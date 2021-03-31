@@ -1,0 +1,1 @@
+Some of these outfiles are crashed calculations that where then restarted. The solvation energies ect... were read out manually from the crashed files, which crashed after the vac calc had finished and the restarted solvation calcuations. 

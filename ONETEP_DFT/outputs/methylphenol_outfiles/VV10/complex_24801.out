@@ -1,0 +1,2771 @@
+ +---------------------------------------------------------------+
+ |                                                               |
+ |        ####### #     # ####### ####### ####### ######         |
+ |        #     # ##    # #          #    #       #     #        |
+ |        #     # # #   # #          #    #       #     #        |
+ |        #     # #  #  # #####      #    #####   ######         |
+ |        #     # #   # # #          #    #       #              |
+ |        #     # #    ## #          #    #       #              |
+ |        ####### #     # #######    #    ####### #              |
+ |                                                               |
+ |        Linear-Scaling Ab Initio Total Energy Program          |
+ |                                                               |
+ |          Release for academic collaborators of ODG            |
+ |                                             Version 5.3.2.6.  |
+ |                                                               |
+ +---------------------------------------------------------------+
+ |                                                               |
+ |  Authors:                                                     |
+ |  Jacek Dziedzic, Peter D. Haynes, Nicholas D. M. Hine,        |
+ |  Arash. A. Mostofi, Mike C. Payne and Chris-Kriton Skylaris   |
+ |                                                               |
+ |  Contributors:                                                |
+ |  J. Aarons, L. Andrinopoulos, P. W. Avraam, R. A. Bell,       |
+ |  A. Bhandari, G. A. Bramley, R. J. Charlton, S. J. Clark,     |
+ |  R. J. Clements, G. C. Constantinescu, F. Corsetti,           |
+ |  N. Corsini, O. Dieguez, S. M. M. Dubois, K. K. B. Duff,      |
+ |  J. M. Escartin, A. Greco, H. Helal, Q. O. Hill, L. P. Lee,   |
+ |  J.-H. Li, E. B. Linscott, G. Moynihan, D. D. O`Regan,        |
+ |  O. K. Okan, M. J. S. Phipps, C. J. Pickard,                  |
+ |  J. C. A. Prentice, M. I. J. Probert, L. E. Ratcliff,         |
+ |  M. Robinson, A. Ruiz Serrano, J. S. Spencer, E. W. Tait,     |
+ |  G. Teobaldi, D. Turban, V. Vitale, K. A. Wilkinson,          |
+ |  C. Weber, J. C. Womack, N. Yeung and T. J. Zuehlsdorff       |
+ |                                                               |
+ |                                   Copyright (c) 2004-2019     |
+ |                                                               |
+ |  Please cite:                                                 |
+ |  "Introducing ONETEP: Linear-scaling density functional       |
+ |   simulations on parallel computers".                         |
+ |   C.-K. Skylaris, P. D. Haynes, A. A. Mostofi, M. C. Payne.   |
+ |   J. Chem. Phys. 122 084119 (2005).                           |
+ |                                                               |
+ |          in all publications arising from your use of ONETEP. |
+ |                                                               |
+ +---------------------------------------------------------------+
+ |                                                               |
+ |   ONETEP is based on developments described in the following  |
+ |   publications:                                               |
+ |                                                               |
+ |  "Nonorthogonal generalized Wannier function pseudopotential  |
+ |   plane-wave method".                                         |
+ |   C.-K. Skylaris, A. A. Mostofi, P. D. Haynes, O. Dieguez,    |
+ |   M. C. Payne.                                                |
+ |   Phys. Rev. B 66 035119 (2002).                              |
+ |                                                               |
+ |  "Preconditioned iterative minimization for linear-scaling    |
+ |   electronic structure calculations".                         |
+ |   A. A. Mostofi, P. D. Haynes, C.-K. Skylaris, M. C. Payne.   |
+ |   J. Chem. Phys. 119(17), pp.8842-8848 (2003).                |
+ |                                                               |
+ |  "Total-energy calculations on a real space grid with         |
+ |   localized functions and a plane-wave basis".                |
+ |   A. A. Mostofi, C.-K. Skylaris, P. D. Haynes, M. C. Payne.   |
+ |   Comput. Phys. Commun. 147, pp.788-802 (2002).               |
+ |                                                               |
+ |  "Accurate kinetic energy evaluation in electronic structure  |
+ |   calculations with localized functions on real space grids"  |
+ |   C.-K. Skylaris, A. A. Mostofi, P. D. Haynes, C. J. Pickard, |
+ |   M. C. Payne.                                                |
+ |   Comput. Phys. Commun. 140, pp.315-322 (2001).               |
+ |                                                               |
+ |  "Accurate ionic forces and geometry optimization in linear-  |
+ |   scaling density-functional theory with local orbitals"      |
+ |   N. D. M. Hine, M. Robinson, P. D. Haynes, C.-K. Skylaris,   |
+ |   M. C. Payne, and A. A. Mostofi.                             |
+ |   Phys. Rev. B 83 195102 (2011).                              |
+ |                                                               |
+ +---------------------------------------------------------------+
+
+Job started: 06-01-2020 16:02 (-0000)
+ 
+Reading parameters from file "complex_24801.dat" ...... done
+
+If your calculation crashes here, before "Checking processes and threads..."
+is displayed, then your stack size is insufficient.
+If so, use "ulimit -s unlimited" at runtime.
+You can disable this check with "check_stack_size F".
+
+Checking processes and threads...
+   Determining the default number of threads...
+      No default threads set at compilation time: defaulting to 1.
+      OpenMP library call suggests 4 threads.
+      Hybrid MPI-OpenMP compilation detected.
+      Number of MPI processes > 1.
+      OMP_NUM_THREADS environment variable present and
+      its value matches the one obtained from the OpenMP library call.
+      Using this value as default.
+      Default threads: 4
+      Default applies to threads_max and threads_num_fftboxes.
+      Settings in the input file override this default.
+   ... done
+
+   Running with 60 MPI processes.
+   There are 6 MPI processes running on the same node as the root process.
+   Each MPI process is using: 
+               1 threads for simulation cell FFTs.
+               1 threads for parallel FFT box operations.
+               4 threads for loops over batched FFT box operations.
+               4 threads in other parallel regions.
+... done
+
+Basic input checks...... done
+
+Reading geometry and species blocks from file "complex_24801.dat" ...
+  <species_atomic_set> block not found: NGWF initialisation set to SOLVE
+IS: Dielectric excluded regions:
+    - NONE.
+    
+  Number of PPD points along a3 set to 1.  This is 
+  the default value, it may have been provided also in the input file.
+... done
+
+
+--------------------------------------------------------------------------------
+---------------------------------- INPUT FILE ----------------------------------
+--------------------------------------------------------------------------------
+
+cutoff_energy       : 800 eV                                                    
+xc_functional VV10                                                              
+task SINGLEPOINT                                                                
+maxit_pen 0                                                                     
+output_detail VERBOSE                                                           
+ngwf_threshold_orig : 0.000002                                                  
+kernel_cutoff       : 1000                                                      
+k_zero              : 3.5                                                       
+elec_cg_max 0                                                                   
+occ_mix 1.0                                                                     
+dispersion 0                                                                    
+maxit_ngwf_cg 40                                                                
+minit_lnv 10                                                                    
+maxit_lnv 10                                                                    
+read_denskern T                                                                 
+read_tightbox_ngwfs T                                                           
+charge 9                                                                        
+is_implicit_solvent T                                                           
+is_include_apolar T                                                             
+is_smeared_ion_rep T                                                            
+is_solvent_surf_tension 4.7624E-5 Ha/bohr**2                                    
+is_apolar_scaling_factor 0.281075                                               
+is_solvation_beta 1.3                                                           
+is_density_threshold 0.00035                                                    
+is_bulk_permittivity 78.54                                                      
+is_dielectric_model fix_initial                                                 
+is_smeared_ion_width 0.8                                                        
+mg_defco_fd_order 8                                                             
+is_bc_coarseness 10                                                             
+is_bc_surface_coarseness 1                                                      
+fine_grid_scale 2.0                                                             
+%block species                                                                  
+N   N   7 4 8.0                                                                 
+H   H   1 1 8.0                                                                 
+C   C   6 4 8.0                                                                 
+S   S  16 9 8.0                                                                 
+O   O   8 4 8.0                                                                 
+%endblock species                                                               
+%block species_pot                                                              
+N   N_00.recpot                                                                 
+H   H_04.recpot                                                                 
+C   C_01.recpot                                                                 
+S   S_00.recpot                                                                 
+O   O_02.recpot                                                                 
+%endblock species_pot                                                           
+%block lattice_cart                                                             
+137.614   0.000   0.000                                                         
+0.000 142.646   0.000                                                           
+0.000   0.000   160.855                                                         
+%endblock lattice_cart                                                          
+%block positions_abs                                                            
+     Hash =   000000215175955957495101
+%endblock positions_abs                                                         
+
+--------------------------------------------------------------------------------
+-------------------------------- END INPUT FILE --------------------------------
+--------------------------------------------------------------------------------
+
+
+ 
+ ESDF WARNING(1): "kernelcutoff" (esdf_physical) has no units. Assume "bohr".
+ ESDF WARNING(2): "kzero" (esdf_physical) has no units. Assume "1/bohr".
+ ESDF WARNING(3
+ ): "issmearedionwidth" (esdf_physical) has no units. Assume "bohr".
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Full system >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<< Pseudopotential information >>>>>>>>>>>>>>>>>>>>>>>>>>
+File: N_00.recpot [ 2001 points up to Gmax=  52.9 (1/bohr)]
+  Atomic number:  7;  ionic charge:  5.000000
+    Shell 1: l = 0; rc = 1.48 bohr
+File: H_04.recpot [ 2001 points up to Gmax=  52.9 (1/bohr)]
+  Atomic number:  1;  ionic charge:  1.000000
+    Local potential
+File: C_01.recpot [ 2001 points up to Gmax=  52.9 (1/bohr)]
+  Atomic number:  6;  ionic charge:  4.000000
+    Shell 1: l = 0; rc = 1.48 bohr
+File: S_00.recpot [ 2001 points up to Gmax=  52.9 (1/bohr)]
+  Atomic number: 16;  ionic charge:  6.000000
+    Shell 1: l = 0; rc = 1.90 bohr
+    Shell 2: l = 2; rc = 1.84 bohr
+File: O_02.recpot [ 2001 points up to Gmax=  52.9 (1/bohr)]
+  Atomic number:  8;  ionic charge:  6.000000
+    Shell 1: l = 0; rc = 1.31 bohr
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+-------------------------- Atom counting information ---------------------------
+Symbol    Natoms    Nngwfs    Nprojs
+  N        236       944       236
+  H       1319      1319         0
+  C        817      3268       817
+  S          6        54        36
+  O        240       960       240
+.......   ......    ......    ......
+Totals:   2618      6545      1329
+--------------------------------------------------------------------------------
+
+=============================== PSINC grid sizes ===============================
+                      Simulation cell:  273 x 286 x 320
+                              FFT-box:   99 x 105 x  99
+                                  PPD:    7 x  11 x   1
+Grid space d1=  0.504080586081a0 (KE cutoff=  29.89538Eh = 813.49465eV)
+Grid space d2=  0.498762237762a0 (KE cutoff=  30.53633Eh = 830.93588eV)
+Grid space d3=  0.502671875000a0 (KE cutoff=  30.06317Eh = 818.06059eV)
+================================================================================
+
+********************* Fourier parallelisation information **********************
+       Coarse grid (whole simulation cell) dimensions:    273   286   320
+          Real-space ('12') slabs/node (min max mean):      5     6     5
+         Recip-space ('23') slabs/node (min max mean):      2     3     2
+********************************************************************************
+
+********************* Fourier parallelisation information **********************
+       Double grid (whole simulation cell) dimensions:    546   572   640
+          Real-space ('12') slabs/node (min max mean):     10    11    10
+         Recip-space ('23') slabs/node (min max mean):      4     5     4
+********************************************************************************
+ONETEP fine grid is 546 x 572 x 640 gridpoints, 137.6140 x 142.6460 x 160.8550 bohr.
+FD multigrid is     545 x 569 x 633 gridpoints, 137.3620 x 141.8979 x 159.0956 bohr.
+
+
+Calculating local pseudopotential in open BC on a radial grid ...
+Discrepancy between calculated realspace psloc and -Z/x on [5a0,255.264a0]:
+max |rel. diff| # avg |rel. diff| #  avg rel. diff #  f # pseudopotential file
+ 0.000296759711    0.000009439468   0.000000085927   54  'N_00.recpot'
+ 0.000490027943    0.000021572324  -0.000000031900   54  'H_04.recpot'
+ 0.000320795249    0.000014598087   0.000000111901   54  'C_01.recpot'
+ 0.000388730920    0.000016096375   0.000000514750   54  'S_00.recpot'
+ 0.000828383344    0.000035421288   0.000000087443   54  'O_02.recpot'
+... done
+
+Atom SCF Calculation for N  : Z (AE atom) =   7 : Z (PS atom) =   5
+Config String:
+Orbitals (num,occ):  2     2.00 3.00
+Orbitals   (num,l):  2        0    1
+Real-space Grid (nr,dr,rmax): 1203    0.0066555740    8.0000000000
+Spherical Bessel Basis (nsws,lmax,cutoff):   47    1  176.3951722778
+Confining potential (l,width,scale):  0    3.0000000000  100.0000000000
+Confining potential (l,width,scale):  1    3.0000000000  100.0000000000
+  1         -4.7366890484   -3.4501654188    7.0523828109   -1.9619316308
+  2         -9.7225420322   -2.0763080851    8.3068355706   -2.2908832437
+  3         -9.7134243553   -2.1270543915    8.2534567806   -2.2819809971
+  4         -9.7235185949   -2.1427582218    8.2369947390   -2.2802814234
+  5         -9.7258373845   -2.1477905863    8.2317116314   -2.2798536235
+  6         -9.7268932325   -2.1503512400    8.2290229806   -2.2796830099
+  7         -9.7273189469   -2.1516634231    8.2276451699   -2.2796169657
+  8         -9.7274675212   -2.1523365544    8.2269384796   -2.2795940092
+  9         -9.7275041773   -2.1526817003    8.2265762312   -2.2795881371
+ 10         -9.7275008637   -2.1528585007    8.2263907413   -2.2795884060
+ 11         -9.7274868305   -2.1529489544    8.2262958841   -2.2795903922
+ 12         -9.7274755655   -2.1529859230    8.2262571347   -2.2795920452
+ 13         -9.7274662327   -2.1530083995    8.2262335832   -2.2795934369
+ 14         -9.7274589439   -2.1530220534    8.2262192809   -2.2795945372
+ 15         -9.7274534633   -2.1530303399    8.2262106039   -2.2795953734
+ 16         -9.7274494492   -2.1530353634    8.2262053452   -2.2795959920
+ 17         -9.7274465654   -2.1530384053    8.2262021621   -2.2795964406
+ 18         -9.7274445237   -2.1530402447    8.2262002378   -2.2795967611
+ 19         -9.7274430947   -2.1530413553    8.2261990762   -2.2795969874
+ 20         -9.7274421038   -2.1530420249    8.2261983762   -2.2795971458
+ 21         -9.7274414219   -2.1530424277    8.2261979551   -2.2795972557
+ 22         -9.7274409555   -2.1530426696    8.2261977024   -2.2795973315
+ 23         -9.7274406382   -2.1530428144    8.2261975510   -2.2795973835
+ 24         -9.7274404232   -2.1530429010    8.2261974606   -2.2795974190
+ 25         -9.7274402783   -2.1530429525    8.2261974067   -2.2795974432
+ 26         -9.7274401808   -2.1530429831    8.2261973748   -2.2795974596
+Atom SCF converged after  26 iterations to a total energy of     -9.72744018
+
+Atom SCF Calculation for H  : Z (AE atom) =   1 : Z (PS atom) =   1
+Config String:
+Orbitals (num,occ):  1     1.00
+Orbitals   (num,l):  1        0
+Real-space Grid (nr,dr,rmax): 1203    0.0066555740    8.0000000000
+Spherical Bessel Basis (nsws,lmax,cutoff):   47    0  176.3951722778
+Confining potential (l,width,scale):  0    3.0000000000  100.0000000000
+  1         -0.3178661827   -0.2469879004    0.2820953124   -0.2487802071
+  2         -0.3961824611   -0.2455070831    0.2902209900   -0.2567664324
+  3         -0.4406462424   -0.2424227551    0.2948173255   -0.2622129794
+  4         -0.4569739054   -0.2416771342    0.2960118236   -0.2639986016
+  5         -0.4627745219   -0.2416114401    0.2961916694   -0.2644992007
+  6         -0.4648634749   -0.2416666130    0.2961598921   -0.2646237065
+  7         -0.4656347011   -0.2417155160    0.2961132802   -0.2646490719
+  8         -0.4659271144   -0.2417438448    0.2960836537   -0.2646515522
+  9         -0.4660407254   -0.2417580788    0.2960682004   -0.2646501482
+ 10         -0.4660857867   -0.2417647566    0.2960608087   -0.2646488305
+ 11         -0.4661039568   -0.2417677717    0.2960574330   -0.2646480606
+ 12         -0.4661113773   -0.2417691018    0.2960559329   -0.2646476727
+ 13         -0.4661144368   -0.2417696800    0.2960552775   -0.2646474903
+ 14         -0.4661157072   -0.2417699291    0.2960549942   -0.2646474079
+ 15         -0.4661162374   -0.2417700356    0.2960548727   -0.2646473715
+ 16         -0.4661164596   -0.2417700810    0.2960548208   -0.2646473556
+ 17         -0.4661165529   -0.2417701003    0.2960547987   -0.2646473488
+Atom SCF converged after  17 iterations to a total energy of     -0.46611655
+
+Atom SCF Calculation for C  : Z (AE atom) =   6 : Z (PS atom) =   4
+Config String:
+Orbitals (num,occ):  2     2.00 2.00
+Orbitals   (num,l):  2        0    1
+Real-space Grid (nr,dr,rmax): 1203    0.0066555740    8.0000000000
+Spherical Bessel Basis (nsws,lmax,cutoff):   47    1  176.3951722778
+Confining potential (l,width,scale):  0    3.0000000000  100.0000000000
+Confining potential (l,width,scale):  1    3.0000000000  100.0000000000
+  1         -5.2812238291   -1.3293161250    4.5135249990   -1.4716766231
+  2         -5.3996591362   -1.3542148509    4.4876064308   -1.4645117417
+  3         -5.4111847148   -1.3757224423    4.4645718036   -1.4593107263
+  4         -5.4199203659   -1.3833334895    4.4563636676   -1.4579885221
+  5         -5.4226876204   -1.3865104950    4.4529090432   -1.4575385943
+  6         -5.4235070726   -1.3878131251    4.4514866831   -1.4573882877
+  7         -5.4237271252   -1.3883401868    4.4509094528   -1.4573411661
+  8         -5.4237693051   -1.3885521813    4.4506766230   -1.4573281030
+  9         -5.4237656430   -1.3886371046    4.4505830704   -1.4573255254
+ 10         -5.4237547927   -1.3886709976    4.4505456041   -1.4573257244
+ 11         -5.4237478594   -1.3886817763    4.4505336403   -1.4573262476
+ 12         -5.4237429748   -1.3886873440    4.4505274417   -1.4573266921
+ 13         -5.4237397042   -1.3886902144    4.4505242350   -1.4573270222
+ 14         -5.4237375865   -1.3886916908    4.4505225792   -1.4573272507
+ 15         -5.4237362473   -1.3886924482    4.4505217259   -1.4573274021
+ 16         -5.4237354152   -1.3886928356    4.4505212873   -1.4573274996
+ 17         -5.4237349050   -1.3886930331    4.4505210623   -1.4573275610
+ 18         -5.4237345954   -1.3886931333    4.4505209473   -1.4573275991
+ 19         -5.4237344092   -1.3886931840    4.4505208887   -1.4573276224
+ 20         -5.4237342980   -1.3886932094    4.4505208590   -1.4573276366
+ 21         -5.4237342320   -1.3886932221    4.4505208440   -1.4573276451
+Atom SCF converged after  21 iterations to a total energy of     -5.42373423
+
+Atom SCF Calculation for S  : Z (AE atom) =  16 : Z (PS atom) =   6
+Config String:
+Orbitals (num,occ):  3     2.00 4.00 0.00
+Orbitals   (num,l):  3        0    1    2
+Real-space Grid (nr,dr,rmax): 1203    0.0066555740    8.0000000000
+Spherical Bessel Basis (nsws,lmax,cutoff):   47    2  176.3951722778
+Confining potential (l,width,scale):  0    3.0000000000  100.0000000000
+Confining potential (l,width,scale):  1    3.0000000000  100.0000000000
+Confining potential (l,width,scale):  2    3.0000000000  100.0000000000
+  1        -12.4916237786   -1.0485914554   10.1554312477   -2.4822447765
+  2         -9.9747083603   -2.4807597367    8.3138131863   -2.0618837268
+  3        -10.1811370131   -2.3153496392    8.4906092179   -2.1137756843
+  4        -10.1856385898   -2.2984912006    8.5093862195   -2.1218167101
+  5        -10.1891317560   -2.2894783333    8.5195006030   -2.1261392389
+  6        -10.1911142562   -2.2849160124    8.5246320974   -2.1283733378
+  7        -10.1921506977   -2.2826473329    8.5271859473   -2.1295140514
+  8        -10.1926851273   -2.2815219985    8.5284534218   -2.1300957983
+  9        -10.1929632671   -2.2809620806    8.5290843811   -2.1303933136
+ 10        -10.1931100895   -2.2806822783    8.5293998452   -2.1305460626
+ 11        -10.1931885828   -2.2805418782    8.5295582201   -2.1306248009
+ 12        -10.1932309625   -2.2804711729    8.5296380158   -2.1306655459
+ 13        -10.1932540142   -2.2804354512    8.5296783476   -2.1306867097
+ 14        -10.1932666242   -2.2804173494    8.5296987927   -2.1306977435
+ 15        -10.1932735535   -2.2804081489    8.5297091868   -2.1307035175
+ 16        -10.1932773756   -2.2804034581    8.5297144867   -2.1307065505
+ 17        -10.1932794908   -2.2804010586    8.5297171976   -2.1307081499
+ 18        -10.1932806648   -2.2803998268    8.5297185890   -2.1307089965
+ 19        -10.1932813181   -2.2803991920    8.5297193057   -2.1307094466
+ 20        -10.1932816826   -2.2803988634    8.5297196763   -2.1307096867
+ 21        -10.1932818864   -2.2803986926    8.5297198688   -2.1307098154
+ 22        -10.1932820006   -2.2803986034    8.5297199692   -2.1307098847
+ 23        -10.1932820648   -2.2803985565    8.5297200219   -2.1307099221
+Atom SCF converged after  23 iterations to a total energy of    -10.19328206
+
+Atom SCF Calculation for O  : Z (AE atom) =   8 : Z (PS atom) =   6
+Config String:
+Orbitals (num,occ):  2     2.00 4.00
+Orbitals   (num,l):  2        0    1
+Real-space Grid (nr,dr,rmax): 1203    0.0066555740    8.0000000000
+Spherical Bessel Basis (nsws,lmax,cutoff):   47    1  176.3951722778
+Confining potential (l,width,scale):  0    3.0000000000  100.0000000000
+Confining potential (l,width,scale):  1    3.0000000000  100.0000000000
+  1         -1.9497477053   -7.5870966769   10.1554312477   -2.4822447765
+  2        -15.9466298225   -3.1778351734   13.6353006614   -3.2931224232
+  3        -16.0387051750   -3.0909030611   13.7305651010   -3.3194522996
+  4        -15.9025031450   -3.1083023605   13.7128101414   -3.3180850501
+  5        -15.8912953362   -3.1033022259   13.7185404266   -3.3206942093
+  6        -15.8793912992   -3.1043100674   13.7175820250   -3.3209366960
+  7        -15.8748748605   -3.1043975610   13.7175531476   -3.3211845618
+  8        -15.8725354084   -3.1044655610   13.7175148333   -3.3213149154
+  9        -15.8713193866   -3.1045129589   13.7174824743   -3.3213832909
+ 10        -15.8706863385   -3.1045436851   13.7174593895   -3.3214192053
+ 11        -15.8703562731   -3.1045627330   13.7174442347   -3.3214381098
+ 12        -15.8701839150   -3.1045741887   13.7174347673   -3.3214480859
+ 13        -15.8700937727   -3.1045809294   13.7174290448   -3.3214533647
+ 14        -15.8700465571   -3.1045848305   13.7174256662   -3.3214561658
+ 15        -15.8700217888   -3.1045870593   13.7174237063   -3.3214576563
+ 16        -15.8700087767   -3.1045883194   13.7174225849   -3.3214584516
+ 17        -15.8700019307   -3.1045890258   13.7174219502   -3.3214588771
+ 18        -15.8699983237   -3.1045894190   13.7174215942   -3.3214591053
+ 19        -15.8699964206   -3.1045896366   13.7174213960   -3.3214592281
+ 20        -15.8699954151   -3.1045897563   13.7174212864   -3.3214592942
+ 21        -15.8699948832   -3.1045898219   13.7174212260   -3.3214593299
+ 22        -15.8699946014   -3.1045898577   13.7174211930   -3.3214593493
+ 23        -15.8699944520   -3.1045898771   13.7174211750   -3.3214593597
+ 24        -15.8699943726   -3.1045898877   13.7174211652   -3.3214593654
+Atom SCF converged after  24 iterations to a total energy of    -15.86999437
+
+Determining parallel strategy ...
+... using space-filling curve
+... NGWF load balancing: max    110;  min    109;  average    109
+... Projector load balancing: max     26;  min     21;  average     22
+... done
+Calculating direct Ion-Ion energy ...
+Ion-Ion Energy        :    839085.20605334197171
+Basis initialisation ...... NGWF spheres initialised
+... Projector spheres initialised
+... NGWF tight boxes initialised
+... Tight-boxes gathered
+... NGWF basis size (local,global):     940607  56396131
+... Nonlocal pseudopotential projector initialisation
+... done
+
+========================== Sparse matrix information ===========================
+                        Overlap matrix filling:   6.77%
+                        Density kernel filling: 100.00%
+              NGWF-Proj overlap matrix filling:   1.77%
+                    Hamiltonian matrix filling:   7.65%
+                  NGWF diagonal matrix filling:   0.05%
+                             KS matrix filling: 100.00% 
+                           KSKS matrix filling: 100.00% 
+================================================================================
+
+Sparse matrix initialisation ... done
+
+Generating smeared ion density ... done
+Smeared ion self correction:     -14534.963309
+Smeared ion non-self correction: -839036.836915
+
+Reading NGWFs from file "complex_24801.tightbox_ngwfs" ...  done
+============ Calculation of NGWF S^-1 using Hotelling algorithm ================ 
+         Iteration  |  Frobenius norm and Maximum abs value    (of I-S*S_n^-1)   
+               1       0.78834503E+02     0.98307307E+00
+               2       0.77055668E+02     0.96667801E+00
+               3       0.74139145E+02     0.93534554E+00
+               4       0.69924780E+02     0.87772011E+00
+               5       0.64591490E+02     0.77813063E+00
+               6       0.58514654E+02     0.70505843E+00
+               7       0.52302308E+02     0.66821948E+00
+               8       0.46478556E+02     0.64153684E+00
+               9       0.40157317E+02     0.60014746E+00
+              10       0.31727691E+02     0.53051623E+00
+              11       0.21283735E+02     0.42222292E+00
+              12       0.11165847E+02     0.28041914E+00
+              13       0.40540287E+01     0.13714501E+00
+              14       0.79108843E+00     0.39414703E-01
+              15       0.52336131E-01     0.50247783E-02
+              16       0.59502898E-03     0.93996948E-04
+              17       0.19348020E-06     0.34467570E-07
+              18       0.13384262E-12     0.71054274E-14
+================================================================================
+Calculating local pseudopotential in open BC on the fine real space grid ...
+... done
+
+
+Reading density kernel from file "complex_24801.dkn" ... done
+
+>>> Optimising kernel for current NGWFs:
+
+Generating solute cavity for implicit solvation ... done
+MG BCs: +ve charge blocks (gridpoints):     29089 (   19361973).
+MG BCs: -ve charge blocks (gridpoints):      8502 (    1060294).
+MG BCs:     Elided blocks (gridpoints):    171551 (  175874198).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009814.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1210.199884
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1210.014861
+MG Discrepancy due to finite box and discretization:     -0.185023 (  -0.01529%)
+MG Correction to account for finite box:                  0.006290
+MG Remaining discrepancy, due to discretization:         -0.178733 (  -0.01477%)
+
+
+>>> Density kernel optimised for the current NGWF basis:
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     Total energy                =  -1.17590782769819E+04  Eh
+     Estimated bandgap           =   1.0976E-01  Eh
+     RMS occupancy error         =   2.0675E-11
+     [H,K] commutator            =   1.3736E-04
+     Occupancy bounds            = [  0.000:  1.000]
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+################################################################################
+########################### NGWF CG iteration  001 #############################
+################################################################################
+****** Reciprocal space K.E. preconditioning with k_zero =  3.5000 a0^-1 *******
+
+>>> Checking for convergence of NGWFs:   NOT CONVERGED
+  ========================================================================
+         NGWF RMS gradient =  2.5821E-05 >  2.0000E-06  | above tolerance
+  ========================================================================
+
+>>> Improving NGWFs using line search:
+============ Calculation of NGWF S^-1 using Hotelling algorithm ================ 
+         Iteration  |  Frobenius norm and Maximum abs value    (of I-S*S_n^-1)   
+               1       0.11179745E+00     0.19168047E-02
+               2       0.28926788E-03     0.10930564E-04
+               3       0.36258299E-08     0.20481605E-09
+               4       0.13550432E-12     0.59952043E-14
+================================================================================
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29106 (   19383936).
+MG BCs: -ve charge blocks (gridpoints):      8502 (    1060245).
+MG BCs:     Elided blocks (gridpoints):    171534 (  175852284).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009769.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1210.283690
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1210.098698
+MG Discrepancy due to finite box and discretization:     -0.184992 (  -0.01529%)
+MG Correction to account for finite box:                  0.006291
+MG Remaining discrepancy, due to discretization:         -0.178701 (  -0.01477%)
+============ Calculation of NGWF S^-1 using Hotelling algorithm ================ 
+         Iteration  |  Frobenius norm and Maximum abs value    (of I-S*S_n^-1)   
+               1       0.27887363E+00     0.47632584E-02
+               2       0.17917365E-02     0.66074863E-04
+               3       0.13586293E-06     0.72990157E-08
+               4       0.14764618E-12     0.77715612E-14
+================================================================================
+------------------------------- NGWF line search -------------------------------
+RMS gradient                =       0.00002582063215
+Trial step length           =               0.122474
+Gradient along search dir.  =         -0.07404979122
+Functional at step 0        =  -11759.07827698194887
+Functional at step 1        =  -11759.08604310802184
+Functional predicted        =  -11759.09405696342583
+Selected quadratic step     =               0.426199
+--------------------------- NGWF line search finished --------------------------
+                                               
+Writing NGWFs to file "complex_24801.tightbox_ngwfs"....  done
+
+>>> Optimising kernel for current NGWFs:
+   Initial electron number for spin 1:    7234.93079462
+     Final electron number for spin 1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000517 (step -0.4997 Ne1=   7234.0000)
+ RMS occupancy error at iteration   2:  0.000002 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+................................................................................
+<<<<<<<<<<<<<< LNV (Original version) density kernel optimisation >>>>>>>>>>>>>>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   iter  |      energy (Eh)       | rms gradient |  commutator  |   dE (Eh)
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29136 (   19435993).
+MG BCs: -ve charge blocks (gridpoints):      8501 (    1060179).
+MG BCs:     Elided blocks (gridpoints):    171504 (  175800293).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009658.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1210.496481
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1210.311566
+MG Discrepancy due to finite box and discretization:     -0.184915 (  -0.01528%)
+MG Correction to account for finite box:                  0.006294
+MG Remaining discrepancy, due to discretization:         -0.178622 (  -0.01476%)
+      ideal mu1:      -0.487546637543
+             Q0:  -11759.093361831619
+             G0:      -1.014270613108
+   RMS gradient:       0.000153874718
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29126 (   19421267).
+MG BCs: -ve charge blocks (gridpoints):      8516 (    1062531).
+MG BCs:     Elided blocks (gridpoints):    171514 (  175812667).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009693.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.477121
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1209.291462
+MG Discrepancy due to finite box and discretization:     -0.185659 (  -0.01535%)
+MG Correction to account for finite box:                  0.006355
+MG Remaining discrepancy, due to discretization:         -0.179304 (  -0.01482%)
+     Trial step:       0.500000000000
+             Q1:  -11759.435317672091
+ Quadratic coef:       0.165179466083
+ Linear coef   :      -0.507135306554
+           Qmin:  -11759.482614541494
+Quadratic minimum step length (  0.767551982368) accepted
+    Initial Ne1:    7233.99999968
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000574 (step -0.4805 Ne1=   7234.0000)
+ RMS occupancy error at iteration   2:  0.000008 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    1        -1.175909336183E+04     1.5387E-04     1.3922E-04
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29120 (   19413251).
+MG BCs: -ve charge blocks (gridpoints):      8522 (    1063719).
+MG BCs:     Elided blocks (gridpoints):    171520 (  175819495).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009714.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.006836
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.820775
+MG Discrepancy due to finite box and discretization:     -0.186061 (  -0.01539%)
+MG Correction to account for finite box:                  0.006388
+MG Remaining discrepancy, due to discretization:         -0.179673 (  -0.01486%)
+      ideal mu1:      -0.485407502069
+             Q0:  -11759.485061702086
+             G0:      -0.372230032592
+   RMS gradient:       0.000092394424
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29122 (   19396453).
+MG BCs: -ve charge blocks (gridpoints):      8536 (    1066085).
+MG BCs:     Elided blocks (gridpoints):    171518 (  175833927).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009768.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1207.724626
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1207.538498
+MG Discrepancy due to finite box and discretization:     -0.186128 (  -0.01541%)
+MG Correction to account for finite box:                  0.006419
+MG Remaining discrepancy, due to discretization:         -0.179709 (  -0.01488%)
+     Trial step:       0.619496562690
+             Q1:  -11759.594477381208
+ Quadratic coef:       0.121179546599
+ Linear coef   :      -0.230595225720
+           Qmin:  -11759.594762884375
+Quadratic minimum step length (  0.589426820433) accepted
+    Initial Ne1:    7233.99998877
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000587 (step -0.4789 Ne1=   7234.0000)
+ RMS occupancy error at iteration   2:  0.000008 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    2        -1.175948506170E+04     9.2394E-05     8.3594E-05    -3.9170E-01
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29123 (   19397274).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065976).
+MG BCs:     Elided blocks (gridpoints):    171517 (  175833215).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009765.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1207.783297
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1207.597171
+MG Discrepancy due to finite box and discretization:     -0.186126 (  -0.01541%)
+MG Correction to account for finite box:                  0.006418
+MG Remaining discrepancy, due to discretization:         -0.179709 (  -0.01488%)
+      ideal mu1:      -0.484018629702
+             Q0:  -11759.595883455127
+             G0:      -0.137392756625
+   RMS gradient:       0.000056124650
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29123 (   19393985).
+MG BCs: -ve charge blocks (gridpoints):      8538 (    1065824).
+MG BCs:     Elided blocks (gridpoints):    171517 (  175836656).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009778.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1208.067930
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1207.881805
+MG Discrepancy due to finite box and discretization:     -0.186125 (  -0.01541%)
+MG Correction to account for finite box:                  0.006430
+MG Remaining discrepancy, due to discretization:         -0.179695 (  -0.01487%)
+     Trial step:       0.604274680270
+             Q1:  -11759.650946657406
+ Quadratic coef:       0.027959761803
+ Linear coef   :      -0.083022964081
+           Qmin:  -11759.657514993813
+Quadratic minimum step length (  0.897158484910) accepted
+    Initial Ne1:    7233.99998581
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000881 (step -0.4677 Ne1=   7234.0000)
+ RMS occupancy error at iteration   2:  0.000015 (step -0.4999 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    3        -1.175959588346E+04     5.6125E-05     5.0779E-05    -1.1082E-01
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29123 (   19392697).
+MG BCs: -ve charge blocks (gridpoints):      8538 (    1065691).
+MG BCs:     Elided blocks (gridpoints):    171517 (  175838077).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009782.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1208.212979
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.026859
+MG Discrepancy due to finite box and discretization:     -0.186120 (  -0.01540%)
+MG Correction to account for finite box:                  0.006434
+MG Remaining discrepancy, due to discretization:         -0.179686 (  -0.01487%)
+      ideal mu1:      -0.484205439007
+             Q0:  -11759.659483170137
+             G0:      -0.058185601754
+   RMS gradient:       0.000035956759
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29121 (   19396331).
+MG BCs: -ve charge blocks (gridpoints):      8532 (    1065043).
+MG BCs:     Elided blocks (gridpoints):    171519 (  175835091).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009774.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1208.603945
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.417904
+MG Discrepancy due to finite box and discretization:     -0.186041 (  -0.01539%)
+MG Correction to account for finite box:                  0.006436
+MG Remaining discrepancy, due to discretization:         -0.179605 (  -0.01486%)
+     Trial step:       0.736294884282
+             Q1:  -11759.680053245975
+ Quadratic coef:       0.022271685073
+ Linear coef   :      -0.042841760910
+           Qmin:  -11759.680085747714
+Quadratic minimum step length (  0.708167551947) accepted
+    Initial Ne1:    7233.99998877
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000520 (step -0.4802 Ne1=   7234.0000)
+ RMS occupancy error at iteration   2:  0.000005 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    4        -1.175965948317E+04     3.5957E-05     3.2532E-05    -6.3600E-02
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29121 (   19396099).
+MG BCs: -ve charge blocks (gridpoints):      8532 (    1065064).
+MG BCs:     Elided blocks (gridpoints):    171519 (  175835302).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009775.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1208.588087
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.402042
+MG Discrepancy due to finite box and discretization:     -0.186045 (  -0.01539%)
+MG Correction to account for finite box:                  0.006436
+MG Remaining discrepancy, due to discretization:         -0.179609 (  -0.01486%)
+      ideal mu1:      -0.484605724955
+             Q0:  -11759.680881217704
+             G0:      -0.021250539272
+   RMS gradient:       0.000021716443
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29123 (   19396498).
+MG BCs: -ve charge blocks (gridpoints):      8531 (    1065191).
+MG BCs:     Elided blocks (gridpoints):    171517 (  175834776).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009774.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1208.397952
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.211886
+MG Discrepancy due to finite box and discretization:     -0.186065 (  -0.01540%)
+MG Correction to account for finite box:                  0.006435
+MG Remaining discrepancy, due to discretization:         -0.179630 (  -0.01487%)
+     Trial step:       0.722094277580
+             Q1:  -11759.688302059309
+ Quadratic coef:       0.007924051199
+ Linear coef   :      -0.015344892804
+           Qmin:  -11759.688310048276
+Quadratic minimum step length (  0.699166310626) accepted
+    Initial Ne1:    7233.99999476
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000263 (step -0.4897 Ne1=   7234.0000)
+ RMS occupancy error at iteration   2:  0.000001 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    5        -1.175968088122E+04     2.1716E-05     1.9648E-05    -2.1398E-02
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29123 (   19396449).
+MG BCs: -ve charge blocks (gridpoints):      8531 (    1065193).
+MG BCs:     Elided blocks (gridpoints):    171517 (  175834823).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009774.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1208.403756
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.217691
+MG Discrepancy due to finite box and discretization:     -0.186065 (  -0.01540%)
+MG Correction to account for finite box:                  0.006435
+MG Remaining discrepancy, due to discretization:         -0.179630 (  -0.01487%)
+      ideal mu1:      -0.484545197218
+             Q0:  -11759.688507464482
+             G0:      -0.007352989923
+   RMS gradient:       0.000012899044
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29123 (   19396435).
+MG BCs: -ve charge blocks (gridpoints):      8532 (    1065263).
+MG BCs:     Elided blocks (gridpoints):    171517 (  175834767).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009773.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1208.325796
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.139727
+MG Discrepancy due to finite box and discretization:     -0.186070 (  -0.01540%)
+MG Correction to account for finite box:                  0.006436
+MG Remaining discrepancy, due to discretization:         -0.179634 (  -0.01487%)
+     Trial step:       0.710537818824
+             Q1:  -11759.691031731083
+ Quadratic coef:       0.002700310821
+ Linear coef   :      -0.005224577422
+           Qmin:  -11759.691034600342
+Quadratic minimum step length (  0.687376397039) accepted
+    Initial Ne1:    7233.99999793
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000115 (step -0.4954 Ne1=   7234.0000)
+ RMS occupancy error at iteration   2:  0.000000 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    6        -1.175968850746E+04     1.2899E-05     1.1670E-05    -7.6262E-03
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29123 (   19396431).
+MG BCs: -ve charge blocks (gridpoints):      8532 (    1065256).
+MG BCs:     Elided blocks (gridpoints):    171517 (  175834778).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009774.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1208.328285
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.142216
+MG Discrepancy due to finite box and discretization:     -0.186069 (  -0.01540%)
+MG Correction to account for finite box:                  0.006436
+MG Remaining discrepancy, due to discretization:         -0.179634 (  -0.01487%)
+      ideal mu1:      -0.484529595992
+             Q0:  -11759.691068943357
+             G0:      -0.002459003706
+   RMS gradient:       0.000007576523
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29122 (   19396571).
+MG BCs: -ve charge blocks (gridpoints):      8532 (    1065172).
+MG BCs:     Elided blocks (gridpoints):    171518 (  175834722).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009774.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1208.421107
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.235036
+MG Discrepancy due to finite box and discretization:     -0.186071 (  -0.01540%)
+MG Correction to account for finite box:                  0.006436
+MG Remaining discrepancy, due to discretization:         -0.179635 (  -0.01487%)
+     Trial step:       0.698861163510
+             Q1:  -11759.691626192653
+ Quadratic coef:       0.001161252896
+ Linear coef   :      -0.001718502191
+           Qmin:  -11759.691704732897
+Quadratic minimum step length (  0.517111494315) accepted
+    Initial Ne1:    7233.99999999
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000001 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    7        -1.175969106894E+04     7.5765E-06     6.8549E-06    -2.5615E-03
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29122 (   19396531).
+MG BCs: -ve charge blocks (gridpoints):      8532 (    1065196).
+MG BCs:     Elided blocks (gridpoints):    171518 (  175834738).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009774.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1208.396874
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.210803
+MG Discrepancy due to finite box and discretization:     -0.186070 (  -0.01540%)
+MG Correction to account for finite box:                  0.006436
+MG Remaining discrepancy, due to discretization:         -0.179635 (  -0.01487%)
+      ideal mu1:      -0.484533970929
+             Q0:  -11759.691704398021
+             G0:      -0.001034015451
+   RMS gradient:       0.000004909540
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29122 (   19396378).
+MG BCs: -ve charge blocks (gridpoints):      8532 (    1065187).
+MG BCs:     Elided blocks (gridpoints):    171518 (  175834900).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009774.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1208.416852
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.230785
+MG Discrepancy due to finite box and discretization:     -0.186068 (  -0.01540%)
+MG Correction to account for finite box:                  0.006436
+MG Remaining discrepancy, due to discretization:         -0.179632 (  -0.01487%)
+     Trial step:       0.601156502570
+             Q1:  -11759.692133011296
+ Quadratic coef:       0.000192991836
+ Linear coef   :      -0.000621605112
+           Qmin:  -11759.692204928151
+Quadratic minimum step length (  0.968128917895) accepted
+    Initial Ne1:    7233.99999992
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000005 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    8        -1.175969170440E+04     4.9095E-06     4.4419E-06    -6.3545E-04
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29122 (   19396278).
+MG BCs: -ve charge blocks (gridpoints):      8533 (    1065200).
+MG BCs:     Elided blocks (gridpoints):    171518 (  175834987).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009774.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1208.429075
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.243009
+MG Discrepancy due to finite box and discretization:     -0.186066 (  -0.01540%)
+MG Correction to account for finite box:                  0.006436
+MG Remaining discrepancy, due to discretization:         -0.179630 (  -0.01486%)
+      ideal mu1:      -0.484560544210
+             Q0:  -11759.692205128726
+             G0:      -0.000752092488
+   RMS gradient:       0.000004187938
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29122 (   19396067).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065242).
+MG BCs:     Elided blocks (gridpoints):    171518 (  175835156).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009775.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1208.375466
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.189393
+MG Discrepancy due to finite box and discretization:     -0.186073 (  -0.01540%)
+MG Correction to account for finite box:                  0.006436
+MG Remaining discrepancy, due to discretization:         -0.179637 (  -0.01487%)
+     Trial step:       0.762887274975
+             Q1:  -11759.692533198628
+ Quadratic coef:       0.000245691886
+ Linear coef   :      -0.000573761788
+           Qmin:  -11759.692540103757
+Quadratic minimum step length (  0.890781485549) accepted
+    Initial Ne1:    7233.99999645
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000010 (step -0.4994 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [ -0.0000,  1.0000]
+================================================================================
+
+    9        -1.175969220513E+04     4.1879E-06     3.7891E-06    -5.0073E-04
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29122 (   19396019).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065243).
+MG BCs:     Elided blocks (gridpoints):    171518 (  175835203).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009775.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1208.366477
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.180403
+MG Discrepancy due to finite box and discretization:     -0.186074 (  -0.01540%)
+MG Correction to account for finite box:                  0.006436
+MG Remaining discrepancy, due to discretization:         -0.179638 (  -0.01487%)
+      ideal mu1:      -0.484512922670
+   10        -1.175969254032E+04     3.2166E-06     2.9102E-06    -3.3519E-04
+Finished density kernel iterations (  10)
+
+Writing density kernel to file "complex_24801.dkn" ... done
+
+
+>>> Density kernel optimised for the current NGWF basis:
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     Total energy                =  -1.17596925403237E+04  Eh
+     Estimated bandgap           =   7.7555E-02  Eh
+     RMS occupancy error         =   3.6350E-09
+     [H,K] commutator            =   2.9102E-06
+     Occupancy bounds            = [ -0.000:  1.000]
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+################################################################################
+########################### NGWF CG iteration  002 #############################
+################################################################################
+****** Reciprocal space K.E. preconditioning with k_zero =  3.5000 a0^-1 *******
+
+>>> Checking for convergence of NGWFs:   NOT CONVERGED
+  ========================================================================
+         NGWF RMS gradient =  2.7560E-05 >  2.0000E-06  | above tolerance
+  ========================================================================
+
+>>> Improving NGWFs using line search:
+============ Calculation of NGWF S^-1 using Hotelling algorithm ================ 
+         Iteration  |  Frobenius norm and Maximum abs value    (of I-S*S_n^-1)   
+               1       0.20971313E+00     0.35306431E-02
+               2       0.10204092E-02     0.37070140E-04
+               3       0.44639978E-07     0.23814015E-08
+               4       0.14548595E-12     0.77715612E-14
+================================================================================
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29145 (   19433869).
+MG BCs: -ve charge blocks (gridpoints):      8533 (    1065199).
+MG BCs:     Elided blocks (gridpoints):    171495 (  175797397).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009699.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1208.972428
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.786512
+MG Discrepancy due to finite box and discretization:     -0.185916 (  -0.01538%)
+MG Correction to account for finite box:                  0.006438
+MG Remaining discrepancy, due to discretization:         -0.179478 (  -0.01485%)
+============ Calculation of NGWF S^-1 using Hotelling algorithm ================ 
+         Iteration  |  Frobenius norm and Maximum abs value    (of I-S*S_n^-1)   
+               1       0.14208934E+00     0.23856066E-02
+               2       0.46717839E-03     0.16684163E-04
+               3       0.92214332E-08     0.47448656E-09
+               4       0.14177380E-12     0.86597396E-14
+================================================================================
+------------------------------- NGWF line search -------------------------------
+RMS gradient                =       0.00002755959649
+Trial step length           =               0.228470
+Gradient along search dir.  =         -0.08435985148
+Functional at step 0        =  -11759.69254032371100
+Functional at step 1        =  -11759.70605706144124
+Functional predicted        =  -11759.70867190785611
+Selected quadratic step     =               0.382447
+--------------------------- NGWF line search finished --------------------------
+                                               
+Writing NGWFs to file "complex_24801.tightbox_ngwfs"....  done
+
+>>> Optimising kernel for current NGWFs:
+   Initial electron number for spin 1:    7235.04158292
+     Final electron number for spin 1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000467 (step -0.4997 Ne1=   7234.0000)
+ RMS occupancy error at iteration   2:  0.000001 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+................................................................................
+<<<<<<<<<<<<<< LNV (Original version) density kernel optimisation >>>>>>>>>>>>>>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   iter  |      energy (Eh)       | rms gradient |  commutator  |   dE (Eh)
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29165 (   19458141).
+MG BCs: -ve charge blocks (gridpoints):      8532 (    1065137).
+MG BCs:     Elided blocks (gridpoints):    171475 (  175773187).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009652.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.384522
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1209.198712
+MG Discrepancy due to finite box and discretization:     -0.185810 (  -0.01536%)
+MG Correction to account for finite box:                  0.006439
+MG Remaining discrepancy, due to discretization:         -0.179371 (  -0.01483%)
+      ideal mu1:      -0.485320473914
+             Q0:  -11759.708050864865
+             G0:      -0.012449650634
+   RMS gradient:       0.000017047823
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29164 (   19457713).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065461).
+MG BCs:     Elided blocks (gridpoints):    171476 (  175773291).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009650.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.172628
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.986672
+MG Discrepancy due to finite box and discretization:     -0.185955 (  -0.01538%)
+MG Correction to account for finite box:                  0.006444
+MG Remaining discrepancy, due to discretization:         -0.179511 (  -0.01485%)
+     Trial step:       0.824357847120
+             Q1:  -11759.708736498142
+ Quadratic coef:       0.009577333918
+ Linear coef   :      -0.010262967194
+           Qmin:  -11759.710800285960
+Quadratic minimum step length (  0.441686465855) accepted
+    Initial Ne1:    7233.99999988
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000001 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    1        -1.175970805086E+04     1.7048E-05     1.5424E-05
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29165 (   19457896).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065299).
+MG BCs:     Elided blocks (gridpoints):    171475 (  175773270).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009651.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.269679
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1209.083792
+MG Discrepancy due to finite box and discretization:     -0.185888 (  -0.01537%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179446 (  -0.01484%)
+      ideal mu1:      -0.485254165838
+             Q0:  -11759.710799074033
+             G0:      -0.002001185260
+   RMS gradient:       0.000006836396
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29166 (   19457448).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065489).
+MG BCs:     Elided blocks (gridpoints):    171474 (  175773528).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009653.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.140382
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.954477
+MG Discrepancy due to finite box and discretization:     -0.185905 (  -0.01538%)
+MG Correction to account for finite box:                  0.006443
+MG Remaining discrepancy, due to discretization:         -0.179463 (  -0.01484%)
+     Trial step:       0.603413377458
+             Q1:  -11759.711386430892
+ Quadratic coef:       0.000620185097
+ Linear coef   :      -0.001207541957
+           Qmin:  -11759.711386865316
+Quadratic minimum step length (  0.587443146915) accepted
+    Initial Ne1:    7233.99999989
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000001 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    2        -1.175971079907E+04     6.8364E-06     6.1853E-06    -2.7482E-03
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29166 (   19457464).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065485).
+MG BCs:     Elided blocks (gridpoints):    171474 (  175773516).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009653.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.143799
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.957894
+MG Discrepancy due to finite box and discretization:     -0.185905 (  -0.01537%)
+MG Correction to account for finite box:                  0.006443
+MG Remaining discrepancy, due to discretization:         -0.179462 (  -0.01484%)
+      ideal mu1:      -0.485156332763
+             Q0:  -11759.711386857787
+             G0:      -0.000317104219
+   RMS gradient:       0.000002719631
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29166 (   19457350).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065516).
+MG BCs:     Elided blocks (gridpoints):    171474 (  175773599).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009653.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.136726
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.950817
+MG Discrepancy due to finite box and discretization:     -0.185909 (  -0.01538%)
+MG Correction to account for finite box:                  0.006443
+MG Remaining discrepancy, due to discretization:         -0.179466 (  -0.01484%)
+     Trial step:       0.595374716749
+             Q1:  -11759.711495330092
+ Quadratic coef:       0.000080323531
+ Linear coef   :      -0.000188795834
+           Qmin:  -11759.711497796223
+Quadratic minimum step length (  0.699696996936) accepted
+    Initial Ne1:    7233.99999993
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000000 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    3        -1.175971138686E+04     2.7196E-06     2.4606E-06    -5.8778E-04
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29166 (   19457334).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065518).
+MG BCs:     Elided blocks (gridpoints):    171474 (  175773613).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009653.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.135492
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.949582
+MG Discrepancy due to finite box and discretization:     -0.185910 (  -0.01538%)
+MG Correction to account for finite box:                  0.006443
+MG Remaining discrepancy, due to discretization:         -0.179467 (  -0.01484%)
+      ideal mu1:      -0.485142558522
+             Q0:  -11759.711497842683
+             G0:      -0.000124455335
+   RMS gradient:       0.000001702141
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29166 (   19457382).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065495).
+MG BCs:     Elided blocks (gridpoints):    171474 (  175773588).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009653.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.150892
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.964986
+MG Discrepancy due to finite box and discretization:     -0.185907 (  -0.01537%)
+MG Correction to account for finite box:                  0.006443
+MG Remaining discrepancy, due to discretization:         -0.179464 (  -0.01484%)
+     Trial step:       0.645431562105
+             Q1:  -11759.711544837337
+ Quadratic coef:       0.000033332748
+ Linear coef   :      -0.000080327401
+           Qmin:  -11759.711546237218
+Quadratic minimum step length (  0.777701257376) accepted
+    Initial Ne1:    7233.99999996
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000000 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    4        -1.175971149784E+04     1.7021E-06     1.5400E-06    -1.1098E-04
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29166 (   19457385).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065496).
+MG BCs:     Elided blocks (gridpoints):    171474 (  175773584).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009653.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.154050
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.968144
+MG Discrepancy due to finite box and discretization:     -0.185906 (  -0.01537%)
+MG Correction to account for finite box:                  0.006443
+MG Remaining discrepancy, due to discretization:         -0.179463 (  -0.01484%)
+      ideal mu1:      -0.485154513054
+             Q0:  -11759.711546270410
+             G0:      -0.000063063988
+   RMS gradient:       0.000001210943
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29166 (   19457381).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065499).
+MG BCs:     Elided blocks (gridpoints):    171474 (  175773585).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009653.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.152162
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.966255
+MG Discrepancy due to finite box and discretization:     -0.185907 (  -0.01537%)
+MG Correction to account for finite box:                  0.006443
+MG Remaining discrepancy, due to discretization:         -0.179464 (  -0.01484%)
+     Trial step:       0.708486370652
+             Q1:  -11759.711572570028
+ Quadratic coef:       0.000018380357
+ Linear coef   :      -0.000044679976
+           Qmin:  -11759.711573423041
+Quadratic minimum step length (  0.861113695239) accepted
+    Initial Ne1:    7233.99999994
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000001 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    5        -1.175971154627E+04     1.2109E-06     1.0956E-06    -4.8428E-05
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29166 (   19457386).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065500).
+MG BCs:     Elided blocks (gridpoints):    171474 (  175773579).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009653.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.151755
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.965848
+MG Discrepancy due to finite box and discretization:     -0.185907 (  -0.01537%)
+MG Correction to account for finite box:                  0.006443
+MG Remaining discrepancy, due to discretization:         -0.179464 (  -0.01484%)
+      ideal mu1:      -0.485152169316
+             Q0:  -11759.711573454901
+             G0:      -0.000039351596
+   RMS gradient:       0.000000955335
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29166 (   19457340).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065508).
+MG BCs:     Elided blocks (gridpoints):    171474 (  175773617).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009653.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.144656
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.958749
+MG Discrepancy due to finite box and discretization:     -0.185907 (  -0.01538%)
+MG Correction to account for finite box:                  0.006443
+MG Remaining discrepancy, due to discretization:         -0.179464 (  -0.01484%)
+     Trial step:       0.781080864353
+             Q1:  -11759.711591009866
+ Quadratic coef:       0.000013181814
+ Linear coef   :      -0.000030736779
+           Qmin:  -11759.711591372570
+Quadratic minimum step length (  0.910645122475) accepted
+    Initial Ne1:    7233.99999989
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000001 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    6        -1.175971157345E+04     9.5533E-07     8.6434E-07    -2.7184E-05
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29166 (   19457334).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065510).
+MG BCs:     Elided blocks (gridpoints):    171474 (  175773621).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009653.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.143478
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.957571
+MG Discrepancy due to finite box and discretization:     -0.185907 (  -0.01538%)
+MG Correction to account for finite box:                  0.006443
+MG Remaining discrepancy, due to discretization:         -0.179464 (  -0.01484%)
+      ideal mu1:      -0.485150907461
+             Q0:  -11759.711591352010
+             G0:      -0.000020179424
+   RMS gradient:       0.000000686349
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29166 (   19457404).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065490).
+MG BCs:     Elided blocks (gridpoints):    171474 (  175773571).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009653.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.151694
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.965786
+MG Discrepancy due to finite box and discretization:     -0.185908 (  -0.01538%)
+MG Correction to account for finite box:                  0.006443
+MG Remaining discrepancy, due to discretization:         -0.179464 (  -0.01484%)
+     Trial step:       0.843378609749
+             Q1:  -11759.711594743887
+ Quadratic coef:       0.000013627017
+ Linear coef   :      -0.000017018895
+           Qmin:  -11759.711596665769
+Quadratic minimum step length (  0.526651260157) accepted
+    Initial Ne1:    7233.99999992
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000000 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [ -0.0000,  1.0000]
+================================================================================
+
+    7        -1.175971159135E+04     6.8635E-07     6.2098E-07    -1.7897E-05
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29166 (   19457374).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065498).
+MG BCs:     Elided blocks (gridpoints):    171474 (  175773593).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009653.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.148607
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.962700
+MG Discrepancy due to finite box and discretization:     -0.185907 (  -0.01538%)
+MG Correction to account for finite box:                  0.006443
+MG Remaining discrepancy, due to discretization:         -0.179464 (  -0.01484%)
+      ideal mu1:      -0.485151136427
+             Q0:  -11759.711596644367
+             G0:      -0.000007333095
+   RMS gradient:       0.000000412364
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29166 (   19457388).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065498).
+MG BCs:     Elided blocks (gridpoints):    171474 (  175773579).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009653.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.150102
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.964195
+MG Discrepancy due to finite box and discretization:     -0.185907 (  -0.01538%)
+MG Correction to account for finite box:                  0.006443
+MG Remaining discrepancy, due to discretization:         -0.179464 (  -0.01484%)
+     Trial step:       0.666458106420
+             Q1:  -11759.711599635310
+ Quadratic coef:       0.000001896258
+ Linear coef   :      -0.000004887201
+           Qmin:  -11759.711599793296
+Quadratic minimum step length (  0.858826704972) accepted
+    Initial Ne1:    7233.99999995
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000000 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    8        -1.175971159664E+04     4.1236E-07     3.7309E-07    -5.2924E-06
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29166 (   19457389).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065495).
+MG BCs:     Elided blocks (gridpoints):    171474 (  175773581).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009653.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.150534
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.964627
+MG Discrepancy due to finite box and discretization:     -0.185907 (  -0.01537%)
+MG Correction to account for finite box:                  0.006443
+MG Remaining discrepancy, due to discretization:         -0.179464 (  -0.01484%)
+      ideal mu1:      -0.485154156157
+             Q0:  -11759.711599770118
+             G0:      -0.000004042747
+   RMS gradient:       0.000000312424
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29166 (   19457384).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065501).
+MG BCs:     Elided blocks (gridpoints):    171474 (  175773580).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009653.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.147594
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.961687
+MG Discrepancy due to finite box and discretization:     -0.185907 (  -0.01538%)
+MG Correction to account for finite box:                  0.006443
+MG Remaining discrepancy, due to discretization:         -0.179464 (  -0.01484%)
+     Trial step:       0.756552720925
+             Q1:  -11759.711601385032
+ Quadratic coef:       0.000001443637
+ Linear coef   :      -0.000003058551
+           Qmin:  -11759.711601390112
+Quadratic minimum step length (  0.801432311980) accepted
+    Initial Ne1:    7233.99999997
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000000 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    9        -1.175971159977E+04     3.1242E-07     2.8267E-07    -3.1258E-06
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29166 (   19457384).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065502).
+MG BCs:     Elided blocks (gridpoints):    171474 (  175773579).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009653.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.147420
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.961513
+MG Discrepancy due to finite box and discretization:     -0.185907 (  -0.01538%)
+MG Correction to account for finite box:                  0.006443
+MG Remaining discrepancy, due to discretization:         -0.179464 (  -0.01484%)
+      ideal mu1:      -0.485151923265
+   10        -1.175971160139E+04     2.2159E-07     2.0048E-07    -1.6185E-06
+Finished density kernel iterations (  10)
+
+Writing density kernel to file "complex_24801.dkn" ... done
+
+
+>>> Density kernel optimised for the current NGWF basis:
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     Total energy                =  -1.17597116013886E+04  Eh
+     Estimated bandgap           =   8.4029E-02  Eh
+     RMS occupancy error         =   1.1889E-13
+     [H,K] commutator            =   2.0048E-07
+     Occupancy bounds            = [  0.000:  1.000]
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+################################################################################
+########################### NGWF CG iteration  003 #############################
+################################################################################
+****** Reciprocal space K.E. preconditioning with k_zero =  3.5000 a0^-1 *******
+
+>>> Checking for convergence of NGWFs:   NOT CONVERGED
+  ========================================================================
+         NGWF RMS gradient =  1.0107E-05 >  2.0000E-06  | above tolerance
+  ========================================================================
+
+>>> Improving NGWFs using line search:
+WARNING: slope along search direction is positive:    0.113453E-01
+         Resetting conjugate gradients!
+WARNING: slope along search direction is still positive.
+         Reversing search direction!!
+============ Calculation of NGWF S^-1 using Hotelling algorithm ================ 
+         Iteration  |  Frobenius norm and Maximum abs value    (of I-S*S_n^-1)   
+               1       0.27104518E+00     0.45056562E-02
+               2       0.17325850E-02     0.62449367E-04
+               3       0.13303459E-06     0.70869063E-08
+               4       0.14821984E-12     0.68833828E-14
+================================================================================
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29129 (   19408868).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065616).
+MG BCs:     Elided blocks (gridpoints):    171511 (  175821981).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009752.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1208.671589
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.485532
+MG Discrepancy due to finite box and discretization:     -0.186057 (  -0.01539%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179615 (  -0.01486%)
+============ Calculation of NGWF S^-1 using Hotelling algorithm ================ 
+         Iteration  |  Frobenius norm and Maximum abs value    (of I-S*S_n^-1)   
+               1       0.19085812E+00     0.31680707E-02
+               2       0.85681365E-03     0.30748682E-04
+               3       0.32272925E-07     0.17097266E-08
+               4       0.14514370E-12     0.62172489E-14
+================================================================================
+------------------------------- NGWF line search -------------------------------
+RMS gradient                =       0.00001010680332
+Trial step length           =               0.295597
+Gradient along search dir.  =         -0.01134534550
+Functional at step 0        =  -11759.71160138864070
+Functional at step 1        =  -11759.70925824274309
+Functional predicted        =  -11759.71209495442963
+Selected quadratic step     =               0.087008
+--------------------------- NGWF line search finished --------------------------
+                                               
+Writing NGWFs to file "complex_24801.tightbox_ngwfs"....  done
+
+>>> Optimising kernel for current NGWFs:
+   Initial electron number for spin 1:    7233.77128957
+     Final electron number for spin 1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000105 (step -0.5001 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+................................................................................
+<<<<<<<<<<<<<< LNV (Original version) density kernel optimisation >>>>>>>>>>>>>>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   iter  |      energy (Eh)       | rms gradient |  commutator  |   dE (Eh)
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29154 (   19443450).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065527).
+MG BCs:     Elided blocks (gridpoints):    171486 (  175787488).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009681.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.006717
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.820766
+MG Discrepancy due to finite box and discretization:     -0.185951 (  -0.01538%)
+MG Correction to account for finite box:                  0.006443
+MG Remaining discrepancy, due to discretization:         -0.179508 (  -0.01485%)
+      ideal mu1:      -0.485018646741
+             Q0:  -11759.712065561209
+             G0:      -0.000419293784
+   RMS gradient:       0.000003128597
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29153 (   19443616).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065455).
+MG BCs:     Elided blocks (gridpoints):    171487 (  175787394).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009681.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.058069
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.872143
+MG Discrepancy due to finite box and discretization:     -0.185926 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179484 (  -0.01484%)
+     Trial step:       0.778669247027
+             Q1:  -11759.712119217031
+ Quadratic coef:       0.000272835352
+ Linear coef   :      -0.000326491175
+           Qmin:  -11759.712163235949
+Quadratic minimum step length (  0.465901202545) accepted
+    Initial Ne1:    7233.99923407
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000000 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    1        -1.175971206556E+04     3.1286E-06     2.8306E-06
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29153 (   19443562).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065468).
+MG BCs:     Elided blocks (gridpoints):    171487 (  175787435).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009681.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.037408
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.851472
+MG Discrepancy due to finite box and discretization:     -0.185936 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179494 (  -0.01485%)
+      ideal mu1:      -0.485040551366
+             Q0:  -11759.712163201184
+             G0:      -0.000079709134
+   RMS gradient:       0.000001363649
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29153 (   19443670).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065443).
+MG BCs:     Elided blocks (gridpoints):    171487 (  175787352).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009681.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.061603
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.875670
+MG Discrepancy due to finite box and discretization:     -0.185933 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179491 (  -0.01485%)
+     Trial step:       0.602314650806
+             Q1:  -11759.712184537784
+ Quadratic coef:       0.000026673379
+ Linear coef   :      -0.000048009979
+           Qmin:  -11759.712184804728
+Quadratic minimum step length (  0.542059448022) accepted
+    Initial Ne1:    7233.99983070
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000000 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    2        -1.175971216320E+04     1.3636E-06     1.2338E-06    -9.7640E-05
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29153 (   19443662).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065445).
+MG BCs:     Elided blocks (gridpoints):    171487 (  175787358).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009681.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.059182
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.873248
+MG Discrepancy due to finite box and discretization:     -0.185934 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179492 (  -0.01485%)
+      ideal mu1:      -0.485057442210
+             Q0:  -11759.712184816948
+             G0:      -0.000009010710
+   RMS gradient:       0.000000459814
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29153 (   19443681).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065437).
+MG BCs:     Elided blocks (gridpoints):    171487 (  175787347).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009681.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.058252
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.872319
+MG Discrepancy due to finite box and discretization:     -0.185933 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179491 (  -0.01485%)
+     Trial step:       0.571393338385
+             Q1:  -11759.712187643163
+ Quadratic coef:       0.000002322444
+ Linear coef   :      -0.000005148659
+           Qmin:  -11759.712187670482
+Quadratic minimum step length (  0.633365097861) accepted
+    Initial Ne1:    7233.99997751
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000000 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [ -0.0000,  1.0000]
+================================================================================
+
+    3        -1.175971218482E+04     4.5981E-07     4.1602E-07    -2.1616E-05
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29153 (   19443686).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065437).
+MG BCs:     Elided blocks (gridpoints):    171487 (  175787342).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009681.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.058151
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.872218
+MG Discrepancy due to finite box and discretization:     -0.185933 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179491 (  -0.01485%)
+      ideal mu1:      -0.485058613714
+             Q0:  -11759.712187662954
+             G0:      -0.000002323640
+   RMS gradient:       0.000000236097
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29153 (   19443683).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065436).
+MG BCs:     Elided blocks (gridpoints):    171487 (  175787346).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009681.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.056558
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.870624
+MG Discrepancy due to finite box and discretization:     -0.185933 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179491 (  -0.01485%)
+     Trial step:       0.601581746468
+             Q1:  -11759.712188365753
+ Quadratic coef:       0.000000695059
+ Linear coef   :      -0.000001397859
+           Qmin:  -11759.712188365775
+Quadratic minimum step length (  0.604931350185) accepted
+    Initial Ne1:    7233.99999434
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000000 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    4        -1.175971218766E+04     2.3610E-07     2.1361E-07    -2.8460E-06
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29153 (   19443683).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065436).
+MG BCs:     Elided blocks (gridpoints):    171487 (  175787346).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009681.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.056549
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.870616
+MG Discrepancy due to finite box and discretization:     -0.185933 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179491 (  -0.01485%)
+      ideal mu1:      -0.485057084006
+             Q0:  -11759.712188365869
+             G0:      -0.000000806767
+   RMS gradient:       0.000000137756
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29153 (   19443687).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065436).
+MG BCs:     Elided blocks (gridpoints):    171487 (  175787342).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009681.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.057012
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.871079
+MG Discrepancy due to finite box and discretization:     -0.185933 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179491 (  -0.01485%)
+     Trial step:       0.603254223473
+             Q1:  -11759.712188674137
+ Quadratic coef:       0.000000178417
+ Linear coef   :      -0.000000486686
+           Qmin:  -11759.712188697764
+Quadratic minimum step length (  0.822776162171) accepted
+    Initial Ne1:    7233.99999738
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000000 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    5        -1.175971218837E+04     1.3776E-07     1.2464E-07    -7.0292E-07
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29153 (   19443688).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065439).
+MG BCs:     Elided blocks (gridpoints):    171487 (  175787338).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009681.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.057181
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.871248
+MG Discrepancy due to finite box and discretization:     -0.185933 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179491 (  -0.01485%)
+      ideal mu1:      -0.485057764156
+             Q0:  -11759.712188692181
+             G0:      -0.000000399252
+   RMS gradient:       0.000000099649
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29153 (   19443684).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065439).
+MG BCs:     Elided blocks (gridpoints):    171487 (  175787342).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009681.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.057602
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.871669
+MG Discrepancy due to finite box and discretization:     -0.185933 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179491 (  -0.01485%)
+     Trial step:       0.704516284271
+             Q1:  -11759.712188852252
+ Quadratic coef:       0.000000121208
+ Linear coef   :      -0.000000281280
+           Qmin:  -11759.712188855368
+Quadratic minimum step length (  0.817460560151) accepted
+    Initial Ne1:    7233.99999864
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000000 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    6        -1.175971218869E+04     9.9649E-08     9.0158E-08    -3.2631E-07
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29153 (   19443684).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065439).
+MG BCs:     Elided blocks (gridpoints):    171487 (  175787342).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009681.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.057669
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.871736
+MG Discrepancy due to finite box and discretization:     -0.185933 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179491 (  -0.01485%)
+      ideal mu1:      -0.485057658949
+             Q0:  -11759.712188857375
+             G0:      -0.000000201038
+   RMS gradient:       0.000000068506
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29153 (   19443683).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065438).
+MG BCs:     Elided blocks (gridpoints):    171487 (  175787344).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009681.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.057231
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.871298
+MG Discrepancy due to finite box and discretization:     -0.185933 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179491 (  -0.01485%)
+     Trial step:       0.758890160943
+             Q1:  -11759.712188923499
+ Quadratic coef:       0.000000086442
+ Linear coef   :      -0.000000152566
+           Qmin:  -11759.712188924692
+Quadratic minimum step length (  0.669701179958) accepted
+    Initial Ne1:    7234.00000000
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000000 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    7        -1.175971218886E+04     6.8506E-08     6.1981E-08    -1.6519E-07
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29153 (   19443683).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065439).
+MG BCs:     Elided blocks (gridpoints):    171487 (  175787343).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009681.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.057282
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.871349
+MG Discrepancy due to finite box and discretization:     -0.185933 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179491 (  -0.01485%)
+      ideal mu1:      -0.485057773238
+             Q0:  -11759.712188925478
+             G0:      -0.000000120276
+   RMS gradient:       0.000000055520
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29153 (   19443680).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065437).
+MG BCs:     Elided blocks (gridpoints):    171487 (  175787348).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009681.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.057230
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.871297
+MG Discrepancy due to finite box and discretization:     -0.185933 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179491 (  -0.01485%)
+     Trial step:       0.712902262756
+             Q1:  -11759.712188968435
+ Quadratic coef:       0.000000042788
+ Linear coef   :      -0.000000085745
+           Qmin:  -11759.712188968435
+Quadratic minimum step length (  0.714311711593) accepted
+    Initial Ne1:    7234.00000000
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000000 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [ -0.0000,  1.0000]
+================================================================================
+
+    8        -1.175971218893E+04     5.5520E-08     5.0232E-08    -6.8103E-08
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29153 (   19443680).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065437).
+MG BCs:     Elided blocks (gridpoints):    171487 (  175787348).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009681.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.057230
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.871297
+MG Discrepancy due to finite box and discretization:     -0.185933 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179491 (  -0.01485%)
+      ideal mu1:      -0.485057536965
+             Q0:  -11759.712188968435
+             G0:      -0.000000066141
+   RMS gradient:       0.000000037001
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29153 (   19443680).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065437).
+MG BCs:     Elided blocks (gridpoints):    171487 (  175787348).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009681.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.057486
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.871553
+MG Discrepancy due to finite box and discretization:     -0.185933 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179491 (  -0.01485%)
+     Trial step:       0.713606639198
+             Q1:  -11759.712188995443
+ Quadratic coef:       0.000000020191
+ Linear coef   :      -0.000000047199
+           Qmin:  -11759.712188996018
+Quadratic minimum step length (  0.834079584159) accepted
+    Initial Ne1:    7234.00000000
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000000 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    9        -1.175971218897E+04     3.7001E-08     3.3477E-08    -4.2957E-08
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29153 (   19443682).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065437).
+MG BCs:     Elided blocks (gridpoints):    171487 (  175787346).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009681.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.057529
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.871596
+MG Discrepancy due to finite box and discretization:     -0.185933 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179491 (  -0.01485%)
+      ideal mu1:      -0.485057669223
+   10        -1.175971218900E+04     3.0769E-08     2.7838E-08    -2.8173E-08
+Finished density kernel iterations (  10)
+
+Writing density kernel to file "complex_24801.dkn" ... done
+
+
+>>> Density kernel optimised for the current NGWF basis:
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     Total energy                =  -1.17597121889966E+04  Eh
+     Estimated bandgap           =   8.2964E-02  Eh
+     RMS occupancy error         =   3.6525E-16
+     [H,K] commutator            =   2.7838E-08
+     Occupancy bounds            = [  0.000:  1.000]
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+################################################################################
+########################### NGWF CG iteration  004 #############################
+################################################################################
+****** Reciprocal space K.E. preconditioning with k_zero =  3.5000 a0^-1 *******
+
+>>> Checking for convergence of NGWFs:   NOT CONVERGED
+  ========================================================================
+         NGWF RMS gradient =  4.1749E-06 >  2.0000E-06  | above tolerance
+  ========================================================================
+
+>>> Improving NGWFs using line search:
+============ Calculation of NGWF S^-1 using Hotelling algorithm ================ 
+         Iteration  |  Frobenius norm and Maximum abs value    (of I-S*S_n^-1)   
+               1       0.14726130E+00     0.24518991E-02
+               2       0.50563431E-03     0.18019281E-04
+               3       0.11004610E-07     0.57224103E-09
+               4       0.14030688E-12     0.66856243E-14
+================================================================================
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29170 (   19468857).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065405).
+MG BCs:     Elided blocks (gridpoints):    171470 (  175762203).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009631.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.333348
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1209.147500
+MG Discrepancy due to finite box and discretization:     -0.185848 (  -0.01537%)
+MG Correction to account for finite box:                  0.006443
+MG Remaining discrepancy, due to discretization:         -0.179405 (  -0.01484%)
+============ Calculation of NGWF S^-1 using Hotelling algorithm ================ 
+         Iteration  |  Frobenius norm and Maximum abs value    (of I-S*S_n^-1)   
+               1       0.13463418E+00     0.22436874E-02
+               2       0.42344540E-03     0.15147510E-04
+               3       0.77652950E-08     0.40628012E-09
+               4       0.13977882E-12     0.62172489E-14
+================================================================================
+------------------------------- NGWF line search -------------------------------
+RMS gradient                =       0.00000417490852
+Trial step length           =               0.160372
+Gradient along search dir.  =         -0.00193590493
+Functional at step 0        =  -11759.71218899660744
+Functional at step 1        =  -11759.71070710755885
+Functional predicted        =  -11759.71220244101642
+Selected quadratic step     =               0.013890
+--------------------------- NGWF line search finished --------------------------
+                                               
+Writing NGWFs to file "complex_24801.tightbox_ngwfs"....  done
+
+>>> Optimising kernel for current NGWFs:
+   Initial electron number for spin 1:    7234.03657152
+     Final electron number for spin 1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000017 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+................................................................................
+<<<<<<<<<<<<<< LNV (Original version) density kernel optimisation >>>>>>>>>>>>>>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   iter  |      energy (Eh)       | rms gradient |  commutator  |   dE (Eh)
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29155 (   19445880).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065437).
+MG BCs:     Elided blocks (gridpoints):    171485 (  175785148).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009677.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.081339
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.895414
+MG Discrepancy due to finite box and discretization:     -0.185926 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179484 (  -0.01484%)
+      ideal mu1:      -0.485079863044
+             Q0:  -11759.712201605551
+             G0:      -0.000011115626
+   RMS gradient:       0.000000509398
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29155 (   19445858).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065445).
+MG BCs:     Elided blocks (gridpoints):    171485 (  175785162).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009677.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.073272
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.887342
+MG Discrepancy due to finite box and discretization:     -0.185930 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179488 (  -0.01485%)
+     Trial step:       0.771495125633
+             Q1:  -11759.712203038507
+ Quadratic coef:       0.000007142695
+ Linear coef   :      -0.000008575651
+           Qmin:  -11759.712204179572
+Quadratic minimum step length (  0.463135645609) accepted
+    Initial Ne1:    7233.99998045
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000000 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    1        -1.175971220161E+04     5.0940E-07     4.6088E-07
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29155 (   19445863).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065443).
+MG BCs:     Elided blocks (gridpoints):    171485 (  175785159).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009677.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.076496
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.890567
+MG Discrepancy due to finite box and discretization:     -0.185928 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179486 (  -0.01484%)
+      ideal mu1:      -0.485076551176
+             Q0:  -11759.712204186944
+             G0:      -0.000002049326
+   RMS gradient:       0.000000219206
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29155 (   19445858).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065448).
+MG BCs:     Elided blocks (gridpoints):    171485 (  175785159).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009677.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.072574
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.886646
+MG Discrepancy due to finite box and discretization:     -0.185929 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179487 (  -0.01484%)
+     Trial step:       0.597751531235
+             Q1:  -11759.712204710231
+ Quadratic coef:       0.000000701701
+ Linear coef   :      -0.000001224988
+           Qmin:  -11759.712204721573
+Quadratic minimum step length (  0.521759697454) accepted
+    Initial Ne1:    7233.99999592
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000000 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    2        -1.175971220419E+04     2.1921E-07     1.9833E-07    -2.5814E-06
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29155 (   19445860).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065446).
+MG BCs:     Elided blocks (gridpoints):    171485 (  175785159).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009677.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.073073
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.887144
+MG Discrepancy due to finite box and discretization:     -0.185929 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179487 (  -0.01484%)
+      ideal mu1:      -0.485073831433
+             Q0:  -11759.712204718846
+             G0:      -0.000000227153
+   RMS gradient:       0.000000071624
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29155 (   19445852).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065448).
+MG BCs:     Elided blocks (gridpoints):    171485 (  175785165).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009677.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.073091
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.887163
+MG Discrepancy due to finite box and discretization:     -0.185929 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179487 (  -0.01484%)
+     Trial step:       0.558464554014
+             Q1:  -11759.712204781012
+ Quadratic coef:       0.000000064691
+ Linear coef   :      -0.000000126857
+           Qmin:  -11759.712204781037
+Quadratic minimum step length (  0.547568498519) accepted
+    Initial Ne1:    7233.99999954
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000000 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    3        -1.175971220472E+04     7.1624E-08     6.4802E-08    -5.3190E-07
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29155 (   19445852).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065448).
+MG BCs:     Elided blocks (gridpoints):    171485 (  175785165).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009677.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.073091
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.887162
+MG Discrepancy due to finite box and discretization:     -0.185929 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179487 (  -0.01484%)
+      ideal mu1:      -0.485073586649
+             Q0:  -11759.712204780779
+             G0:      -0.000000055699
+   RMS gradient:       0.000000033411
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29155 (   19445852).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065446).
+MG BCs:     Elided blocks (gridpoints):    171485 (  175785167).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009677.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.073327
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.887398
+MG Discrepancy due to finite box and discretization:     -0.185929 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179487 (  -0.01484%)
+     Trial step:       0.552989690064
+             Q1:  -11759.712204797426
+ Quadratic coef:       0.000000014154
+ Linear coef   :      -0.000000030801
+           Qmin:  -11759.712204797535
+Quadratic minimum step length (  0.601710020695) accepted
+    Initial Ne1:    7233.99999989
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000000 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [ -0.0000,  1.0000]
+================================================================================
+
+    4        -1.175971220478E+04     3.3411E-08     3.0229E-08    -6.1933E-08
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29155 (   19445852).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065446).
+MG BCs:     Elided blocks (gridpoints):    171485 (  175785167).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009677.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.073348
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.887419
+MG Discrepancy due to finite box and discretization:     -0.185929 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179487 (  -0.01484%)
+      ideal mu1:      -0.485073768122
+             Q0:  -11759.712204797659
+             G0:      -0.000000019360
+   RMS gradient:       0.000000019600
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29155 (   19445853).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065447).
+MG BCs:     Elided blocks (gridpoints):    171485 (  175785165).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009677.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.073288
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.887359
+MG Discrepancy due to finite box and discretization:     -0.185929 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179487 (  -0.01484%)
+     Trial step:       0.576835711319
+             Q1:  -11759.712204802898
+ Quadratic coef:       0.000000005930
+ Linear coef   :      -0.000000011168
+           Qmin:  -11759.712204802918
+Quadratic minimum step length (  0.543175405975) accepted
+    Initial Ne1:    7233.99999997
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000000 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    5        -1.175971220480E+04     1.9600E-08     1.7733E-08    -1.6880E-08
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29155 (   19445853).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065447).
+MG BCs:     Elided blocks (gridpoints):    171485 (  175785165).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009677.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.073292
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.887363
+MG Discrepancy due to finite box and discretization:     -0.185929 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179487 (  -0.01484%)
+      ideal mu1:      -0.485073705972
+             Q0:  -11759.712204802665
+             G0:      -0.000000008922
+   RMS gradient:       0.000000012049
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29155 (   19445853).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065447).
+MG BCs:     Elided blocks (gridpoints):    171485 (  175785165).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009677.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.073183
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.887254
+MG Discrepancy due to finite box and discretization:     -0.185929 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179487 (  -0.01484%)
+     Trial step:       0.559752598633
+             Q1:  -11759.712204806157
+ Quadratic coef:       0.000000001501
+ Linear coef   :      -0.000000004994
+           Qmin:  -11759.712204806819
+Quadratic minimum step length (  0.931367571188) accepted
+    Initial Ne1:    7233.99999998
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000000 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [ -0.0000,  1.0000]
+================================================================================
+
+    6        -1.175971220480E+04     1.2049E-08     1.0901E-08    -5.0059E-09
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29155 (   19445852).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065447).
+MG BCs:     Elided blocks (gridpoints):    171485 (  175785166).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009677.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.073110
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.887182
+MG Discrepancy due to finite box and discretization:     -0.185929 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179487 (  -0.01484%)
+      ideal mu1:      -0.485073594165
+             Q0:  -11759.712204807089
+             G0:      -0.000000006347
+   RMS gradient:       0.000000012173
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29155 (   19445851).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065447).
+MG BCs:     Elided blocks (gridpoints):    171485 (  175785167).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009677.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.073245
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.887316
+MG Discrepancy due to finite box and discretization:     -0.185929 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179487 (  -0.01484%)
+     Trial step:       0.722035607332
+             Q1:  -11759.712204809883
+ Quadratic coef:       0.000000001788
+ Linear coef   :      -0.000000004583
+           Qmin:  -11759.712204810025
+Quadratic minimum step length (  0.925300831138) accepted
+    Initial Ne1:    7234.00000000
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000000 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    7        -1.175971220481E+04     1.2173E-08     1.1013E-08    -4.4238E-09
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29155 (   19445851).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065447).
+MG BCs:     Elided blocks (gridpoints):    171485 (  175785167).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009677.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.073282
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.887354
+MG Discrepancy due to finite box and discretization:     -0.185929 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179487 (  -0.01484%)
+      ideal mu1:      -0.485073742472
+             Q0:  -11759.712204809533
+             G0:      -0.000000003093
+   RMS gradient:       0.000000016542
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29155 (   19445851).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065446).
+MG BCs:     Elided blocks (gridpoints):    171485 (  175785168).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009677.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.073385
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.887457
+MG Discrepancy due to finite box and discretization:     -0.185929 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179487 (  -0.01484%)
+     Trial step:       0.817373933751
+             Q1:  -11759.712204809533
+ Quadratic coef:       0.000000002528
+ Linear coef   :      -0.000000002528
+           Qmin:  -11759.712204810165
+Quadratic minimum step length (  0.408649513637) accepted
+    Initial Ne1:    7234.00000000
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000000 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [  0.0000,  1.0000]
+================================================================================
+
+    8        -1.175971220481E+04     1.6542E-08     1.4967E-08    -2.4447E-09
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29155 (   19445851).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065447).
+MG BCs:     Elided blocks (gridpoints):    171485 (  175785167).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009677.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.073334
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.887405
+MG Discrepancy due to finite box and discretization:     -0.185929 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179487 (  -0.01484%)
+      ideal mu1:      -0.485073765771
+             Q0:  -11759.712204810116
+             G0:      -0.000000012785
+   RMS gradient:       0.000000017492
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29155 (   19445851).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065448).
+MG BCs:     Elided blocks (gridpoints):    171485 (  175785166).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009677.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.073232
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.887304
+MG Discrepancy due to finite box and discretization:     -0.185929 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179487 (  -0.01484%)
+     Trial step:       0.577944167275
+             Q1:  -11759.712204810116
+ Quadratic coef:       0.000000007389
+ Linear coef   :      -0.000000007389
+           Qmin:  -11759.712204811964
+Quadratic minimum step length (  0.288981065352) accepted
+    Initial Ne1:    7234.00000000
+      Final Ne1:    7234.00000000
+
+=================== Penalty functional idempotency correction ==================
+ RMS occupancy error at iteration   1:  0.000000 (step -0.5000 Ne1=   7234.0000)
+            Final RMS occupancy error   :  0.000000 (Ne1=   7234.0000)
+               Final occupancy bounds   : [ -0.0000,  1.0000]
+================================================================================
+
+    9        -1.175971220481E+04     1.7492E-08     1.5826E-08    -5.8208E-10
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29155 (   19445852).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065447).
+MG BCs:     Elided blocks (gridpoints):    171485 (  175785166).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009677.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.073283
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.887354
+MG Discrepancy due to finite box and discretization:     -0.185929 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179487 (  -0.01484%)
+      ideal mu1:      -0.485073708486
+   10        -1.175971220481E+04     9.6759E-09     8.7543E-09    -1.5134E-09
+Finished density kernel iterations (  10)
+
+Writing density kernel to file "complex_24801.dkn" ... done
+
+
+>>> Density kernel optimised for the current NGWF basis:
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     Total energy                =  -1.17597122048116E+04  Eh
+     Estimated bandgap           =   8.3146E-02  Eh
+     RMS occupancy error         =   4.6902E-16
+     [H,K] commutator            =   8.7543E-09
+     Occupancy bounds            = [  0.000:  1.000]
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+################################################################################
+########################### NGWF CG iteration  005 #############################
+################################################################################
+****** Reciprocal space K.E. preconditioning with k_zero =  3.5000 a0^-1 *******
+
+>>> Checking for convergence of NGWFs: 
+           ........................................................
+           |         *** NGWF optimisation converged ***          |
+           | RMS NGWF gradient =    0.00000173840319              |
+           | Criteria satisfied:                                  |
+           | -> RMS NGWF gradient lower than set threshold.       |
+           ========================================================
+
+Reusing previously generated solute cavity.
+MG BCs: +ve charge blocks (gridpoints):     29155 (   19445852).
+MG BCs: -ve charge blocks (gridpoints):      8534 (    1065447).
+MG BCs:     Elided blocks (gridpoints):    171485 (  175785166).
+MG BCs: Computational effort saved:  99.9808%.
+MG BCs: Charge after coarse-graining:           -9.0009677.
+MG DL_MG: Calling solver with defect correction order = 8
+MG DL_MG: Solver finished
+MG Hartree energy from (\int phi*rho dr):              1209.073283
+MG Hartree energy from (\int eps (grad phi)^2 dr):     1208.887354
+MG Discrepancy due to finite box and discretization:     -0.185929 (  -0.01538%)
+MG Correction to account for finite box:                  0.006442
+MG Remaining discrepancy, due to discretization:         -0.179487 (  -0.01484%)
+
+================================================================================
+           ---------------- ENERGY COMPONENTS (Eh) ----------------
+           | Kinetic                    :     8610.23704079757044 |
+           | Pseudo. (local,OBC,corr'd) :    -5102.61143270872162 |
+           | Pseudopotential (non-local):     1411.35326817204714 |
+           | Hartree (molecular)        :     1209.07328313329185 |
+           | Exchange-correlation       :    -3401.81073141326806 |
+           | Ion-ion (open BC)          :   839085.20605334197171 |
+           | Smeared ion non-self corr. :  -839036.83691527496558 |
+           | Smeared ion self corr.     :   -14534.96330857569956 |
+           | Solvent cavitation energy  :        2.27888540828097 |
+           | Solute-solvent dis-rep en. :       -1.63834769214840 |
+           | Total                      :   -11759.71220481159617 |
+           --------------------------------------------------------
+           ------ LOCAL ENERGY COMPONENTS FROM MATRIX TRACES ------
+           | Pseudopotential (local)    :    -5102.61143270874163 |
+           | Hartree                    :    -2013.03854968080691 |
+           --------------------------------------------------------
+           Integrated density           :     7233.99999999893953
+           Integrated density tr(KS)    :     7234.00000000000182
+================================================================================
+
+
+                        <<<<< CALCULATION SUMMARY >>>>>                         
+|ITER|    RMS GRADIENT   |     TOTAL ENERGY    |   step   |     Epredicted              
+   0     0.00002582063215 -11759.07827698194887   0.426199 -11759.09405696342583        
+   1     0.00002755959649 -11759.69254032371100   0.382447 -11759.70867190785611        
+   2     0.00001010680332 -11759.71160138864070   0.087008 -11759.71209495442963        
+   3     0.00000417490852 -11759.71218899660744   0.013890 -11759.71220244101642        
+   4     0.00000173840319 -11759.71220481162891  <-- CG                                 
+
+------------------------------ TIMING INFORMATION ------------------------------
+AVERAGE TIME:    9961.485s on     60 node(s)                                    
+TOTAL TIME:      9961.485s on     60 node(s)                                    
+================= AVERAGE TIMINGS FROM ALL NODES (CUMULATIVE) ==================
+|| TAG                                    #calls    cpu time   %total  Gflops ||
+|| work_imbalance                       :     1        0.00s   0.000%  ------ ||
+|| parallel_prepare_fd_halos_request    :   495        0.01s   0.000%  ------ ||
+|| sparse_set_to_garbage                :    52        0.01s   0.000%  ------ ||
+|| basis_extract_function_from_box      :  1199        0.05s   0.001%  ------ ||
+|| parallel_prepare_fd_halos_alloc      :   495        0.06s   0.001%  ------ ||
+|| parallel_prepare_fd_halos_satisfy    :   495        0.17s   0.002%  ------ ||
+|| pseudopotentials_nonlocal_mat        :     9        0.68s   0.007%  ------ ||
+|| parallel_prepare_fd_halos_comms_imbal:   495        2.07s   0.021%  ------ ||
+|| openbc_locps_radial                  :     1        3.20s   0.032%  ------ ||
+|| parallel_prepare_fd_halos_clear      :   495        4.87s   0.049%  ------ ||
+|| restart_kernel_read                  :     1        5.00s   0.050%  ------ ||
+|| parallel_prepare_fd_halos_comms_wait :   495        6.96s   0.070%  ------ ||
+|| projectors_func_ovlp_box             :     9        8.00s   0.080%  ------ ||
+|| restart_ngwfs_tightbox_input         :     1        8.50s   0.085%  ------ ||
+|| function_ops_brappd_ketppd           :     9        8.92s   0.090%  ------ ||
+|| projectors_init_fftbox_recip         :    44       10.91s   0.110%  ------ ||
+|| sparse_init                          :     1       11.28s   0.113%  ------ ||
+|| basis_copy_function_to_box           : 15053       11.56s   0.116%  ------ ||
+|| parallel_prepare_fd_halos            :   495       14.14s   0.142%  ------ ||
+|| ngwf_gradient_coeffs                 :     5       15.94s   0.160%  ------ ||
+|| fourier_apply_box_pair               :  1585       16.65s   0.167% 587.455 ||
+|| restart_kernel_write                 :     4       23.57s   0.237%  ------ ||
+|| pseudo_make_structure_factor         :     1       26.25s   0.264%  ------ ||
+|| sparse_embed_hotelling_invert_embed  :     9       26.28s   0.264%  ------ ||
+|| finite_difference_derivative         :   495       40.65s   0.408%  ------ ||
+|| sparse_trace                         :  1158       43.34s   0.435%  ------ ||
+|| integrals_kinetic                    :     9       43.80s   0.440%  ------ ||
+|| basis_dot_function_with_box          : 2.321M      45.10s   0.453%  ------ ||
+|| projectors_gradient_batch            :    35       56.63s   0.568%  ------ ||
+|| kernel_purify                        :   126       83.30s   0.836%  ------ ||
+|| kernel_fix                           :    40      106.45s   1.069%  ------ ||
+|| basis_add_function_to_box            : 4.933M     113.81s   1.143%  ------ ||
+|| lnv_gradient_norm                    :    40      117.41s   1.179%  ------ ||
+|| openbc_locps_on_grid                 :     1      132.38s   1.329%  ------ ||
+|| hamiltonian_energy_components        :     1      143.11s   1.437%  ------ ||
+|| integrals_locpot_mat_els_batch       :   301      188.46s   1.892%  ------ ||
+|| ngwf_gradient_build_batch            :    35      247.83s   2.488%  ------ ||
+|| density_batch_row_sums               :   574      284.81s   2.859%  ------ ||
+|| restart_ngwfs_tightbox_output        :     4      339.10s   3.404%  ------ ||
+|| ngwf_gradient_batch                  :    35      340.01s   3.413%  ------ ||
+|| cell_grid_deposit_box_real           :  9512      362.48s   3.639%  ------ ||
+|| fourier_apply_cell_forward           :  2297      366.66s   3.681%  86.533 ||
+|| ngwf_gradient_lnv                    :     5      381.83s   3.833%  ------ ||
+|| fourier_apply_cell_backward          :  2463      426.59s   4.282%  79.750 ||
+|| sparse_product                       :  1618      470.33s   4.721%  ------ ||
+|| cell_grid_extract_box_real           : 10528      476.52s   4.784%  ------ ||
+|| density_fftbox_deposit_to_cell       :  9020      561.30s   5.635%  ------ ||
+|| density_fftbox_interpolate_multiply  :  9020      991.36s   9.952%  ------ ||
+|| potential_apply_to_ngwf_batch        :   301      993.29s   9.971%  ------ ||
+|| xc_energy_potential                  :    82     1036.07s  10.401%  ------ ||
+|| integrals_locpot_dbl_grid            :    43     1187.73s  11.923%  ------ ||
+|| multigrid_prepare_bound_cond         :    82     1224.20s  12.289%  ------ ||
+|| fourier_apply_box                    : 31866     1241.06s  12.459% 760.036 ||
+|| nlxc_vdw_energy                      :   164     1683.60s  16.901%  ------ ||
+|| density_batch_interp_deposit         :   574     1798.77s  18.057%  ------ ||
+|| density_on_dbl_grid                  :    82     2162.79s  21.712%  ------ ||
+|| dl_mg_solver_calls                   :    82     2450.70s  24.602%  ------ ||
+|| multigrid_calculate_hartree          :    82     3724.40s  37.388%  ------ ||
+|| hamiltonian_lhxc_calculate           :    81     6909.29s  69.360%  ------ ||
+|| lnv_denskernel_optimise_cg           :     4     8089.06s  81.203%  ------ ||
+|| ngwf_cg_optimise                     :     1     9543.00s  95.799%  ------ ||
+|| total_time                           :     1     9961.48s 100.000%  ------ ||
+================================================================================
+Overhead of generating timer report: 
+- 0 ms averaging over threads,
+- 14 ms ensuring consistency across MPI ranks,
+- 0 ms printing in order.
+
+Job completed: 06-01-2020 18:48 (-0000)
+
+Application 38558891 resources: utime ~1983619s, stime ~69781s, Rss ~3809532, inblocks ~96238604, outblocks ~20078187
