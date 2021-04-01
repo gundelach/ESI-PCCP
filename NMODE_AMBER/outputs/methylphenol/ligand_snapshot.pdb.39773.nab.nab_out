@@ -1,0 +1,3079 @@
+Reading parm file (lig.prmtop)
+title:
+                                                                                
+Reading parm file (lig.prmtop)
+title:
+                                                                                
+	mm_options:  cut=999.
+	mm_options:  ntpr=50
+	mm_options:  nsnb=99999
+	mm_options:  diel=C
+	mm_options:  gb=1
+	mm_options:  dielc=1.0
+      iter    Total       bad      vdW     elect   nonpolar   genBorn      frms
+ff:     0     -8.40      9.78      5.57    -13.13      0.00    -10.61  1.47e+01
+	mm_options:  ntpr=1
+ff:     1     -8.40      9.78      5.57    -13.13      0.00    -10.61  1.47e+01
+      iter    Total       bad      vdW     elect   nonpolar   genBorn      frms
+ff:     1     -8.40      9.78      5.57    -13.13      0.00    -10.61  1.47e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 14.6628103
+For alpha =    0.00000 energy =        -8.3974247217
+For alpha =    1.00000 energy =  16902364.0664069802
+For alpha =    0.00032 energy =       -10.4764589804
+For alpha =    0.00040 energy =       -10.6238066616
+For alpha =    0.00043 energy =       -10.6343064044
+For alpha =    0.00043 energy =       -10.6350556769
+For alpha =    0.00043 energy =       -10.6351091664
+For alpha =    0.00043 energy =       -10.6351129853
+ff:     2    -10.64      7.74      5.48    -13.10      0.00    -10.74  8.05e+00
+ff:     2    -10.64      7.74      5.48    -13.10      0.00    -10.74  8.05e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  8.0470398
+For alpha =    0.00000 energy =       -10.6351129853
+For alpha =    1.00000 energy =   3292078.0781829678
+For alpha =    0.00052 energy =       -11.7041877492
+For alpha =    0.00069 energy =       -11.8167010415
+For alpha =    0.00074 energy =       -11.8285330580
+For alpha =    0.00076 energy =       -11.8297770516
+For alpha =    0.00077 energy =       -11.8299078336
+For alpha =    0.00077 energy =       -11.8299215825
+ff:     3    -11.83      6.77      5.31    -12.99      0.00    -10.92  8.84e+00
+ff:     3    -11.83      6.77      5.31    -12.99      0.00    -10.92  8.84e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  8.8352098
+For alpha =    0.00000 energy =       -11.8299215825
+For alpha =    1.00000 energy =   5557481.2295488687
+For alpha =    0.00036 energy =       -12.6488433592
+For alpha =    0.00044 energy =       -12.6825175049
+For alpha =    0.00045 energy =       -12.6839084696
+For alpha =    0.00046 energy =       -12.6839659771
+For alpha =    0.00046 energy =       -12.6839683551
+For alpha =    0.00046 energy =       -12.6839684535
+ff:     4    -12.68      6.01      5.24    -13.00      0.00    -10.93  6.01e+00
+ff:     4    -12.68      6.01      5.24    -13.00      0.00    -10.93  6.01e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  6.0123046
+For alpha =    0.00000 energy =       -12.6839684535
+For alpha =    1.00000 energy =   1707529.9475919297
+For alpha =    0.00058 energy =       -13.3149587860
+For alpha =    0.00073 energy =       -13.3553253082
+For alpha =    0.00076 energy =       -13.3579097807
+For alpha =    0.00077 energy =       -13.3580752865
+For alpha =    0.00078 energy =       -13.3580858858
+For alpha =    0.00078 energy =       -13.3580865647
+ff:     5    -13.36      5.50      5.11    -12.93      0.00    -11.04  7.03e+00
+ff:     5    -13.36      5.50      5.11    -12.93      0.00    -11.04  7.03e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  7.0258194
+For alpha =    0.00000 energy =       -13.3580865647
+For alpha =    1.00000 energy =   3402391.8081508339
+For alpha =    0.00038 energy =       -13.8867980273
+For alpha =    0.00045 energy =       -13.9012035588
+For alpha =    0.00046 energy =       -13.9015974202
+For alpha =    0.00046 energy =       -13.9016081978
+For alpha =    0.00046 energy =       -13.9016084928
+For alpha =    0.00046 energy =       -13.9016085008
+ff:     6    -13.90      5.03      5.06    -12.95      0.00    -11.04  4.89e+00
+ff:     6    -13.90      5.03      5.06    -12.95      0.00    -11.04  4.89e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.8861126
+For alpha =    0.00000 energy =       -13.9016085008
+For alpha =    1.00000 energy =   1102804.8450036740
+For alpha =    0.00061 energy =       -14.3286644838
+For alpha =    0.00075 energy =       -14.3489391852
+For alpha =    0.00077 energy =       -14.3499029038
+For alpha =    0.00078 energy =       -14.3499487235
+For alpha =    0.00078 energy =       -14.3499509021
+For alpha =    0.00078 energy =       -14.3499510057
+ff:     7    -14.35      4.71      4.96    -12.88      0.00    -11.14  5.81e+00
+ff:     7    -14.35      4.71      4.96    -12.88      0.00    -11.14  5.81e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.8138698
+For alpha =    0.00000 energy =       -14.3499510057
+For alpha =    1.00000 energy =   2271495.3198470292
+For alpha =    0.00040 energy =       -14.7175789646
+For alpha =    0.00045 energy =       -14.7238255959
+For alpha =    0.00046 energy =       -14.7239323850
+For alpha =    0.00046 energy =       -14.7239342121
+For alpha =    0.00046 energy =       -14.7239342433
+For alpha =    0.00046 energy =       -14.7239342412
+ff:     8    -14.72      4.39      4.93    -12.90      0.00    -11.14  4.10e+00
+ff:     8    -14.72      4.39      4.93    -12.90      0.00    -11.14  4.10e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.0973866
+For alpha =    0.00000 energy =       -14.7239342412
+For alpha =    1.00000 energy =    762950.0660646200
+For alpha =    0.00064 energy =       -15.0300007327
+For alpha =    0.00076 energy =       -15.0405132448
+For alpha =    0.00078 energy =       -15.0408748654
+For alpha =    0.00079 energy =       -15.0408873081
+For alpha =    0.00079 energy =       -15.0408877363
+For alpha =    0.00079 energy =       -15.0408877510
+ff:     9    -15.04      4.16      4.86    -12.85      0.00    -11.22  4.94e+00
+ff:     9    -15.04      4.16      4.86    -12.85      0.00    -11.22  4.94e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.9381245
+For alpha =    0.00000 energy =       -15.0408877510
+For alpha =    1.00000 energy =   1604503.2629387307
+For alpha =    0.00042 energy =       -15.3093442247
+For alpha =    0.00046 energy =       -15.3118895625
+For alpha =    0.00046 energy =       -15.3119138814
+For alpha =    0.00046 energy =       -15.3119141140
+For alpha =    0.00046 energy =       -15.3119141154
+ff:    10    -15.31      3.93      4.83    -12.86      0.00    -11.22  3.52e+00
+ff:    10    -15.31      3.93      4.83    -12.86      0.00    -11.22  3.52e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  3.5185965
+For alpha =    0.00000 energy =       -15.3119141154
+For alpha =    1.00000 energy =    554879.4522411005
+For alpha =    0.00067 energy =       -15.5415752929
+For alpha =    0.00077 energy =       -15.5466607012
+For alpha =    0.00079 energy =       -15.5467735489
+For alpha =    0.00079 energy =       -15.5467760540
+For alpha =    0.00079 energy =       -15.5467761096
+For alpha =    0.00079 energy =       -15.5467761104
+ff:    11    -15.55      3.77      4.78    -12.81      0.00    -11.28  4.29e+00
+ff:    11    -15.55      3.77      4.78    -12.81      0.00    -11.28  4.29e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.2872257
+For alpha =    0.00000 energy =       -15.5467761104
+For alpha =    1.00000 energy =   1188179.0339251703
+For alpha =    0.00043 energy =       -15.7509629083
+For alpha =    0.00046 energy =       -15.7518490074
+For alpha =    0.00046 energy =       -15.7518528934
+For alpha =    0.00046 energy =       -15.7518529105
+For alpha =    0.00046 energy =       -15.7518529062
+ff:    12    -15.75      3.59      4.76    -12.83      0.00    -11.28  3.08e+00
+ff:    12    -15.75      3.59      4.76    -12.83      0.00    -11.28  3.08e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  3.0835430
+For alpha =    0.00000 energy =       -15.7518529062
+For alpha =    1.00000 energy =    420576.5361535470
+For alpha =    0.00070 energy =       -15.9302871897
+For alpha =    0.00078 energy =       -15.9329277387
+For alpha =    0.00079 energy =       -15.9329669310
+For alpha =    0.00079 energy =       -15.9329675129
+For alpha =    0.00079 energy =       -15.9329675215
+For alpha =    0.00079 energy =       -15.9329675196
+ff:    13    -15.93      3.47      4.72    -12.79      0.00    -11.33  3.79e+00
+ff:    13    -15.93      3.47      4.72    -12.79      0.00    -11.33  3.79e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  3.7924277
+For alpha =    0.00000 energy =       -15.9329675196
+For alpha =    1.00000 energy =    915934.5024333291
+For alpha =    0.00045 energy =       -16.0937897211
+For alpha =    0.00047 energy =       -16.0939998512
+For alpha =    0.00047 energy =       -16.0940001306
+For alpha =    0.00047 energy =       -16.0940001279
+ff:    14    -16.09      3.33      4.70    -12.80      0.00    -11.33  2.75e+00
+ff:    14    -16.09      3.33      4.70    -12.80      0.00    -11.33  2.75e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  2.7499273
+For alpha =    0.00000 energy =       -16.0940001279
+For alpha =    1.00000 energy =    330573.6794295089
+For alpha =    0.00072 energy =       -16.2373656662
+For alpha =    0.00079 energy =       -16.2385606360
+For alpha =    0.00080 energy =       -16.2385706372
+For alpha =    0.00080 energy =       -16.2385707209
+For alpha =    0.00080 energy =       -16.2385707207
+ff:    15    -16.24      3.23      4.67    -12.77      0.00    -11.37  3.41e+00
+ff:    15    -16.24      3.23      4.67    -12.77      0.00    -11.37  3.41e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  3.4092929
+For alpha =    0.00000 energy =       -16.2385707207
+For alpha =    1.00000 energy =    730925.6684408030
+For alpha =    0.00046 energy =       -16.3690938251
+For alpha =    0.00047 energy =       -16.3691027961
+For alpha =    0.00047 energy =       -16.3691027943
+ff:    16    -16.37      3.11      4.66    -12.78      0.00    -11.37  2.49e+00
+ff:    16    -16.37      3.11      4.66    -12.78      0.00    -11.37  2.49e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  2.4893225
+For alpha =    0.00000 energy =       -16.3691027943
+For alpha =    1.00000 energy =    267770.1395476959
+For alpha =    0.00075 energy =       -16.4874727531
+For alpha =    0.00080 energy =       -16.4879216933
+For alpha =    0.00080 energy =       -16.4879234061
+For alpha =    0.00080 energy =       -16.4879234126
+For alpha =    0.00080 energy =       -16.4879234100
+ff:    17    -16.49      3.03      4.64    -12.75      0.00    -11.41  3.11e+00
+ff:    17    -16.49      3.03      4.64    -12.75      0.00    -11.41  3.11e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  3.1070442
+For alpha =    0.00000 energy =       -16.4879234100
+For alpha =    1.00000 energy =    600555.1242964733
+For alpha =    0.00048 energy =       -16.5965691598
+For alpha =    0.00047 energy =       -16.5966039573
+For alpha =    0.00047 energy =       -16.5966039518
+ff:    18    -16.60      2.93      4.63    -12.76      0.00    -11.40  2.28e+00
+ff:    18    -16.60      2.93      4.63    -12.76      0.00    -11.40  2.28e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  2.2817834
+For alpha =    0.00000 energy =       -16.5966039518
+For alpha =    1.00000 energy =    222336.3997369288
+For alpha =    0.00077 energy =       -16.6965540055
+For alpha =    0.00080 energy =       -16.6966574623
+For alpha =    0.00080 energy =       -16.6966575705
+For alpha =    0.00080 energy =       -16.6966575685
+ff:    19    -16.70      2.86      4.61    -12.73      0.00    -11.43  2.86e+00
+ff:    19    -16.70      2.86      4.61    -12.73      0.00    -11.43  2.86e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  2.8630904
+For alpha =    0.00000 energy =       -16.6966575685
+For alpha =    1.00000 energy =    504962.0750808804
+For alpha =    0.00049 energy =       -16.7889771201
+For alpha =    0.00047 energy =       -16.7891476313
+For alpha =    0.00047 energy =       -16.7891476257
+ff:    20    -16.79      2.78      4.60    -12.74      0.00    -11.43  2.11e+00
+ff:    20    -16.79      2.78      4.60    -12.74      0.00    -11.43  2.11e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  2.1130961
+For alpha =    0.00000 energy =       -16.7891476257
+For alpha =    1.00000 energy =    188304.9695983970
+For alpha =    0.00080 energy =       -16.8750897466
+For alpha =    0.00080 energy =       -16.8750903891
+For alpha =    0.00080 energy =       -16.8750903861
+ff:    21    -16.88      2.71      4.59    -12.72      0.00    -11.46  2.66e+00
+ff:    21    -16.88      2.71      4.59    -12.72      0.00    -11.46  2.66e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  2.6625226
+For alpha =    0.00000 energy =       -16.8750903861
+For alpha =    1.00000 energy =    432691.8987172114
+For alpha =    0.00050 energy =       -16.9548621882
+For alpha =    0.00047 energy =       -16.9552251131
+For alpha =    0.00047 energy =       -16.9552251075
+ff:    22    -16.96      2.64      4.58    -12.73      0.00    -11.45  1.97e+00
+ff:    22    -16.96      2.64      4.58    -12.73      0.00    -11.45  1.97e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.9731558
+For alpha =    0.00000 energy =       -16.9552251075
+For alpha =    1.00000 energy =    161992.5047050201
+For alpha =    0.00082 energy =       -17.0301920558
+For alpha =    0.00080 energy =       -17.0302468356
+For alpha =    0.00080 energy =       -17.0302468323
+ff:    23    -17.03      2.58      4.57    -12.71      0.00    -11.48  2.49e+00
+ff:    23    -17.03      2.58      4.57    -12.71      0.00    -11.48  2.49e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  2.4942857
+For alpha =    0.00000 energy =       -17.0302468323
+For alpha =    1.00000 energy =    376336.0986977144
+For alpha =    0.00051 energy =       -17.1000971999
+For alpha =    0.00047 energy =       -17.1006859295
+For alpha =    0.00047 energy =       -17.1006859240
+ff:    24    -17.10      2.51      4.57    -12.71      0.00    -11.47  1.85e+00
+ff:    24    -17.10      2.51      4.57    -12.71      0.00    -11.47  1.85e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.8548284
+For alpha =    0.00000 energy =       -17.1006859240
+For alpha =    1.00000 energy =    141092.1465043638
+For alpha =    0.00085 energy =       -17.1668106746
+For alpha =    0.00080 energy =       -17.1670284685
+For alpha =    0.00080 energy =       -17.1670284652
+ff:    25    -17.17      2.46      4.56    -12.70      0.00    -11.49  2.35e+00
+ff:    25    -17.17      2.46      4.56    -12.70      0.00    -11.49  2.35e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  2.3505135
+For alpha =    0.00000 energy =       -17.1670284652
+For alpha =    1.00000 energy =    331178.2637081333
+For alpha =    0.00053 energy =       -17.2288318182
+For alpha =    0.00047 energy =       -17.2296668673
+For alpha =    0.00047 energy =       -17.2296668618
+ff:    26    -17.23      2.40      4.56    -12.70      0.00    -11.48  1.75e+00
+ff:    26    -17.23      2.40      4.56    -12.70      0.00    -11.48  1.75e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.7529930
+For alpha =    0.00000 energy =       -17.2296668618
+For alpha =    1.00000 energy =    124101.4240011699
+For alpha =    0.00087 energy =       -17.2884878186
+For alpha =    0.00080 energy =       -17.2889482866
+For alpha =    0.00080 energy =       -17.2889482833
+ff:    27    -17.29      2.35      4.55    -12.69      0.00    -11.50  2.23e+00
+ff:    27    -17.29      2.35      4.55    -12.69      0.00    -11.50  2.23e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  2.2255669
+For alpha =    0.00000 energy =       -17.2889482833
+For alpha =    1.00000 energy =    294144.7913659631
+For alpha =    0.00054 energy =       -17.3440930738
+For alpha =    0.00047 energy =       -17.3451717945
+For alpha =    0.00047 energy =       -17.3451717890
+ff:    28    -17.35      2.30      4.54    -12.70      0.00    -11.49  1.66e+00
+ff:    28    -17.35      2.30      4.54    -12.70      0.00    -11.49  1.66e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.6639425
+For alpha =    0.00000 energy =       -17.3451717890
+For alpha =    1.00000 energy =    110016.5774929128
+For alpha =    0.00090 energy =       -17.3978281657
+For alpha =    0.00080 energy =       -17.3985900356
+For alpha =    0.00080 energy =       -17.3985900324
+ff:    29    -17.40      2.25      4.54    -12.68      0.00    -11.51  2.12e+00
+ff:    29    -17.40      2.25      4.54    -12.68      0.00    -11.51  2.12e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  2.1153515
+For alpha =    0.00000 energy =       -17.3985900324
+For alpha =    1.00000 energy =    263189.5952403425
+For alpha =    0.00055 energy =       -17.4482055167
+For alpha =    0.00047 energy =       -17.4494373295
+For alpha =    0.00047 energy =       -17.4494373240
+ff:    30    -17.45      2.21      4.54    -12.69      0.00    -11.51  1.58e+00
+ff:    30    -17.45      2.21      4.54    -12.69      0.00    -11.51  1.58e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.5849699
+For alpha =    0.00000 energy =       -17.4494373240
+For alpha =    1.00000 energy =     98150.8888013647
+For alpha =    0.00093 energy =       -17.4967966184
+For alpha =    0.00080 energy =       -17.4979007092
+For alpha =    0.00080 energy =       -17.4979007060
+ff:    31    -17.50      2.17      4.53    -12.67      0.00    -11.52  2.02e+00
+ff:    31    -17.50      2.17      4.53    -12.67      0.00    -11.52  2.02e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  2.0168599
+For alpha =    0.00000 energy =       -17.4979007060
+For alpha =    1.00000 energy =    236955.9152538333
+For alpha =    0.00054 energy =       -17.5431613756
+For alpha =    0.00047 energy =       -17.5441684632
+For alpha =    0.00047 energy =       -17.5441684577
+ff:    32    -17.54      2.12      4.53    -12.68      0.00    -11.51  1.51e+00
+ff:    32    -17.54      2.12      4.53    -12.68      0.00    -11.51  1.51e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.5140749
+For alpha =    0.00000 energy =       -17.5441684577
+For alpha =    1.00000 energy =     88021.9065597983
+For alpha =    0.00095 energy =       -17.5869112304
+For alpha =    0.00080 energy =       -17.5883811906
+For alpha =    0.00080 energy =       -17.5883811873
+ff:    33    -17.59      2.08      4.53    -12.67      0.00    -11.53  1.93e+00
+ff:    33    -17.59      2.08      4.53    -12.67      0.00    -11.53  1.93e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.9278551
+For alpha =    0.00000 energy =       -17.5883811873
+For alpha =    1.00000 energy =    214631.3794616676
+For alpha =    0.00050 energy =       -17.6305478092
+For alpha =    0.00047 energy =       -17.6306936714
+For alpha =    0.00047 energy =       -17.6306936659
+ff:    34    -17.63      2.05      4.52    -12.68      0.00    -11.52  1.45e+00
+ff:    34    -17.63      2.05      4.52    -12.68      0.00    -11.52  1.45e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.4497606
+For alpha =    0.00000 energy =       -17.6306936659
+For alpha =    1.00000 energy =     79281.7210077888
+For alpha =    0.00097 energy =       -17.6693709388
+For alpha =    0.00080 energy =       -17.6712130310
+For alpha =    0.00080 energy =       -17.6712130277
+ff:    35    -17.67      2.01      4.52    -12.66      0.00    -11.54  1.85e+00
+ff:    35    -17.67      2.01      4.52    -12.66      0.00    -11.54  1.85e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.8466513
+For alpha =    0.00000 energy =       -17.6712130277
+For alpha =    1.00000 energy =    195980.2737450462
+For alpha =    0.00039 energy =       -17.7087805143
+For alpha =    0.00046 energy =       -17.7100262346
+For alpha =    0.00047 energy =       -17.7100676742
+For alpha =    0.00047 energy =       -17.7100690535
+For alpha =    0.00047 energy =       -17.7100690994
+For alpha =    0.00047 energy =       -17.7100690998
+ff:    36    -17.71      1.97      4.52    -12.67      0.00    -11.53  1.39e+00
+ff:    36    -17.71      1.97      4.52    -12.67      0.00    -11.53  1.39e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.3906111
+For alpha =    0.00000 energy =       -17.7100690998
+For alpha =    1.00000 energy =     71610.8471250269
+For alpha =    0.00100 energy =       -17.7451565750
+For alpha =    0.00080 energy =       -17.7473548425
+For alpha =    0.00080 energy =       -17.7473548393
+ff:    37    -17.75      1.94      4.51    -12.66      0.00    -11.54  1.77e+00
+ff:    37    -17.75      1.94      4.51    -12.66      0.00    -11.54  1.77e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.7725549
+For alpha =    0.00000 energy =       -17.7473548393
+For alpha =    1.00000 energy =    181571.5433717132
+For alpha =    0.00024 energy =       -17.7743360744
+For alpha =    0.00036 energy =       -17.7809895937
+For alpha =    0.00042 energy =       -17.7826315930
+For alpha =    0.00045 energy =       -17.7830369700
+For alpha =    0.00046 energy =       -17.7831370683
+For alpha =    0.00047 energy =       -17.7831617876
+ff:    38    -17.78      1.91      4.51    -12.67      0.00    -11.53  1.32e+00
+ff:    38    -17.78      1.91      4.51    -12.67      0.00    -11.53  1.32e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.3159626
+For alpha =    0.00000 energy =       -17.7831617876
+For alpha =    1.00000 energy =     60742.7715129023
+For alpha =    0.00105 energy =       -17.8162842944
+For alpha =    0.00085 energy =       -17.8183846855
+For alpha =    0.00085 energy =       -17.8183846825
+ff:    39    -17.82      1.87      4.51    -12.66      0.00    -11.55  1.75e+00
+ff:    39    -17.82      1.87      4.51    -12.66      0.00    -11.55  1.75e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.7491708
+For alpha =    0.00000 energy =       -17.8183846825
+For alpha =    1.00000 energy =    177851.4218295656
+For alpha =    0.00036 energy =       -17.8506402754
+For alpha =    0.00044 energy =       -17.8521591203
+For alpha =    0.00046 energy =       -17.8522308224
+For alpha =    0.00046 energy =       -17.8522342092
+For alpha =    0.00046 energy =       -17.8522343692
+For alpha =    0.00046 energy =       -17.8522343769
+ff:    40    -17.85      1.84      4.51    -12.66      0.00    -11.54  1.26e+00
+ff:    40    -17.85      1.84      4.51    -12.66      0.00    -11.54  1.26e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.2645629
+For alpha =    0.00000 energy =       -17.8522343769
+For alpha =    1.00000 energy =     54998.7208979269
+For alpha =    0.00107 energy =       -17.8824620813
+For alpha =    0.00085 energy =       -17.8847888390
+For alpha =    0.00085 energy =       -17.8847888359
+ff:    41    -17.88      1.81      4.50    -12.65      0.00    -11.55  1.68e+00
+ff:    41    -17.88      1.81      4.50    -12.65      0.00    -11.55  1.68e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.6827908
+For alpha =    0.00000 energy =       -17.8847888359
+For alpha =    1.00000 energy =    165245.7319242747
+For alpha =    0.00025 energy =       -17.9093090648
+For alpha =    0.00036 energy =       -17.9146341020
+For alpha =    0.00041 energy =       -17.9157915208
+For alpha =    0.00044 energy =       -17.9160431902
+For alpha =    0.00045 energy =       -17.9160979233
+For alpha =    0.00046 energy =       -17.9161098277
+ff:    42    -17.92      1.78      4.50    -12.66      0.00    -11.54  1.20e+00
+ff:    42    -17.92      1.78      4.50    -12.66      0.00    -11.54  1.20e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.2043333
+For alpha =    0.00000 energy =       -17.9161098277
+For alpha =    1.00000 energy =     47722.9092402027
+For alpha =    0.00111 energy =       -17.9447227413
+For alpha =    0.00088 energy =       -17.9468234803
+For alpha =    0.00088 energy =       -17.9468234773
+ff:    43    -17.95      1.76      4.50    -12.65      0.00    -11.55  1.65e+00
+ff:    43    -17.95      1.76      4.50    -12.65      0.00    -11.55  1.65e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.6516418
+For alpha =    0.00000 energy =       -17.9468234773
+For alpha =    1.00000 energy =    159606.9708037066
+For alpha =    0.00030 energy =       -17.9732408498
+For alpha =    0.00040 energy =       -17.9760517611
+For alpha =    0.00044 energy =       -17.9763513085
+For alpha =    0.00045 energy =       -17.9763832459
+For alpha =    0.00045 energy =       -17.9763866516
+For alpha =    0.00045 energy =       -17.9763870148
+ff:    44    -17.98      1.73      4.50    -12.66      0.00    -11.54  1.16e+00
+ff:    44    -17.98      1.73      4.50    -12.66      0.00    -11.54  1.16e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.1577499
+For alpha =    0.00000 energy =       -17.9763870148
+For alpha =    1.00000 energy =     43124.7854579093
+For alpha =    0.00113 energy =       -18.0028112071
+For alpha =    0.00089 energy =       -18.0049216766
+For alpha =    0.00089 energy =       -18.0049216737
+ff:    45    -18.00      1.70      4.49    -12.65      0.00    -11.55  1.59e+00
+ff:    45    -18.00      1.70      4.49    -12.65      0.00    -11.55  1.59e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.5946443
+For alpha =    0.00000 energy =       -18.0049216737
+For alpha =    1.00000 energy =    149410.3941299640
+For alpha =    0.00024 energy =       -18.0261970492
+For alpha =    0.00035 energy =       -18.0310058997
+For alpha =    0.00040 energy =       -18.0320937000
+For alpha =    0.00043 energy =       -18.0323398616
+For alpha =    0.00044 energy =       -18.0323955762
+For alpha =    0.00045 energy =       -18.0324081874
+ff:    46    -18.03      1.68      4.49    -12.66      0.00    -11.55  1.10e+00
+ff:    46    -18.03      1.68      4.49    -12.66      0.00    -11.55  1.10e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.1024795
+For alpha =    0.00000 energy =       -18.0324081874
+For alpha =    1.00000 energy =     37279.9321743689
+For alpha =    0.00115 energy =       -18.0579619183
+For alpha =    0.00093 energy =       -18.0595428076
+For alpha =    0.00093 energy =       -18.0595428048
+ff:    47    -18.06      1.65      4.49    -12.64      0.00    -11.56  1.57e+00
+ff:    47    -18.06      1.65      4.49    -12.64      0.00    -11.56  1.57e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.5730313
+For alpha =    0.00000 energy =       -18.0595428048
+For alpha =    1.00000 energy =    145516.8194315180
+For alpha =    0.00032 energy =       -18.0836999626
+For alpha =    0.00041 energy =       -18.0855318108
+For alpha =    0.00043 energy =       -18.0856709732
+For alpha =    0.00044 energy =       -18.0856815504
+For alpha =    0.00044 energy =       -18.0856823544
+For alpha =    0.00044 energy =       -18.0856824156
+ff:    48    -18.09      1.63      4.49    -12.65      0.00    -11.55  1.06e+00
+ff:    48    -18.09      1.63      4.49    -12.65      0.00    -11.55  1.06e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.0614562
+For alpha =    0.00000 energy =       -18.0856824156
+For alpha =    1.00000 energy =     33874.8559620018
+For alpha =    0.00116 energy =       -18.1094373956
+For alpha =    0.00093 energy =       -18.1108949847
+For alpha =    0.00093 energy =       -18.1108949819
+ff:    49    -18.11      1.60      4.49    -12.64      0.00    -11.56  1.52e+00
+ff:    49    -18.11      1.60      4.49    -12.64      0.00    -11.56  1.52e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.5175888
+For alpha =    0.00000 energy =       -18.1108949819
+For alpha =    1.00000 energy =    135543.3083088527
+For alpha =    0.00026 energy =       -18.1312826710
+For alpha =    0.00037 energy =       -18.1345688667
+For alpha =    0.00041 energy =       -18.1350991155
+For alpha =    0.00043 energy =       -18.1351847110
+For alpha =    0.00044 energy =       -18.1351985306
+For alpha =    0.00044 energy =       -18.1352007619
+ff:    50    -18.14      1.58      4.48    -12.65      0.00    -11.55  1.02e+00
+ff:    50    -18.14      1.58      4.48    -12.65      0.00    -11.55  1.02e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.0188519
+For alpha =    0.00000 energy =       -18.1352007619
+For alpha =    1.00000 energy =     30329.2841805913
+For alpha =    0.00116 energy =       -18.1577448330
+For alpha =    0.00095 energy =       -18.1588647961
+For alpha =    0.00095 energy =       -18.1588647934
+ff:    51    -18.16      1.56      4.48    -12.64      0.00    -11.56  1.48e+00
+ff:    51    -18.16      1.56      4.48    -12.64      0.00    -11.56  1.48e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.4767447
+For alpha =    0.00000 energy =       -18.1588647934
+For alpha =    1.00000 energy =    128331.4880760479
+For alpha =    0.00027 energy =       -18.1782526675
+For alpha =    0.00037 energy =       -18.1811688803
+For alpha =    0.00041 energy =       -18.1816080068
+For alpha =    0.00043 energy =       -18.1816741593
+For alpha =    0.00043 energy =       -18.1816841266
+For alpha =    0.00043 energy =       -18.1816856284
+ff:    52    -18.18      1.54      4.48    -12.65      0.00    -11.55  9.79e-01
+ff:    52    -18.18      1.54      4.48    -12.65      0.00    -11.55  9.79e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.9790338
+For alpha =    0.00000 energy =       -18.1816856284
+For alpha =    1.00000 energy =     27290.6738043032
+For alpha =    0.00115 energy =       -18.2030780989
+For alpha =    0.00096 energy =       -18.2038783208
+For alpha =    0.00096 energy =       -18.2038783181
+ff:    53    -18.20      1.52      4.48    -12.64      0.00    -11.56  1.44e+00
+ff:    53    -18.20      1.52      4.48    -12.64      0.00    -11.56  1.44e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.4353034
+For alpha =    0.00000 energy =       -18.2038783181
+For alpha =    1.00000 energy =    121048.3747314191
+For alpha =    0.00027 energy =       -18.2223643749
+For alpha =    0.00037 energy =       -18.2248881667
+For alpha =    0.00041 energy =       -18.2252331321
+For alpha =    0.00042 energy =       -18.2252803043
+For alpha =    0.00043 energy =       -18.2252867559
+For alpha =    0.00043 energy =       -18.2252876383
+ff:    54    -18.23      1.50      4.47    -12.65      0.00    -11.55  9.42e-01
+ff:    54    -18.23      1.50      4.47    -12.65      0.00    -11.55  9.42e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.9418772
+For alpha =    0.00000 energy =       -18.2252876383
+For alpha =    1.00000 energy =     24692.8982903010
+For alpha =    0.00113 energy =       -18.2455507259
+For alpha =    0.00098 energy =       -18.2460753985
+For alpha =    0.00098 energy =       -18.2460753958
+ff:    55    -18.25      1.48      4.47    -12.64      0.00    -11.56  1.39e+00
+ff:    55    -18.25      1.48      4.47    -12.64      0.00    -11.56  1.39e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.3930139
+For alpha =    0.00000 energy =       -18.2460753958
+For alpha =    1.00000 energy =    113621.2728425743
+For alpha =    0.00028 energy =       -18.2638284433
+For alpha =    0.00038 energy =       -18.2658708819
+For alpha =    0.00041 energy =       -18.2661061693
+For alpha =    0.00043 energy =       -18.2661332864
+For alpha =    0.00043 energy =       -18.2661364121
+For alpha =    0.00043 energy =       -18.2661367724
+ff:    56    -18.27      1.46      4.47    -12.65      0.00    -11.55  9.07e-01
+ff:    56    -18.27      1.46      4.47    -12.65      0.00    -11.55  9.07e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.9073653
+For alpha =    0.00000 energy =       -18.2661367724
+For alpha =    1.00000 energy =     22487.5630670062
+For alpha =    0.00111 energy =       -18.2852632944
+For alpha =    0.00098 energy =       -18.2855741444
+For alpha =    0.00098 energy =       -18.2855741418
+ff:    57    -18.29      1.45      4.47    -12.64      0.00    -11.56  1.35e+00
+ff:    57    -18.29      1.45      4.47    -12.64      0.00    -11.56  1.35e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.3494403
+For alpha =    0.00000 energy =       -18.2855741418
+For alpha =    1.00000 energy =    105933.4740121067
+For alpha =    0.00031 energy =       -18.3027950282
+For alpha =    0.00039 energy =       -18.3042127744
+For alpha =    0.00042 energy =       -18.3043296821
+For alpha =    0.00043 energy =       -18.3043393268
+For alpha =    0.00043 energy =       -18.3043401226
+For alpha =    0.00043 energy =       -18.3043401882
+ff:    58    -18.30      1.43      4.47    -12.64      0.00    -11.55  8.75e-01
+ff:    58    -18.30      1.43      4.47    -12.64      0.00    -11.55  8.75e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.8753048
+For alpha =    0.00000 energy =       -18.3043401882
+For alpha =    1.00000 energy =     20610.8600188084
+For alpha =    0.00108 energy =       -18.3223251480
+For alpha =    0.00099 energy =       -18.3224847782
+For alpha =    0.00099 energy =       -18.3224847756
+ff:    59    -18.32      1.41      4.46    -12.64      0.00    -11.56  1.30e+00
+ff:    59    -18.32      1.41      4.46    -12.64      0.00    -11.56  1.30e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.3049311
+For alpha =    0.00000 energy =       -18.3224847756
+For alpha =    1.00000 energy =     98006.9204959765
+For alpha =    0.00035 energy =       -18.3393425481
+For alpha =    0.00041 energy =       -18.3399854515
+For alpha =    0.00043 energy =       -18.3400100281
+For alpha =    0.00043 energy =       -18.3400109680
+For alpha =    0.00043 energy =       -18.3400110040
+For alpha =    0.00043 energy =       -18.3400110038
+ff:    60    -18.34      1.40      4.46    -12.64      0.00    -11.55  8.45e-01
+ff:    60    -18.34      1.40      4.46    -12.64      0.00    -11.55  8.45e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.8454822
+For alpha =    0.00000 energy =       -18.3400110038
+For alpha =    1.00000 energy =     19005.8479533835
+For alpha =    0.00105 energy =       -18.3568608808
+For alpha =    0.00099 energy =       -18.3569263027
+For alpha =    0.00099 energy =       -18.3569263001
+ff:    61    -18.36      1.38      4.46    -12.64      0.00    -11.56  1.26e+00
+ff:    61    -18.36      1.38      4.46    -12.64      0.00    -11.56  1.26e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.2600075
+For alpha =    0.00000 energy =       -18.3569263001
+For alpha =    1.00000 energy =     89949.8780690733
+For alpha =    0.00041 energy =       -18.3732367841
+For alpha =    0.00043 energy =       -18.3732736199
+For alpha =    0.00043 energy =       -18.3732737037
+For alpha =    0.00043 energy =       -18.3732736998
+ff:    62    -18.37      1.37      4.46    -12.64      0.00    -11.56  8.17e-01
+ff:    62    -18.37      1.37      4.46    -12.64      0.00    -11.56  8.17e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.8172409
+For alpha =    0.00000 energy =       -18.3732736998
+For alpha =    1.00000 energy =     17583.8923618785
+For alpha =    0.00101 energy =       -18.3890372649
+For alpha =    0.00098 energy =       -18.3890509966
+For alpha =    0.00098 energy =       -18.3890509940
+ff:    63    -18.39      1.35      4.46    -12.64      0.00    -11.56  1.22e+00
+ff:    63    -18.39      1.35      4.46    -12.64      0.00    -11.56  1.22e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.2157081
+For alpha =    0.00000 energy =       -18.3890509940
+For alpha =    1.00000 energy =     82061.3355095661
+For alpha =    0.00050 energy =       -18.4039075980
+For alpha =    0.00043 energy =       -18.4042924076
+For alpha =    0.00043 energy =       -18.4042924015
+ff:    64    -18.40      1.34      4.45    -12.64      0.00    -11.56  7.91e-01
+ff:    64    -18.40      1.34      4.45    -12.64      0.00    -11.56  7.91e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.7907242
+For alpha =    0.00000 energy =       -18.4042924015
+For alpha =    1.00000 energy =     16343.1606876722
+For alpha =    0.00098 energy =       -18.4190051483
+For alpha =    0.00098 energy =       -18.4190051977
+For alpha =    0.00098 energy =       -18.4190051951
+ff:    65    -18.42      1.33      4.45    -12.64      0.00    -11.56  1.17e+00
+ff:    65    -18.42      1.33      4.45    -12.64      0.00    -11.56  1.17e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.1742187
+For alpha =    0.00000 energy =       -18.4190051951
+For alpha =    1.00000 energy =     74921.3926536292
+For alpha =    0.00060 energy =       -18.4311267396
+For alpha =    0.00043 energy =       -18.4332390560
+For alpha =    0.00043 energy =       -18.4332390500
+ff:    66    -18.43      1.31      4.45    -12.64      0.00    -11.56  7.65e-01
+ff:    66    -18.43      1.31      4.45    -12.64      0.00    -11.56  7.65e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.7651875
+For alpha =    0.00000 energy =       -18.4332390500
+For alpha =    1.00000 energy =     15206.5068028602
+For alpha =    0.00094 energy =       -18.4469683139
+For alpha =    0.00098 energy =       -18.4469851333
+For alpha =    0.00098 energy =       -18.4469851538
+For alpha =    0.00098 energy =       -18.4469851516
+ff:    67    -18.45      1.30      4.45    -12.63      0.00    -11.56  1.13e+00
+ff:    67    -18.45      1.30      4.45    -12.63      0.00    -11.56  1.13e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.1346101
+For alpha =    0.00000 energy =       -18.4469851516
+For alpha =    1.00000 energy =     68446.4777015430
+For alpha =    0.00068 energy =       -18.4558094086
+For alpha =    0.00043 energy =       -18.4602897313
+For alpha =    0.00043 energy =       -18.4602897253
+ff:    68    -18.46      1.29      4.45    -12.64      0.00    -11.56  7.41e-01
+ff:    68    -18.46      1.29      4.45    -12.64      0.00    -11.56  7.41e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.7408454
+For alpha =    0.00000 energy =       -18.4602897253
+For alpha =    1.00000 energy =     14185.4703077860
+For alpha =    0.00091 energy =       -18.4730860238
+For alpha =    0.00097 energy =       -18.4731435333
+For alpha =    0.00098 energy =       -18.4731437915
+For alpha =    0.00098 energy =       -18.4731437924
+ff:    69    -18.47      1.28      4.44    -12.63      0.00    -11.56  1.10e+00
+ff:    69    -18.47      1.28      4.44    -12.63      0.00    -11.56  1.10e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.0965343
+For alpha =    0.00000 energy =       -18.4731437924
+For alpha =    1.00000 energy =     62596.4365980120
+For alpha =    0.00073 energy =       -18.4795320679
+For alpha =    0.00043 energy =       -18.4855873674
+For alpha =    0.00043 energy =       -18.4855873613
+ff:    70    -18.49      1.27      4.44    -12.64      0.00    -11.56  7.18e-01
+ff:    70    -18.49      1.27      4.44    -12.64      0.00    -11.56  7.18e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.7177005
+For alpha =    0.00000 energy =       -18.4855873613
+For alpha =    1.00000 energy =     13271.7941956860
+For alpha =    0.00088 energy =       -18.4975004506
+For alpha =    0.00096 energy =       -18.4976135457
+For alpha =    0.00097 energy =       -18.4976146198
+For alpha =    0.00097 energy =       -18.4976146300
+For alpha =    0.00097 energy =       -18.4976146284
+ff:    71    -18.50      1.26      4.44    -12.63      0.00    -11.56  1.06e+00
+ff:    71    -18.50      1.26      4.44    -12.63      0.00    -11.56  1.06e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.0604228
+For alpha =    0.00000 energy =       -18.4976146284
+For alpha =    1.00000 energy =     57443.1259598431
+For alpha =    0.00073 energy =       -18.5036712885
+For alpha =    0.00043 energy =       -18.5092661192
+For alpha =    0.00043 energy =       -18.5092661131
+ff:    72    -18.51      1.25      4.44    -12.64      0.00    -11.56  6.96e-01
+ff:    72    -18.51      1.25      4.44    -12.64      0.00    -11.56  6.96e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.6955371
+For alpha =    0.00000 energy =       -18.5092661131
+For alpha =    1.00000 energy =     12442.5987980620
+For alpha =    0.00085 energy =       -18.5203493596
+For alpha =    0.00095 energy =       -18.5205293299
+For alpha =    0.00097 energy =       -18.5205322554
+For alpha =    0.00097 energy =       -18.5205323030
+For alpha =    0.00097 energy =       -18.5205323032
+ff:    73    -18.52      1.24      4.44    -12.63      0.00    -11.56  1.03e+00
+ff:    73    -18.52      1.24      4.44    -12.63      0.00    -11.56  1.03e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.0257505
+For alpha =    0.00000 energy =       -18.5205323032
+For alpha =    1.00000 energy =     52906.3012938114
+For alpha =    0.00065 energy =       -18.5286768547
+For alpha =    0.00043 energy =       -18.5314494207
+For alpha =    0.00043 energy =       -18.5314494147
+ff:    74    -18.53      1.23      4.44    -12.64      0.00    -11.56  6.74e-01
+ff:    74    -18.53      1.23      4.44    -12.64      0.00    -11.56  6.74e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.6744173
+For alpha =    0.00000 energy =       -18.5314494147
+For alpha =    1.00000 energy =     11697.1777822234
+For alpha =    0.00082 energy =       -18.5417514880
+For alpha =    0.00094 energy =       -18.5420034068
+For alpha =    0.00096 energy =       -18.5420095754
+For alpha =    0.00097 energy =       -18.5420097264
+For alpha =    0.00097 energy =       -18.5420097301
+For alpha =    0.00097 energy =       -18.5420097284
+ff:    75    -18.54      1.22      4.43    -12.63      0.00    -11.56  9.93e-01
+ff:    75    -18.54      1.22      4.43    -12.63      0.00    -11.56  9.93e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.9927938
+For alpha =    0.00000 energy =       -18.5420097284
+For alpha =    1.00000 energy =     49155.4206113705
+For alpha =    0.00047 energy =       -18.5521643523
+For alpha =    0.00043 energy =       -18.5522494723
+For alpha =    0.00043 energy =       -18.5522494663
+ff:    76    -18.55      1.21      4.43    -12.64      0.00    -11.56  6.54e-01
+ff:    76    -18.55      1.21      4.43    -12.64      0.00    -11.56  6.54e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.6541815
+For alpha =    0.00000 energy =       -18.5522494663
+For alpha =    1.00000 energy =     11019.5999287724
+For alpha =    0.00079 energy =       -18.5618205713
+For alpha =    0.00093 energy =       -18.5621468136
+For alpha =    0.00096 energy =       -18.5621579506
+For alpha =    0.00096 energy =       -18.5621583309
+For alpha =    0.00096 energy =       -18.5621583439
+For alpha =    0.00096 energy =       -18.5621583434
+ff:    77    -18.56      1.20      4.43    -12.63      0.00    -11.56  9.61e-01
+ff:    77    -18.56      1.20      4.43    -12.63      0.00    -11.56  9.61e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.9611646
+For alpha =    0.00000 energy =       -18.5621583434
+For alpha =    1.00000 energy =     46579.7124537925
+For alpha =    0.00026 energy =       -18.5701855105
+For alpha =    0.00036 energy =       -18.5715081977
+For alpha =    0.00040 energy =       -18.5717263243
+For alpha =    0.00042 energy =       -18.5717623079
+For alpha =    0.00043 energy =       -18.5717682448
+For alpha =    0.00043 energy =       -18.5717692244
+ff:    78    -18.57      1.19      4.43    -12.64      0.00    -11.56  6.32e-01
+ff:    78    -18.57      1.19      4.43    -12.64      0.00    -11.56  6.32e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.6315319
+For alpha =    0.00000 energy =       -18.5717692244
+For alpha =    1.00000 energy =     10197.4666795067
+For alpha =    0.00076 energy =       -18.5807142914
+For alpha =    0.00093 energy =       -18.5811721554
+For alpha =    0.00097 energy =       -18.5811956312
+For alpha =    0.00098 energy =       -18.5811968354
+For alpha =    0.00098 energy =       -18.5811968971
+For alpha =    0.00098 energy =       -18.5811969004
+ff:    79    -18.58      1.19      4.43    -12.63      0.00    -11.56  9.41e-01
+ff:    79    -18.58      1.19      4.43    -12.63      0.00    -11.56  9.41e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.9414629
+For alpha =    0.00000 energy =       -18.5811969004
+For alpha =    1.00000 energy =     46212.0011597185
+For alpha =    0.00016 energy =       -18.5866866279
+For alpha =    0.00026 energy =       -18.5888789808
+For alpha =    0.00032 energy =       -18.5897547618
+For alpha =    0.00036 energy =       -18.5901046746
+For alpha =    0.00039 energy =       -18.5902444962
+For alpha =    0.00040 energy =       -18.5903003715
+ff:    80    -18.59      1.18      4.43    -12.64      0.00    -11.56  5.77e-01
+ff:    80    -18.59      1.18      4.43    -12.64      0.00    -11.56  5.77e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.5765783
+For alpha =    0.00000 energy =       -18.5903003715
+For alpha =    1.00000 energy =      7266.4203742424
+For alpha =    0.00108 energy =       -18.6008633836
+For alpha =    0.00132 energy =       -18.6014106659
+For alpha =    0.00138 energy =       -18.6014391544
+For alpha =    0.00139 energy =       -18.6014406389
+For alpha =    0.00140 energy =       -18.6014407163
+For alpha =    0.00140 energy =       -18.6014407203
+ff:    81    -18.60      1.17      4.42    -12.63      0.00    -11.56  1.08e+00
+ff:    81    -18.60      1.17      4.42    -12.63      0.00    -11.56  1.08e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.0829323
+For alpha =    0.00000 energy =       -18.6014407203
+For alpha =    1.00000 energy =     66754.5824298104
+For alpha =    0.00065 energy =       -18.6066060648
+For alpha =    0.00038 energy =       -18.6121581030
+For alpha =    0.00038 energy =       -18.6121580962
+ff:    82    -18.61      1.16      4.42    -12.64      0.00    -11.56  5.55e-01
+ff:    82    -18.61      1.16      4.42    -12.64      0.00    -11.56  5.55e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.5554780
+For alpha =    0.00000 energy =       -18.6121580962
+For alpha =    1.00000 energy =      6730.5240557763
+For alpha =    0.00111 energy =       -18.6220121406
+For alpha =    0.00133 energy =       -18.6224154007
+For alpha =    0.00138 energy =       -18.6224319890
+For alpha =    0.00138 energy =       -18.6224326721
+For alpha =    0.00139 energy =       -18.6224327002
+For alpha =    0.00139 energy =       -18.6224327013
+ff:    83    -18.62      1.15      4.42    -12.63      0.00    -11.56  1.04e+00
+ff:    83    -18.62      1.15      4.42    -12.63      0.00    -11.56  1.04e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.0397017
+For alpha =    0.00000 energy =       -18.6224327013
+For alpha =    1.00000 energy =     60411.6713944778
+For alpha =    0.00066 energy =       -18.6272365568
+For alpha =    0.00038 energy =       -18.6323281743
+For alpha =    0.00038 energy =       -18.6323281675
+ff:    84    -18.63      1.14      4.42    -12.64      0.00    -11.56  5.36e-01
+ff:    84    -18.63      1.14      4.42    -12.64      0.00    -11.56  5.36e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.5355381
+For alpha =    0.00000 energy =       -18.6323281675
+For alpha =    1.00000 energy =      6242.0843787618
+For alpha =    0.00112 energy =       -18.6414983693
+For alpha =    0.00133 energy =       -18.6418097438
+For alpha =    0.00137 energy =       -18.6418203749
+For alpha =    0.00138 energy =       -18.6418207383
+For alpha =    0.00138 energy =       -18.6418207507
+For alpha =    0.00138 energy =       -18.6418207506
+ff:    85    -18.64      1.13      4.42    -12.63      0.00    -11.56  9.99e-01
+ff:    85    -18.64      1.13      4.42    -12.63      0.00    -11.56  9.99e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.9989988
+For alpha =    0.00000 energy =       -18.6418207506
+For alpha =    1.00000 energy =     54899.8763914208
+For alpha =    0.00058 energy =       -18.6484075591
+For alpha =    0.00038 energy =       -18.6509718239
+For alpha =    0.00038 energy =       -18.6509718171
+ff:    86    -18.65      1.13      4.42    -12.64      0.00    -11.56  5.17e-01
+ff:    86    -18.65      1.13      4.42    -12.64      0.00    -11.56  5.17e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.5166859
+For alpha =    0.00000 energy =       -18.6509718171
+For alpha =    1.00000 energy =      5796.9712285921
+For alpha =    0.00111 energy =       -18.6594454618
+For alpha =    0.00132 energy =       -18.6597445653
+For alpha =    0.00136 energy =       -18.6597551798
+For alpha =    0.00137 energy =       -18.6597555568
+For alpha =    0.00137 energy =       -18.6597555702
+For alpha =    0.00137 energy =       -18.6597555703
+ff:    87    -18.66      1.12      4.41    -12.63      0.00    -11.56  9.60e-01
+ff:    87    -18.66      1.12      4.41    -12.63      0.00    -11.56  9.60e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.9604928
+For alpha =    0.00000 energy =       -18.6597555703
+For alpha =    1.00000 energy =     50423.3432151275
+For alpha =    0.00039 energy =       -18.6682281928
+For alpha =    0.00038 energy =       -18.6682293950
+For alpha =    0.00038 energy =       -18.6682293881
+ff:    88    -18.67      1.11      4.41    -12.64      0.00    -11.56  4.99e-01
+ff:    88    -18.67      1.11      4.41    -12.64      0.00    -11.56  4.99e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.4988668
+For alpha =    0.00000 energy =       -18.6682293881
+For alpha =    1.00000 energy =      5397.8530410096
+For alpha =    0.00107 energy =       -18.6759803638
+For alpha =    0.00130 energy =       -18.6763492942
+For alpha =    0.00135 energy =       -18.6763669367
+For alpha =    0.00136 energy =       -18.6763677813
+For alpha =    0.00136 energy =       -18.6763678217
+For alpha =    0.00136 energy =       -18.6763678237
+ff:    89    -18.68      1.11      4.41    -12.63      0.00    -11.56  9.24e-01
+ff:    89    -18.68      1.11      4.41    -12.63      0.00    -11.56  9.24e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.9238129
+For alpha =    0.00000 energy =       -18.6763678237
+For alpha =    1.00000 energy =     48048.1311735425
+For alpha =    0.00016 energy =       -18.6815253614
+For alpha =    0.00025 energy =       -18.6832958394
+For alpha =    0.00031 energy =       -18.6839038089
+For alpha =    0.00034 energy =       -18.6841126216
+For alpha =    0.00036 energy =       -18.6841843483
+For alpha =    0.00037 energy =       -18.6842089879
+ff:    90    -18.68      1.10      4.41    -12.64      0.00    -11.56  4.64e-01
+ff:    90    -18.68      1.10      4.41    -12.64      0.00    -11.56  4.64e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.4635990
+For alpha =    0.00000 energy =       -18.6842089879
+For alpha =    1.00000 energy =      3814.9190703185
+For alpha =    0.00163 energy =       -18.6937942792
+For alpha =    0.00186 energy =       -18.6939837383
+For alpha =    0.00189 energy =       -18.6939875358
+For alpha =    0.00189 energy =       -18.6939876120
+For alpha =    0.00190 energy =       -18.6939876136
+For alpha =    0.00190 energy =       -18.6939876124
+ff:    91    -18.69      1.09      4.41    -12.63      0.00    -11.56  1.05e+00
+ff:    91    -18.69      1.09      4.41    -12.63      0.00    -11.56  1.05e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  1.0470991
+For alpha =    0.00000 energy =       -18.6939876124
+For alpha =    1.00000 energy =     65402.5195472494
+For alpha =    0.00063 energy =       -18.6977561754
+For alpha =    0.00036 energy =       -18.7033369510
+For alpha =    0.00036 energy =       -18.7033369436
+ff:    92    -18.70      1.08      4.41    -12.64      0.00    -11.56  4.44e-01
+ff:    92    -18.70      1.08      4.41    -12.64      0.00    -11.56  4.44e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.4435756
+For alpha =    0.00000 energy =       -18.7033369436
+For alpha =    1.00000 energy =      3442.4525582186
+For alpha =    0.00166 energy =       -18.7120844797
+For alpha =    0.00185 energy =       -18.7122076078
+For alpha =    0.00188 energy =       -18.7122093678
+For alpha =    0.00188 energy =       -18.7122093930
+For alpha =    0.00188 energy =       -18.7122093931
+ff:    93    -18.71      1.08      4.40    -12.63      0.00    -11.56  9.97e-01
+ff:    93    -18.71      1.08      4.40    -12.63      0.00    -11.56  9.97e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.9969685
+For alpha =    0.00000 energy =       -18.7122093931
+For alpha =    1.00000 energy =     58142.1589460999
+For alpha =    0.00058 energy =       -18.7172506944
+For alpha =    0.00036 energy =       -18.7207004328
+For alpha =    0.00036 energy =       -18.7207004254
+ff:    94    -18.72      1.07      4.40    -12.64      0.00    -11.56  4.25e-01
+ff:    94    -18.72      1.07      4.40    -12.64      0.00    -11.56  4.25e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.4249487
+For alpha =    0.00000 energy =       -18.7207004254
+For alpha =    1.00000 energy =      3120.9652555966
+For alpha =    0.00167 energy =       -18.7286819347
+For alpha =    0.00184 energy =       -18.7287648426
+For alpha =    0.00186 energy =       -18.7287657181
+For alpha =    0.00186 energy =       -18.7287657274
+For alpha =    0.00186 energy =       -18.7287657268
+ff:    95    -18.73      1.06      4.40    -12.63      0.00    -11.56  9.50e-01
+ff:    95    -18.73      1.06      4.40    -12.63      0.00    -11.56  9.50e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.9502973
+For alpha =    0.00000 energy =       -18.7287657268
+For alpha =    1.00000 energy =     52300.4685520848
+For alpha =    0.00038 energy =       -18.7364509177
+For alpha =    0.00036 energy =       -18.7364947568
+For alpha =    0.00036 energy =       -18.7364947495
+ff:    96    -18.74      1.06      4.40    -12.64      0.00    -11.56  4.08e-01
+ff:    96    -18.74      1.06      4.40    -12.64      0.00    -11.56  4.08e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.4075763
+For alpha =    0.00000 energy =       -18.7364947495
+For alpha =    1.00000 energy =      2838.3411593385
+For alpha =    0.00168 energy =       -18.7437875257
+For alpha =    0.00183 energy =       -18.7438421616
+For alpha =    0.00184 energy =       -18.7438425782
+For alpha =    0.00184 energy =       -18.7438425814
+For alpha =    0.00184 energy =       -18.7438425803
+ff:    97    -18.74      1.05      4.40    -12.63      0.00    -11.56  9.07e-01
+ff:    97    -18.74      1.05      4.40    -12.63      0.00    -11.56  9.07e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.9067404
+For alpha =    0.00000 energy =       -18.7438425803
+For alpha =    1.00000 energy =     49559.9793645813
+For alpha =    2.00000 energy =    283691.3880839346
+For alpha =    1.00635 energy =     49592.9029174898
+For alpha =    1.00178 energy =     49553.5740573686
+For alpha =    1.00178 energy =     49553.5740450458
+For alpha =    1.00178 energy =     49553.5740453069
+ff:    98  49553.57  46147.13   3493.45    -58.97      0.00    -28.03  4.99e+03
+ff:    98  49553.57  46147.13   3493.45    -58.97      0.00    -28.03  4.99e+03
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 4992.4291027
+For alpha =    0.00000 energy =     49553.5740453069
+For alpha =    1.00000 energy = 1106701712848.7500000000
+For alpha =    0.00054 energy =    330540.0319743776
+For alpha =    0.00016 energy =     69382.9584273608
+For alpha =    0.00005 energy =     48505.2321404939
+For alpha =    0.00002 energy =     46326.3497616491
+For alpha =    0.00001 energy =     46358.7079069540
+For alpha =    0.00001 energy =     46257.4671973103
+ff:    99  46257.47  46157.09    194.35    -67.11      0.00    -26.86  2.71e+03
+ff:    99  46257.47  46157.09    194.35    -67.11      0.00    -26.86  2.71e+03
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 2705.2873437
+For alpha =    0.00000 energy =     46257.4671973103
+For alpha =    1.00000 energy = 809581438995.1687011719
+For alpha =    0.00022 energy =     10357.5703456534
+For alpha =    0.00067 energy =   2403032.4964256012
+For alpha =    0.08426 energy = 5696140912.8901786804
+For alpha =    0.02195 energy = 375741956.4062181711
+For alpha =    0.00720 energy =  37327431.4256000444
+For alpha =    0.00279 energy =   4591352.5477562891
+ff:   100 4591352.55 4591279.36    164.18     -2.89      0.00    -88.10  2.98e+04
+ff:   100 4591352.55 4591279.36    164.18     -2.89      0.00    -88.10  2.98e+04
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 29829.2495268
+For alpha =    0.00000 energy =   4591352.5477562891
+For alpha =    1.00000 energy = 99671952543429.2500000000
+For alpha =    0.00021 energy = 421806723.8703332543
+For alpha =    0.00014 energy =   1313138.2866085507
+For alpha =    0.00013 energy =   1256277.8410595921
+For alpha =    0.00012 energy =   1236725.3297888781
+For alpha =    0.00012 energy =   1236290.2638629908
+For alpha =    0.00012 energy =   1236289.6794131829
+ff:   101 1236289.68 846896.71 389488.47    -26.18      0.00    -69.32  1.11e+06
+ff:   101 1236289.68 846896.71 389488.47    -26.18      0.00    -69.32  1.11e+06
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 1114962.7830061
+For alpha =    0.00000 energy =   1236289.6794131829
+For alpha =    1.00000 energy = 32794242393613428.0000000000
+For alpha =    0.00091 energy = 26944884831.4329452515
+For alpha =    0.00021 energy = 1460821037.9019932747
+For alpha =    0.00006 energy = 132477187.8081788123
+For alpha =    0.00002 energy =  14506929.0961134024
+For alpha =    0.00001 energy =   2335517.2239873204
+For alpha =    0.00000 energy =   1017727.9142506610
+ff:   102 1017727.91 1017818.28      0.78      9.95      0.00   -101.09  1.33e+04
+ff:   102 1017727.91 1017818.28      0.78      9.95      0.00   -101.09  1.33e+04
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 13333.6730469
+For alpha =    0.00000 energy =   1017727.9142506610
+For alpha =    1.00000 energy = 19147509290977.6406250000
+For alpha =    0.00022 energy =    908057.1174265032
+For alpha =    0.00058 energy =   1950970.7629887082
+For alpha =    0.00034 energy =    389074.5579742000
+For alpha =    0.00041 energy =    456655.5536078689
+For alpha =    0.00036 energy =    260370.8294244092
+For alpha =    0.00035 energy =    246817.1779358349
+ff:   103 246817.18 213891.33  32973.93     11.25      0.00    -59.34  7.83e+04
+ff:   103 246817.18 213891.33  32973.93     11.25      0.00    -59.34  7.83e+04
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 78256.6378504
+For alpha =    0.00000 energy =    246817.1779358349
+For alpha =    1.00000 energy = 240871487938795.5000000000
+For alpha =    0.00061 energy =  89148280.0646348745
+For alpha =    0.00014 energy =   5032985.9847107977
+For alpha =    0.00004 energy =    647158.7004080979
+For alpha =    0.00001 energy =    259790.4540166825
+For alpha =    0.00000 energy =    219678.7877368603
+For alpha =    0.00000 energy =    215032.8608335111
+ff:   104 215032.86 214913.57    168.43     11.88      0.00    -61.03  6.03e+03
+ff:   104 215032.86 214913.57    168.43     11.88      0.00    -61.03  6.03e+03
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 6025.7907536
+For alpha =    0.00000 energy =    215032.8608335111
+For alpha =    1.00000 energy = 3975653924623.6469726562
+For alpha =    0.00022 energy =     25663.4415257635
+For alpha =    0.00021 energy =     25192.6281815962
+For alpha =    0.00021 energy =     25192.4444167789
+For alpha =    0.00021 energy =     25192.4441633850
+For alpha =    0.00021 energy =     25192.4441630398
+For alpha =    0.00021 energy =     25192.4441630486
+ff:   105  25192.44  17510.78   7721.36    -10.37      0.00    -29.33  1.58e+04
+ff:   105  25192.44  17510.78   7721.36    -10.37      0.00    -29.33  1.58e+04
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 15830.2407418
+For alpha =    0.00000 energy =     25192.4441630486
+For alpha =    1.00000 energy = 10067475743483.3515625000
+For alpha =    0.00060 energy =   3424652.9559064670
+For alpha =    0.00014 energy =    182325.9926819083
+For alpha =    0.00004 energy =     27805.4215948006
+For alpha =    0.00001 energy =     19602.7959627342
+For alpha =    0.00001 energy =     17700.4425077967
+For alpha =    0.00000 energy =     17951.5276618569
+ff:   106  17951.53  17440.80    550.86    -10.79      0.00    -29.34  1.01e+03
+ff:   106  17951.53  17440.80    550.86    -10.79      0.00    -29.34  1.01e+03
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 1012.3691698
+For alpha =    0.00000 energy =     17951.5276618569
+For alpha =    1.00000 energy = 56703602235.9322586060
+For alpha =    0.00043 energy =     10210.1782594936
+For alpha =    0.00034 energy =      9847.3009447381
+For alpha =    0.00037 energy =      9793.3202287096
+For alpha =    0.00037 energy =      9793.2927650153
+For alpha =    0.00037 energy =      9793.2927645314
+For alpha =    0.00037 energy =      9793.2927645399
+ff:   107   9793.29   8243.84   1579.30    -14.32      0.00    -15.53  1.95e+03
+ff:   107   9793.29   8243.84   1579.30    -14.32      0.00    -15.53  1.95e+03
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 1945.9857262
+For alpha =    0.00000 energy =      9793.2927645399
+For alpha =    1.00000 energy = 181643660726.4904785156
+For alpha =    0.00050 energy =     36422.6346088871
+For alpha =    0.00014 energy =      9025.9197867554
+For alpha =    0.00005 energy =      8089.0273497702
+For alpha =    0.00006 energy =      8088.0810137885
+For alpha =    0.00006 energy =      8088.0625936847
+For alpha =    0.00006 energy =      8088.0625936766
+ff:   108   8088.06   8022.38     92.85    -12.26      0.00    -14.91  4.61e+02
+ff:   108   8088.06   8022.38     92.85    -12.26      0.00    -14.91  4.61e+02
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 460.9981794
+For alpha =    0.00000 energy =      8088.0625936766
+For alpha =    1.00000 energy = 8888443610.8054141998
+For alpha =    0.00057 energy =      4188.0865518766
+For alpha =    0.00076 energy =      3887.0343366118
+For alpha =    0.00075 energy =      3886.3855030143
+For alpha =    0.00075 energy =      3886.3854909461
+For alpha =    0.00075 energy =      3886.3854909491
+ff:   109   3886.39   3309.62    598.40    -14.84      0.00     -6.79  5.85e+02
+ff:   109   3886.39   3309.62    598.40    -14.84      0.00     -6.79  5.85e+02
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 584.5726749
+For alpha =    0.00000 energy =      3886.3854909491
+For alpha =    1.00000 energy = 19418077499.1815071106
+For alpha =    0.00042 energy =      3542.2223911292
+For alpha =    0.00018 energy =      3049.6121904969
+For alpha =    0.00020 energy =      3044.3333022310
+For alpha =    0.00020 energy =      3044.3315413364
+For alpha =    0.00020 energy =      3044.3315412947
+For alpha =    0.00020 energy =      3044.3315412978
+ff:   110   3044.33   3019.51     46.96    -12.26      0.00     -9.88  2.42e+02
+ff:   110   3044.33   3019.51     46.96    -12.26      0.00     -9.88  2.42e+02
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 242.3562572
+For alpha =    0.00000 energy =      3044.3315412978
+For alpha =    1.00000 energy = 2087947360.9455816746
+For alpha =    0.00068 energy =      1874.8954678712
+For alpha =    0.00081 energy =      1837.3129563131
+For alpha =    0.00081 energy =      1837.2969524306
+For alpha =    0.00081 energy =      1837.2969511031
+For alpha =    0.00081 energy =      1837.2969511074
+ff:   111   1837.30   1729.17    130.92    -12.22      0.00    -10.57  2.67e+02
+ff:   111   1837.30   1729.17    130.92    -12.22      0.00    -10.57  2.67e+02
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 266.7409347
+For alpha =    0.00000 energy =      1837.2969511074
+For alpha =    1.00000 energy = 5640478557.3164291382
+For alpha =    0.00030 energy =      1307.8677138236
+For alpha =    0.00033 energy =      1302.1512665727
+For alpha =    0.00034 energy =      1301.7600207697
+For alpha =    0.00034 energy =      1301.7314521370
+For alpha =    0.00034 energy =      1301.7293323186
+For alpha =    0.00034 energy =      1301.7291743518
+ff:   112   1301.73   1287.43     36.94    -11.60      0.00    -11.04  1.41e+02
+ff:   112   1301.73   1287.43     36.94    -11.60      0.00    -11.04  1.41e+02
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 141.4350148
+For alpha =    0.00000 energy =      1301.7291743518
+For alpha =    1.00000 energy = 837430199.7949779034
+For alpha =    0.00058 energy =       954.2543128295
+For alpha =    0.00072 energy =       931.7381953244
+For alpha =    0.00076 energy =       930.2427223805
+For alpha =    0.00077 energy =       930.1416980211
+For alpha =    0.00077 energy =       930.1348368989
+For alpha =    0.00077 energy =       930.1343702415
+ff:   113    930.13    898.30     54.87    -11.87      0.00    -11.17  1.60e+02
+ff:   113    930.13    898.30     54.87    -11.87      0.00    -11.17  1.60e+02
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 160.1570875
+For alpha =    0.00000 energy =       930.1343702415
+For alpha =    1.00000 energy = 2116026410.5806868076
+For alpha =    0.00029 energy =       710.7637184634
+For alpha =    0.00036 energy =       698.5896704593
+For alpha =    0.00038 energy =       697.6768028592
+For alpha =    0.00038 energy =       697.6034402442
+For alpha =    0.00038 energy =       697.5974320481
+For alpha =    0.00038 energy =       697.5969373564
+ff:   114    697.60    688.44     32.48    -11.65      0.00    -11.67  9.08e+01
+ff:   114    697.60    688.44     32.48    -11.65      0.00    -11.67  9.08e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 90.7572010
+For alpha =    0.00000 energy =       697.5969373564
+For alpha =    1.00000 energy = 336187074.4364107847
+For alpha =    0.00059 energy =       550.7176336636
+For alpha =    0.00074 energy =       541.2717030837
+For alpha =    0.00078 energy =       540.6297425719
+For alpha =    0.00079 energy =       540.5854226345
+For alpha =    0.00080 energy =       540.5823499516
+For alpha =    0.00080 energy =       540.5821366865
+ff:   115    540.58    528.05     35.51    -11.97      0.00    -11.00  1.05e+02
+ff:   115    540.58    528.05     35.51    -11.97      0.00    -11.00  1.05e+02
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 104.8006685
+For alpha =    0.00000 energy =       540.5821366865
+For alpha =    1.00000 energy = 901218810.6863858700
+For alpha =    0.00029 energy =       441.9113148227
+For alpha =    0.00038 energy =       434.0980876606
+For alpha =    0.00040 energy =       433.3719987824
+For alpha =    0.00041 energy =       433.3014071176
+For alpha =    0.00041 energy =       433.2944489717
+For alpha =    0.00041 energy =       433.2937601656
+ff:   116    433.29    430.92     25.65    -11.90      0.00    -11.38  6.24e+01
+ff:   116    433.29    430.92     25.65    -11.90      0.00    -11.38  6.24e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 62.3519573
+For alpha =    0.00000 energy =       433.2937601656
+For alpha =    1.00000 energy = 157053635.6812070012
+For alpha =    0.00060 energy =       362.3916800997
+For alpha =    0.00076 energy =       357.5440022372
+For alpha =    0.00080 energy =       357.2035665718
+For alpha =    0.00081 energy =       357.1794778263
+For alpha =    0.00082 energy =       357.1777698427
+For alpha =    0.00082 energy =       357.1776486736
+ff:   117    357.18    354.46     25.73    -12.25      0.00    -10.77  7.31e+01
+ff:   117    357.18    354.46     25.73    -12.25      0.00    -10.77  7.31e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 73.1289730
+For alpha =    0.00000 energy =       357.1776486736
+For alpha =    1.00000 energy = 434643990.7255675793
+For alpha =    0.00030 energy =       307.4799367218
+For alpha =    0.00039 energy =       302.8466171439
+For alpha =    0.00042 energy =       302.3710309242
+For alpha =    0.00043 energy =       302.3207613233
+For alpha =    0.00043 energy =       302.3153975444
+For alpha =    0.00043 energy =       302.3148234731
+ff:   118    302.31    304.96     20.62    -12.22      0.00    -11.04  4.53e+01
+ff:   118    302.31    304.96     20.62    -12.22      0.00    -11.04  4.53e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 45.3360678
+For alpha =    0.00000 energy =       302.3148234731
+For alpha =    1.00000 energy =  81806791.1685741246
+For alpha =    0.00062 energy =       263.9367850688
+For alpha =    0.00078 energy =       261.2605155229
+For alpha =    0.00082 energy =       261.0721187713
+For alpha =    0.00083 energy =       261.0588207828
+For alpha =    0.00084 energy =       261.0578815315
+For alpha =    0.00084 energy =       261.0578151781
+ff:   119    261.06    263.75     20.39    -12.55      0.00    -10.53  5.45e+01
+ff:   119    261.06    263.75     20.39    -12.55      0.00    -10.53  5.45e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 54.4682900
+For alpha =    0.00000 energy =       261.0578151781
+For alpha =    1.00000 energy = 238971190.0819274783
+For alpha =    0.00030 energy =       232.8399829306
+For alpha =    0.00040 energy =       229.9950270171
+For alpha =    0.00043 energy =       229.6893013849
+For alpha =    0.00044 energy =       229.6557772988
+For alpha =    0.00044 energy =       229.6520768481
+For alpha =    0.00044 energy =       229.6516674900
+ff:   120    229.65    235.65     17.29    -12.54      0.00    -10.74  3.48e+01
+ff:   120    229.65    235.65     17.29    -12.54      0.00    -10.74  3.48e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 34.8257989
+For alpha =    0.00000 energy =       229.6516674900
+For alpha =    1.00000 energy =  48309813.5565920472
+For alpha =    0.00062 energy =       206.6693230752
+For alpha =    0.00079 energy =       204.9323713717
+For alpha =    0.00084 energy =       204.8016052691
+For alpha =    0.00085 energy =       204.7917718643
+For alpha =    0.00085 energy =       204.7910326374
+For alpha =    0.00085 energy =       204.7909770707
+ff:   121    204.79    210.80     17.16    -12.84      0.00    -10.33  4.28e+01
+ff:   121    204.79    210.80     17.16    -12.84      0.00    -10.33  4.28e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 42.8145024
+For alpha =    0.00000 energy =       204.7909770707
+For alpha =    1.00000 energy = 146652089.5848659873
+For alpha =    0.00030 energy =       187.0714695993
+For alpha =    0.00040 energy =       185.2099747344
+For alpha =    0.00044 energy =       185.0052770456
+For alpha =    0.00045 energy =       184.9824340088
+For alpha =    0.00045 energy =       184.9798724085
+For alpha =    0.00045 energy =       184.9795846824
+ff:   122    184.98    193.22     15.09    -12.83      0.00    -10.49  2.80e+01
+ff:   122    184.98    193.22     15.09    -12.83      0.00    -10.49  2.80e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 27.9881060
+For alpha =    0.00000 energy =       184.9795846824
+For alpha =    1.00000 energy =  31592584.4985786900
+For alpha =    0.00062 energy =       170.0443290457
+For alpha =    0.00079 energy =       168.7876900356
+For alpha =    0.00085 energy =       168.6833963685
+For alpha =    0.00086 energy =       168.6747755932
+For alpha =    0.00086 energy =       168.6740638355
+For alpha =    0.00087 energy =       168.6740050901
+ff:   123    168.67    176.87     15.06    -13.09      0.00    -10.16  3.50e+01
+ff:   123    168.67    176.87     15.06    -13.09      0.00    -10.16  3.50e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 35.0215918
+For alpha =    0.00000 energy =       168.6740050901
+For alpha =    1.00000 energy =  97551650.0524820685
+For alpha =    0.00031 energy =       156.6717854681
+For alpha =    0.00041 energy =       155.3871324856
+For alpha =    0.00044 energy =       155.2447845827
+For alpha =    0.00045 energy =       155.2288333098
+For alpha =    0.00046 energy =       155.2270391581
+For alpha =    0.00046 energy =       155.2268371057
+ff:   124    155.23    165.03     13.58    -13.08      0.00    -10.30  2.33e+01
+ff:   124    155.23    165.03     13.58    -13.08      0.00    -10.30  2.33e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 23.2664411
+For alpha =    0.00000 energy =       155.2268371057
+For alpha =    1.00000 energy =  22175360.9491297677
+For alpha =    0.00061 energy =       144.8955769005
+For alpha =    0.00079 energy =       143.9464642090
+For alpha =    0.00085 energy =       143.8609229121
+For alpha =    0.00087 energy =       143.8532582969
+For alpha =    0.00087 energy =       143.8525727459
+For alpha =    0.00087 energy =       143.8525114601
+ff:   125    143.85    153.59     13.61    -13.31      0.00    -10.04  2.95e+01
+ff:   125    143.85    153.59     13.61    -13.31      0.00    -10.04  2.95e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 29.4509781
+For alpha =    0.00000 energy =       143.8525114601
+For alpha =    1.00000 energy =  68552719.6410092115
+For alpha =    0.00031 energy =       135.2772149425
+For alpha =    0.00041 energy =       134.3595078397
+For alpha =    0.00045 energy =       134.2585736935
+For alpha =    0.00046 energy =       134.2473737793
+For alpha =    0.00046 energy =       134.2461273766
+For alpha =    0.00046 energy =       134.2459885337
+ff:   126    134.25    145.19     12.51    -13.30      0.00    -10.16  1.98e+01
+ff:   126    134.25    145.19     12.51    -13.30      0.00    -10.16  1.98e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 19.8003195
+For alpha =    0.00000 energy =       134.2459885337
+For alpha =    1.00000 energy =  16254505.9534518663
+For alpha =    0.00061 energy =       126.7646883359
+For alpha =    0.00079 energy =       126.0457161337
+For alpha =    0.00085 energy =       125.9782482575
+For alpha =    0.00087 energy =       125.9719596172
+For alpha =    0.00087 energy =       125.9713746668
+For alpha =    0.00088 energy =       125.9713202909
+ff:   127    125.97    136.86     12.55    -13.49      0.00     -9.95  2.52e+01
+ff:   127    125.97    136.86     12.55    -13.49      0.00     -9.95  2.52e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 25.2269661
+For alpha =    0.00000 energy =       125.9713202909
+For alpha =    1.00000 energy =  49935208.8035186231
+For alpha =    0.00031 energy =       119.6204417976
+For alpha =    0.00042 energy =       118.9515055376
+For alpha =    0.00045 energy =       118.8794618190
+For alpha =    0.00046 energy =       118.8716473025
+For alpha =    0.00046 energy =       118.8707976943
+For alpha =    0.00047 energy =       118.8707052527
+ff:   128    118.87    130.70     11.69    -13.47      0.00    -10.05  1.71e+01
+ff:   128    118.87    130.70     11.69    -13.47      0.00    -10.05  1.71e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 17.1192756
+For alpha =    0.00000 energy =       118.8707052527
+For alpha =    1.00000 energy =  12231466.3628228530
+For alpha =    0.00061 energy =       113.2739123760
+For alpha =    0.00079 energy =       112.7329422635
+For alpha =    0.00085 energy =       112.6818011556
+For alpha =    0.00087 energy =       112.6769972054
+For alpha =    0.00088 energy =       112.6765469171
+For alpha =    0.00088 energy =       112.6765047382
+ff:   129    112.68    124.46     11.72    -13.63      0.00     -9.88  2.19e+01
+ff:   129    112.68    124.46     11.72    -13.63      0.00     -9.88  2.19e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 21.9107925
+For alpha =    0.00000 energy =       112.6765047382
+For alpha =    1.00000 energy =  37372231.4225769043
+For alpha =    0.00032 energy =       107.8422573498
+For alpha =    0.00042 energy =       107.3458511523
+For alpha =    0.00045 energy =       107.2939207152
+For alpha =    0.00046 energy =       107.2884559865
+For alpha =    0.00047 energy =       107.2878798337
+For alpha =    0.00047 energy =       107.2878190519
+ff:   130    107.29    119.82     11.03    -13.60      0.00     -9.96  1.50e+01
+ff:   130    107.29    119.82     11.03    -13.60      0.00     -9.96  1.50e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 15.0078170
+For alpha =    0.00000 energy =       107.2878190519
+For alpha =    1.00000 energy =   9430168.3625391740
+For alpha =    0.00061 energy =       102.9761186917
+For alpha =    0.00080 energy =       102.5644950756
+For alpha =    0.00085 energy =       102.5260727231
+For alpha =    0.00087 energy =       102.5225112488
+For alpha =    0.00088 energy =       102.5221818304
+For alpha =    0.00088 energy =       102.5221513807
+ff:   131    102.52    115.03     11.04    -13.73      0.00     -9.82  1.93e+01
+ff:   131    102.52    115.03     11.04    -13.73      0.00     -9.82  1.93e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 19.3132591
+For alpha =    0.00000 energy =       102.5221513807
+For alpha =    1.00000 energy =  28805967.0503458269
+For alpha =    0.00032 energy =        98.7337739690
+For alpha =    0.00042 energy =        98.3561535015
+For alpha =    0.00046 energy =        98.3179034792
+For alpha =    0.00047 energy =        98.3140095973
+For alpha =    0.00047 energy =        98.3136125703
+For alpha =    0.00047 energy =        98.3135720683
+ff:   132     98.31    111.44     10.48    -13.71      0.00     -9.89  1.34e+01
+ff:   132     98.31    111.44     10.48    -13.71      0.00     -9.89  1.34e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 13.3577445
+For alpha =    0.00000 energy =        98.3135720683
+For alpha =    1.00000 energy =   7490414.2630840018
+For alpha =    0.00061 energy =        94.8901229844
+For alpha =    0.00080 energy =        94.5689403953
+For alpha =    0.00086 energy =        94.5394738734
+For alpha =    0.00087 energy =        94.5367889871
+For alpha =    0.00088 energy =        94.5365448560
+For alpha =    0.00088 energy =        94.5365226717
+ff:   133     94.54    107.66     10.47    -13.81      0.00     -9.78  1.73e+01
+ff:   133     94.54    107.66     10.47    -13.81      0.00     -9.78  1.73e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 17.2889847
+For alpha =    0.00000 energy =        94.5365226717
+For alpha =    1.00000 energy =  22910910.2540662438
+For alpha =    0.00033 energy =        91.4763662198
+For alpha =    0.00043 energy =        91.1805130255
+For alpha =    0.00046 energy =        91.1515024127
+For alpha =    0.00047 energy =        91.1486453209
+For alpha =    0.00047 energy =        91.1483635605
+For alpha =    0.00047 energy =        91.1483357621
+ff:   134     91.15    104.79      9.99    -13.79      0.00     -9.85  1.21e+01
+ff:   134     91.15    104.79      9.99    -13.79      0.00     -9.85  1.21e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 12.0746989
+For alpha =    0.00000 energy =        91.1483357621
+For alpha =    1.00000 energy =   6144353.1104358835
+For alpha =    0.00061 energy =        88.3481582758
+For alpha =    0.00080 energy =        88.0890593985
+For alpha =    0.00086 energy =        88.0656058702
+For alpha =    0.00087 energy =        88.0634970163
+For alpha =    0.00088 energy =        88.0633077773
+For alpha =    0.00088 energy =        88.0632908061
+ff:   135     88.06    101.72      9.97    -13.87      0.00     -9.75  1.57e+01
+ff:   135     88.06    101.72      9.97    -13.87      0.00     -9.75  1.57e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 15.7082713
+For alpha =    0.00000 energy =        88.0632908061
+For alpha =    1.00000 energy =  18782282.7060192674
+For alpha =    0.00033 energy =        85.5188688585
+For alpha =    0.00043 energy =        85.2802906857
+For alpha =    0.00046 energy =        85.2576307153
+For alpha =    0.00047 energy =        85.2554700952
+For alpha =    0.00047 energy =        85.2552638345
+For alpha =    0.00047 energy =        85.2552441368
+ff:   136     85.26     99.35      9.56    -13.84      0.00     -9.81  1.11e+01
+ff:   136     85.26     99.35      9.56    -13.84      0.00     -9.81  1.11e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 11.0690099
+For alpha =    0.00000 energy =        85.2552441368
+For alpha =    1.00000 energy =   5189550.7671127971
+For alpha =    0.00061 energy =        82.9033078672
+For alpha =    0.00080 energy =        82.6882289734
+For alpha =    0.00085 energy =        82.6689765988
+For alpha =    0.00087 energy =        82.6672643728
+For alpha =    0.00088 energy =        82.6671123891
+For alpha =    0.00088 energy =        82.6670989062
+ff:   137     82.67     96.80      9.52    -13.91      0.00     -9.74  1.44e+01
+ff:   137     82.67     96.80      9.52    -13.91      0.00     -9.74  1.44e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 14.4478497
+For alpha =    0.00000 energy =        82.6670989062
+For alpha =    1.00000 energy =  15786321.8895731717
+For alpha =    0.00033 energy =        80.5006029218
+For alpha =    0.00043 energy =        80.3037351597
+For alpha =    0.00046 energy =        80.2856297918
+For alpha =    0.00047 energy =        80.2839587207
+For alpha =    0.00047 energy =        80.2838043189
+For alpha =    0.00048 energy =        80.2837900480
+ff:   138     80.28     94.79      9.17    -13.88      0.00     -9.80  1.03e+01
+ff:   138     80.28     94.79      9.17    -13.88      0.00     -9.80  1.03e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 10.2580482
+For alpha =    0.00000 energy =        80.2837900480
+For alpha =    1.00000 energy =   4480061.4568243781
+For alpha =    0.00061 energy =        78.2669679027
+For alpha =    0.00080 energy =        78.0853682150
+For alpha =    0.00085 energy =        78.0693498943
+For alpha =    0.00087 energy =        78.0679456757
+For alpha =    0.00087 energy =        78.0678228031
+For alpha =    0.00087 energy =        78.0678120572
+ff:   139     78.07     92.62      9.12    -13.94      0.00     -9.73  1.34e+01
+ff:   139     78.07     92.62      9.12    -13.94      0.00     -9.73  1.34e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 13.4044480
+For alpha =    0.00000 energy =        78.0678120572
+For alpha =    1.00000 energy =  13503195.6648883838
+For alpha =    0.00034 energy =        76.1917277565
+For alpha =    0.00044 energy =        76.0268556411
+For alpha =    0.00046 energy =        76.0121993834
+For alpha =    0.00047 energy =        76.0108921301
+For alpha =    0.00048 energy =        76.0107754140
+For alpha =    0.00048 energy =        76.0107649901
+ff:   140     76.01     90.90      8.81    -13.90      0.00     -9.80  9.58e+00
+ff:   140     76.01     90.90      8.81    -13.90      0.00     -9.80  9.58e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  9.5758266
+For alpha =    0.00000 energy =        76.0107649901
+For alpha =    1.00000 energy =   3920529.2668056558
+For alpha =    0.00061 energy =        74.2564327352
+For alpha =    0.00080 energy =        74.1022478972
+For alpha =    0.00085 energy =        74.0889605368
+For alpha =    0.00087 energy =        74.0878221009
+For alpha =    0.00087 energy =        74.0877247282
+For alpha =    0.00087 energy =        74.0877164039
+ff:   141     74.09     89.03      8.74    -13.95      0.00     -9.74  1.25e+01
+ff:   141     74.09     89.03      8.74    -13.95      0.00     -9.74  1.25e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 12.5036857
+For alpha =    0.00000 energy =        74.0877164039
+For alpha =    1.00000 energy =  11675326.8928449564
+For alpha =    0.00034 energy =        72.4459170914
+For alpha =    0.00044 energy =        72.3068050305
+For alpha =    0.00047 energy =        72.2948859455
+For alpha =    0.00047 energy =        72.2938614430
+For alpha =    0.00048 energy =        72.2937732997
+For alpha =    0.00048 energy =        72.2937657142
+ff:   142     72.29     87.53      8.47    -13.91      0.00     -9.80  8.98e+00
+ff:   142     72.29     87.53      8.47    -13.91      0.00     -9.80  8.98e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  8.9772013
+For alpha =    0.00000 energy =        72.2937657142
+For alpha =    1.00000 energy =   3455305.4708919660
+For alpha =    0.00062 energy =        70.7541311864
+For alpha =    0.00080 energy =        70.6234437892
+For alpha =    0.00085 energy =        70.6125550178
+For alpha =    0.00086 energy =        70.6116526650
+For alpha =    0.00087 energy =        70.6115780035
+For alpha =    0.00087 energy =        70.6115718287
+ff:   143     70.61     85.91      8.40    -13.95      0.00     -9.76  1.17e+01
+ff:   143     70.61     85.91      8.40    -13.95      0.00     -9.76  1.17e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 11.6996457
+For alpha =    0.00000 energy =        70.6115718287
+For alpha =    1.00000 energy =  10156474.4545679595
+For alpha =    0.00034 energy =        69.1660110387
+For alpha =    0.00044 energy =        69.0483255189
+For alpha =    0.00047 energy =        69.0386395359
+For alpha =    0.00048 energy =        69.0378398847
+For alpha =    0.00048 energy =        69.0377738094
+For alpha =    0.00048 energy =        69.0377683482
+ff:   144     69.04     84.60      8.17    -13.91      0.00     -9.81  8.44e+00
+ff:   144     69.04     84.60      8.17    -13.91      0.00     -9.81  8.44e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  8.4358472
+For alpha =    0.00000 energy =        69.0377683482
+For alpha =    1.00000 energy =   3055368.5471968111
+For alpha =    0.00062 energy =        67.6792935862
+For alpha =    0.00079 energy =        67.5690128889
+For alpha =    0.00084 energy =        67.5602155330
+For alpha =    0.00086 energy =        67.5595172286
+For alpha =    0.00086 energy =        67.5594618774
+For alpha =    0.00086 energy =        67.5594574917
+ff:   145     67.56     83.19      8.09    -13.94      0.00     -9.78  1.10e+01
+ff:   145     67.56     83.19      8.09    -13.94      0.00     -9.78  1.10e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 10.9679275
+For alpha =    0.00000 energy =        67.5594574917
+For alpha =    1.00000 energy =   8867571.2204855606
+For alpha =    0.00035 energy =        66.2819131574
+For alpha =    0.00044 energy =        66.1823255168
+For alpha =    0.00047 energy =        66.1744787304
+For alpha =    0.00048 energy =        66.1738586268
+For alpha =    0.00048 energy =        66.1738095817
+For alpha =    0.00048 energy =        66.1738057017
+ff:   146     66.17     82.03      7.88    -13.91      0.00     -9.83  7.94e+00
+ff:   146     66.17     82.03      7.88    -13.91      0.00     -9.83  7.94e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  7.9387286
+For alpha =    0.00000 energy =        66.1738057017
+For alpha =    1.00000 energy =   2706781.9798933310
+For alpha =    0.00062 energy =        64.9708780828
+For alpha =    0.00079 energy =        64.8781770383
+For alpha =    0.00084 energy =        64.8711496925
+For alpha =    0.00086 energy =        64.8706193948
+For alpha =    0.00086 energy =        64.8705794276
+For alpha =    0.00086 energy =        64.8705764164
+ff:   147     64.87     80.80      7.81    -13.93      0.00     -9.80  1.03e+01
+ff:   147     64.87     80.80      7.81    -13.93      0.00     -9.80  1.03e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 10.2972313
+For alpha =    0.00000 energy =        64.8705764164
+For alpha =    1.00000 energy =   7764797.5501388218
+For alpha =    0.00035 energy =        63.7381855401
+For alpha =    0.00045 energy =        63.6539360527
+For alpha =    0.00047 energy =        63.6476013280
+For alpha =    0.00048 energy =        63.6471236599
+For alpha =    0.00048 energy =        63.6470876133
+For alpha =    0.00048 energy =        63.6470848926
+ff:   148     63.65     79.78      7.62    -13.90      0.00     -9.86  7.48e+00
+ff:   148     63.65     79.78      7.62    -13.90      0.00     -9.86  7.48e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  7.4804226
+For alpha =    0.00000 energy =        63.6470848926
+For alpha =    1.00000 energy =   2402539.1798858009
+For alpha =    0.00063 energy =        62.5786011383
+For alpha =    0.00079 energy =        62.5008418080
+For alpha =    0.00084 energy =        62.4952701157
+For alpha =    0.00085 energy =        62.4948725496
+For alpha =    0.00086 energy =        62.4948442130
+For alpha =    0.00086 energy =        62.4948421940
+ff:   149     62.49     78.69      7.55    -13.92      0.00     -9.83  9.68e+00
+ff:   149     62.49     78.69      7.55    -13.92      0.00     -9.83  9.68e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  9.6825509
+For alpha =    0.00000 energy =        62.4948421940
+For alpha =    1.00000 energy =   6820267.2868825691
+For alpha =    0.00035 energy =        61.4880337451
+For alpha =    0.00045 energy =        61.4167541278
+For alpha =    0.00047 energy =        61.4116544494
+For alpha =    0.00048 energy =        61.4112885505
+For alpha =    0.00048 energy =        61.4112622782
+For alpha =    0.00048 energy =        61.4112603914
+ff:   150     61.41     77.79      7.38    -13.88      0.00     -9.88  7.06e+00
+ff:   150     61.41     77.79      7.38    -13.88      0.00     -9.88  7.06e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  7.0587936
+For alpha =    0.00000 energy =        61.4112603914
+For alpha =    1.00000 energy =   2137973.7736814437
+For alpha =    0.00063 energy =        60.4590751149
+For alpha =    0.00080 energy =        60.3938474046
+For alpha =    0.00084 energy =        60.3894444030
+For alpha =    0.00085 energy =        60.3891483416
+For alpha =    0.00085 energy =        60.3891284540
+For alpha =    0.00085 energy =        60.3891271184
+ff:   151     60.39     76.83      7.31    -13.90      0.00     -9.85  9.12e+00
+ff:   151     60.39     76.83      7.31    -13.90      0.00     -9.85  9.12e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  9.1213322
+For alpha =    0.00000 energy =        60.3891271184
+For alpha =    1.00000 energy =   6012887.4906560751
+For alpha =    0.00036 energy =        59.4907286641
+For alpha =    0.00045 energy =        59.4303700337
+For alpha =    0.00047 energy =        59.4262721397
+For alpha =    0.00048 energy =        59.4259931873
+For alpha =    0.00048 energy =        59.4259741854
+For alpha =    0.00048 energy =        59.4259728907
+ff:   152     59.43     76.03      7.16    -13.87      0.00     -9.91  6.67e+00
+ff:   152     59.43     76.03      7.16    -13.87      0.00     -9.91  6.67e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  6.6729964
+For alpha =    0.00000 energy =        59.4259728907
+For alpha =    1.00000 energy =   1909227.0109504526
+For alpha =    0.00064 energy =        58.5741424825
+For alpha =    0.00080 energy =        58.5193170985
+For alpha =    0.00084 energy =        58.5158378956
+For alpha =    0.00085 energy =        58.5156178916
+For alpha =    0.00085 energy =        58.5156039923
+For alpha =    0.00085 energy =        58.5156031144
+ff:   153     58.52     75.19      7.09    -13.88      0.00     -9.88  8.61e+00
+ff:   153     58.52     75.19      7.09    -13.88      0.00     -9.88  8.61e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  8.6116538
+For alpha =    0.00000 energy =        58.5156031144
+For alpha =    1.00000 energy =   5324803.9293740280
+For alpha =    0.00036 energy =        57.7104573464
+For alpha =    0.00045 energy =        57.6592563169
+For alpha =    0.00048 energy =        57.6559664403
+For alpha =    0.00048 energy =        57.6557545128
+For alpha =    0.00048 energy =        57.6557408520
+For alpha =    0.00048 energy =        57.6557399713
+ff:   154     57.66     74.47      6.96    -13.85      0.00     -9.93  6.32e+00
+ff:   154     57.66     74.47      6.96    -13.85      0.00     -9.93  6.32e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  6.3221904
+For alpha =    0.00000 energy =        57.6557399713
+For alpha =    1.00000 energy =   1712482.4121513225
+For alpha =    0.00064 energy =        56.8902369435
+For alpha =    0.00080 energy =        56.8439945979
+For alpha =    0.00084 energy =        56.8412390095
+For alpha =    0.00085 energy =        56.8410753499
+For alpha =    0.00085 energy =        56.8410656378
+For alpha =    0.00085 energy =        56.8410650616
+ff:   155     56.84     73.72      6.89    -13.86      0.00     -9.91  8.15e+00
+ff:   155     56.84     73.72      6.89    -13.86      0.00     -9.91  8.15e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  8.1511935
+For alpha =    0.00000 energy =        56.8410650616
+For alpha =    1.00000 energy =   4739802.2478827322
+For alpha =    0.00037 energy =        56.1158816772
+For alpha =    0.00045 energy =        56.0723347761
+For alpha =    0.00048 energy =        56.0696928209
+For alpha =    0.00048 energy =        56.0695321406
+For alpha =    0.00048 energy =        56.0695223623
+For alpha =    0.00048 energy =        56.0695217671
+ff:   156     56.07     73.08      6.78    -13.83      0.00     -9.96  6.01e+00
+ff:   156     56.07     73.08      6.78    -13.83      0.00     -9.96  6.01e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  6.0051057
+For alpha =    0.00000 energy =        56.0695217671
+For alpha =    1.00000 energy =   1543928.2358439651
+For alpha =    0.00064 energy =        55.3780575534
+For alpha =    0.00080 energy =        55.3388743130
+For alpha =    0.00083 energy =        55.3366832441
+For alpha =    0.00084 energy =        55.3365611074
+For alpha =    0.00085 energy =        55.3365543042
+For alpha =    0.00085 energy =        55.3365539253
+ff:   157     55.34     72.40      6.72    -13.84      0.00     -9.94  7.74e+00
+ff:   157     55.34     72.40      6.72    -13.84      0.00     -9.94  7.74e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  7.7372655
+For alpha =    0.00000 energy =        55.3365539253
+For alpha =    1.00000 energy =   4243334.9050084790
+For alpha =    0.00037 energy =        54.6797579981
+For alpha =    0.00046 energy =        54.6425939404
+For alpha =    0.00048 energy =        54.6404694614
+For alpha =    0.00048 energy =        54.6403477261
+For alpha =    0.00048 energy =        54.6403407466
+For alpha =    0.00048 energy =        54.6403403464
+ff:   158     54.64     71.82      6.62    -13.81      0.00     -9.99  5.72e+00
+ff:   158     54.64     71.82      6.62    -13.81      0.00     -9.99  5.72e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.7201565
+For alpha =    0.00000 energy =        54.6403403464
+For alpha =    1.00000 energy =   1399992.4191827152
+For alpha =    0.00065 energy =        54.0122151905
+For alpha =    0.00080 energy =        53.9788281990
+For alpha =    0.00083 energy =        53.9770766198
+For alpha =    0.00084 energy =        53.9769850012
+For alpha =    0.00084 energy =        53.9769802123
+For alpha =    0.00084 energy =        53.9769799620
+ff:   159     53.98     71.21      6.55    -13.82      0.00     -9.97  7.37e+00
+ff:   159     53.98     71.21      6.55    -13.82      0.00     -9.97  7.37e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  7.3669595
+For alpha =    0.00000 energy =        53.9769799620
+For alpha =    1.00000 energy =   3822582.2456633756
+For alpha =    0.00037 energy =        53.3785420949
+For alpha =    0.00046 energy =        53.3466919632
+For alpha =    0.00048 energy =        53.3449794523
+For alpha =    0.00048 energy =        53.3448871614
+For alpha =    0.00049 energy =        53.3448821850
+For alpha =    0.00049 energy =        53.3448819166
+ff:   160     53.34     70.68      6.47    -13.79      0.00    -10.01  5.47e+00
+ff:   160     53.34     70.68      6.47    -13.79      0.00    -10.01  5.47e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.4655234
+For alpha =    0.00000 energy =        53.3448819166
+For alpha =    1.00000 energy =   1277414.1414192922
+For alpha =    0.00065 energy =        52.7708197612
+For alpha =    0.00080 energy =        52.7421870461
+For alpha =    0.00083 energy =        52.7407772755
+For alpha =    0.00084 energy =        52.7407080619
+For alpha =    0.00084 energy =        52.7407046660
+For alpha =    0.00084 energy =        52.7407044994
+ff:   161     52.74     70.12      6.41    -13.80      0.00     -9.99  7.04e+00
+ff:   161     52.74     70.12      6.41    -13.80      0.00     -9.99  7.04e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  7.0372886
+For alpha =    0.00000 energy =        52.7407044994
+For alpha =    1.00000 energy =   3466426.0252101873
+For alpha =    0.00038 energy =        52.1919596212
+For alpha =    0.00046 energy =        52.1645310531
+For alpha =    0.00048 energy =        52.1631459770
+For alpha =    0.00048 energy =        52.1630758767
+For alpha =    0.00049 energy =        52.1630723271
+For alpha =    0.00049 energy =        52.1630721473
+ff:   162     52.16     69.64      6.33    -13.77      0.00    -10.04  5.24e+00
+ff:   162     52.16     69.64      6.33    -13.77      0.00    -10.04  5.24e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.2392831
+For alpha =    0.00000 energy =        52.1630721473
+For alpha =    1.00000 energy =   1173307.0366805110
+For alpha =    0.00066 energy =        51.6350544495
+For alpha =    0.00080 energy =        51.6103163028
+For alpha =    0.00083 energy =        51.6091720947
+For alpha =    0.00084 energy =        51.6091193173
+For alpha =    0.00084 energy =        51.6091168843
+For alpha =    0.00084 energy =        51.6091167722
+ff:   163     51.61     69.13      6.27    -13.78      0.00    -10.02  6.75e+00
+ff:   163     51.61     69.13      6.27    -13.78      0.00    -10.02  6.75e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  6.7453015
+For alpha =    0.00000 energy =        51.6091167722
+For alpha =    1.00000 energy =   3165344.6854427503
+For alpha =    0.00038 energy =        51.1025941245
+For alpha =    0.00046 energy =        51.0788398347
+For alpha =    0.00048 energy =        51.0777143391
+For alpha =    0.00049 energy =        51.0776608955
+For alpha =    0.00049 energy =        51.0776583565
+For alpha =    0.00049 energy =        51.0776582359
+ff:   164     51.08     68.69      6.20    -13.75      0.00    -10.07  5.04e+00
+ff:   164     51.08     68.69      6.20    -13.75      0.00    -10.07  5.04e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.0394959
+For alpha =    0.00000 energy =        51.0776582359
+For alpha =    1.00000 energy =   1085161.7956162395
+For alpha =    0.00066 energy =        50.5887621792
+For alpha =    0.00080 energy =        50.5672077973
+For alpha =    0.00083 energy =        50.5662695932
+For alpha =    0.00084 energy =        50.5662288640
+For alpha =    0.00084 energy =        50.5662270969
+For alpha =    0.00084 energy =        50.5662270202
+ff:   165     50.57     68.22      6.15    -13.75      0.00    -10.05  6.49e+00
+ff:   165     50.57     68.22      6.15    -13.75      0.00    -10.05  6.49e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  6.4881520
+For alpha =    0.00000 energy =        50.5662270202
+For alpha =    1.00000 energy =   2911252.9784710030
+For alpha =    0.00039 energy =        50.0954884406
+For alpha =    0.00047 energy =        50.0747804537
+For alpha =    0.00048 energy =        50.0738600346
+For alpha =    0.00049 energy =        50.0738190368
+For alpha =    0.00049 energy =        50.0738172099
+For alpha =    0.00049 energy =        50.0738171284
+ff:   166     50.07     67.80      6.09    -13.73      0.00    -10.09  4.86e+00
+ff:   166     50.07     67.80      6.09    -13.73      0.00    -10.09  4.86e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.8642623
+For alpha =    0.00000 energy =        50.0738171284
+For alpha =    1.00000 energy =   1010820.8492734237
+For alpha =    0.00067 energy =        49.6180651741
+For alpha =    0.00080 energy =        49.5991052480
+For alpha =    0.00083 energy =        49.5983264845
+For alpha =    0.00084 energy =        49.5982945794
+For alpha =    0.00084 energy =        49.5982932730
+For alpha =    0.00084 energy =        49.5982932195
+ff:   167     49.60     67.36      6.04    -13.73      0.00    -10.07  6.26e+00
+ff:   167     49.60     67.36      6.04    -13.73      0.00    -10.07  6.26e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  6.2631330
+For alpha =    0.00000 energy =        49.5982932195
+For alpha =    1.00000 energy =   2697313.6893283343
+For alpha =    0.00039 energy =        49.1577805367
+For alpha =    0.00047 energy =        49.1395944613
+For alpha =    0.00048 energy =        49.1388357993
+For alpha =    0.00049 energy =        49.1388040843
+For alpha =    0.00049 energy =        49.1388027580
+For alpha =    0.00049 energy =        49.1388027025
+ff:   168     49.14     66.97      5.98    -13.70      0.00    -10.11  4.71e+00
+ff:   168     49.14     66.97      5.98    -13.70      0.00    -10.11  4.71e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.7117531
+For alpha =    0.00000 energy =        49.1388027025
+For alpha =    1.00000 energy =    948439.3046476457
+For alpha =    0.00067 energy =        48.7110278161
+For alpha =    0.00080 energy =        48.6941723751
+For alpha =    0.00083 energy =        48.6935166065
+For alpha =    0.00083 energy =        48.6934911570
+For alpha =    0.00083 energy =        48.6934901698
+For alpha =    0.00083 energy =        48.6934901315
+ff:   169     48.69     66.56      5.94    -13.71      0.00    -10.10  6.07e+00
+ff:   169     48.69     66.56      5.94    -13.71      0.00    -10.10  6.07e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  6.0676872
+For alpha =    0.00000 energy =        48.6934901315
+For alpha =    1.00000 energy =   2517755.4957620581
+For alpha =    0.00039 energy =        48.2783942083
+For alpha =    0.00047 energy =        48.2622937171
+For alpha =    0.00049 energy =        48.2616626087
+For alpha =    0.00049 energy =        48.2616378199
+For alpha =    0.00049 energy =        48.2616368458
+For alpha =    0.00049 energy =        48.2616368075
+ff:   170     48.26     66.20      5.89    -13.68      0.00    -10.14  4.58e+00
+ff:   170     48.26     66.20      5.89    -13.68      0.00    -10.14  4.58e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.5802237
+For alpha =    0.00000 energy =        48.2616368075
+For alpha =    1.00000 energy =    896443.5776904520
+For alpha =    0.00067 energy =        47.8573643742
+For alpha =    0.00080 energy =        47.8422047226
+For alpha =    0.00083 energy =        47.8416433853
+For alpha =    0.00083 energy =        47.8416226500
+For alpha =    0.00083 energy =        47.8416218844
+For alpha =    0.00083 energy =        47.8416218561
+ff:   171     47.84     65.81      5.84    -13.69      0.00    -10.12  5.90e+00
+ff:   171     47.84     65.81      5.84    -13.69      0.00    -10.12  5.90e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.8994064
+For alpha =    0.00000 energy =        47.8416218561
+For alpha =    1.00000 energy =   2367710.1456149514
+For alpha =    0.00040 energy =        47.4477791602
+For alpha =    0.00047 energy =        47.4333943362
+For alpha =    0.00049 energy =        47.4328633185
+For alpha =    0.00049 energy =        47.4328436766
+For alpha =    0.00049 energy =        47.4328429498
+For alpha =    0.00049 energy =        47.4328429229
+ff:   172     47.43     65.46      5.80    -13.66      0.00    -10.16  4.47e+00
+ff:   172     47.43     65.46      5.80    -13.66      0.00    -10.16  4.47e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.4680180
+For alpha =    0.00000 energy =        47.4328429229
+For alpha =    1.00000 energy =    853492.2710485485
+For alpha =    0.00067 energy =        47.0481888568
+For alpha =    0.00080 energy =        47.0343832330
+For alpha =    0.00083 energy =        47.0338938928
+For alpha =    0.00083 energy =        47.0338765887
+For alpha =    0.00083 energy =        47.0338759771
+For alpha =    0.00083 energy =        47.0338759555
+ff:   173     47.03     65.09      5.76    -13.67      0.00    -10.14  5.76e+00
+ff:   173     47.03     65.09      5.76    -13.67      0.00    -10.14  5.76e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.7560270
+For alpha =    0.00000 energy =        47.0338759555
+For alpha =    1.00000 energy =   2243076.2119202586
+For alpha =    0.00040 energy =        46.6576693000
+For alpha =    0.00047 energy =        46.6446884314
+For alpha =    0.00049 energy =        46.6442356871
+For alpha =    0.00049 energy =        46.6442198654
+For alpha =    0.00049 energy =        46.6442193123
+For alpha =    0.00049 energy =        46.6442192929
+ff:   174     46.64     64.75      5.71    -13.64      0.00    -10.18  4.37e+00
+ff:   174     46.64     64.75      5.71    -13.64      0.00    -10.18  4.37e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.3735692
+For alpha =    0.00000 energy =        46.6442192929
+For alpha =    1.00000 energy =    818441.8463416538
+For alpha =    0.00068 energy =        46.2758030266
+For alpha =    0.00080 energy =        46.2630647748
+For alpha =    0.00083 energy =        46.2626297457
+For alpha =    0.00083 energy =        46.2626149226
+For alpha =    0.00083 energy =        46.2626144177
+For alpha =    0.00083 energy =        46.2626144005
+ff:   175     46.26     64.40      5.67    -13.64      0.00    -10.17  5.64e+00
+ff:   175     46.26     64.40      5.67    -13.64      0.00    -10.17  5.64e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.6354238
+For alpha =    0.00000 energy =        46.2626144005
+For alpha =    1.00000 energy =   2140388.2027345239
+For alpha =    0.00040 energy =        45.9008891025
+For alpha =    0.00047 energy =        45.8890515643
+For alpha =    0.00049 energy =        45.8886599453
+For alpha =    0.00049 energy =        45.8886469644
+For alpha =    0.00049 energy =        45.8886465340
+For alpha =    0.00049 energy =        45.8886465197
+ff:   176     45.89     64.08      5.64    -13.62      0.00    -10.21  4.30e+00
+ff:   176     45.89     64.08      5.64    -13.62      0.00    -10.21  4.30e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.2953994
+For alpha =    0.00000 energy =        45.8886465197
+For alpha =    1.00000 energy =    790316.8204425887
+For alpha =    0.00068 energy =        45.5335162682
+For alpha =    0.00080 energy =        45.5216048143
+For alpha =    0.00082 energy =        45.5212101137
+For alpha =    0.00083 energy =        45.5211970635
+For alpha =    0.00083 energy =        45.5211966322
+For alpha =    0.00083 energy =        45.5211966180
+ff:   177     45.52     63.73      5.60    -13.62      0.00    -10.19  5.54e+00
+ff:   177     45.52     63.73      5.60    -13.62      0.00    -10.19  5.54e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.5356057
+For alpha =    0.00000 energy =        45.5211966180
+For alpha =    1.00000 energy =   2056714.0085186157
+For alpha =    0.00040 energy =        45.1711938123
+For alpha =    0.00048 energy =        45.1602800417
+For alpha =    0.00049 energy =        45.1599359744
+For alpha =    0.00049 energy =        45.1599251068
+For alpha =    0.00049 energy =        45.1599247634
+For alpha =    0.00049 energy =        45.1599247525
+ff:   178     45.16     63.42      5.57    -13.60      0.00    -10.23  4.23e+00
+ff:   178     45.16     63.42      5.57    -13.60      0.00    -10.23  4.23e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.2321187
+For alpha =    0.00000 energy =        45.1599247525
+For alpha =    1.00000 energy =    768284.3549954602
+For alpha =    0.00068 energy =        44.8154971869
+For alpha =    0.00080 energy =        44.8042116596
+For alpha =    0.00082 energy =        44.8038462951
+For alpha =    0.00083 energy =        44.8038344918
+For alpha =    0.00083 energy =        44.8038341107
+For alpha =    0.00083 energy =        44.8038340984
+ff:   179     44.80     63.09      5.53    -13.60      0.00    -10.21  5.45e+00
+ff:   179     44.80     63.09      5.53    -13.60      0.00    -10.21  5.45e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.4545603
+For alpha =    0.00000 energy =        44.8038340984
+For alpha =    1.00000 energy =   1989450.0105242913
+For alpha =    0.00041 energy =        44.4631521826
+For alpha =    0.00048 energy =        44.4529784688
+For alpha =    0.00049 energy =        44.4526712723
+For alpha =    0.00049 energy =        44.4526619791
+For alpha =    0.00049 energy =        44.4526616979
+For alpha =    0.00049 energy =        44.4526616894
+ff:   180     44.45     62.78      5.50    -13.58      0.00    -10.25  4.18e+00
+ff:   180     44.45     62.78      5.50    -13.58      0.00    -10.25  4.18e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.1822347
+For alpha =    0.00000 energy =        44.4526616894
+For alpha =    1.00000 energy =    751561.8349817425
+For alpha =    0.00068 energy =        44.1166974383
+For alpha =    0.00080 energy =        44.1058666301
+For alpha =    0.00082 energy =        44.1055214948
+For alpha =    0.00083 energy =        44.1055105194
+For alpha =    0.00083 energy =        44.1055101705
+For alpha =    0.00083 energy =        44.1055101594
+ff:   181     44.11     62.45      5.47    -13.58      0.00    -10.23  5.39e+00
+ff:   181     44.11     62.45      5.47    -13.58      0.00    -10.23  5.39e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.3905328
+For alpha =    0.00000 energy =        44.1055101594
+For alpha =    1.00000 energy =   1936485.8768392142
+For alpha =    0.00041 energy =        43.7720364185
+For alpha =    0.00048 energy =        43.7624456749
+For alpha =    0.00049 energy =        43.7621667512
+For alpha =    0.00049 energy =        43.7621586244
+For alpha =    0.00049 energy =        43.7621583875
+For alpha =    0.00049 energy =        43.7621583805
+ff:   182     43.76     62.15      5.44    -13.55      0.00    -10.27  4.14e+00
+ff:   182     43.76     62.15      5.44    -13.55      0.00    -10.27  4.14e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.1446867
+For alpha =    0.00000 energy =        43.7621583805
+For alpha =    1.00000 energy =    739608.8084711254
+For alpha =    0.00068 energy =        43.4326584280
+For alpha =    0.00080 energy =        43.4221335054
+For alpha =    0.00082 energy =        43.4218010848
+For alpha =    0.00082 energy =        43.4217906066
+For alpha =    0.00082 energy =        43.4217902764
+For alpha =    0.00082 energy =        43.4217902660
+ff:   183     43.42     61.83      5.41    -13.56      0.00    -10.26  5.34e+00
+ff:   183     43.42     61.83      5.41    -13.56      0.00    -10.26  5.34e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.3420805
+For alpha =    0.00000 energy =        43.4217902660
+For alpha =    1.00000 energy =   1896143.1413616932
+For alpha =    0.00041 energy =        43.0936375031
+For alpha =    0.00048 energy =        43.0844950254
+For alpha =    0.00049 energy =        43.0842374378
+For alpha =    0.00049 energy =        43.0842301671
+For alpha =    0.00049 energy =        43.0842299618
+For alpha =    0.00049 energy =        43.0842299559
+ff:   184     43.08     61.53      5.38    -13.53      0.00    -10.29  4.12e+00
+ff:   184     43.08     61.53      5.38    -13.53      0.00    -10.29  4.12e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.1184475
+For alpha =    0.00000 energy =        43.0842299559
+For alpha =    1.00000 energy =    731952.0294443436
+For alpha =    0.00068 energy =        42.7594202234
+For alpha =    0.00080 energy =        42.7490734138
+For alpha =    0.00082 energy =        42.7487473898
+For alpha =    0.00082 energy =        42.7487371368
+For alpha =    0.00082 energy =        42.7487368145
+For alpha =    0.00082 energy =        42.7487368043
+ff:   185     42.75     61.21      5.35    -13.54      0.00    -10.28  5.31e+00
+ff:   185     42.75     61.21      5.35    -13.54      0.00    -10.28  5.31e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.3076938
+For alpha =    0.00000 energy =        42.7487368043
+For alpha =    1.00000 energy =   1866862.3386612567
+For alpha =    0.00041 energy =        42.4242295294
+For alpha =    0.00048 energy =        42.4154199148
+For alpha =    0.00049 energy =        42.4151780416
+For alpha =    0.00049 energy =        42.4151713888
+For alpha =    0.00049 energy =        42.4151712058
+For alpha =    0.00049 energy =        42.4151712006
+ff:   186     42.42     60.91      5.33    -13.51      0.00    -10.31  4.10e+00
+ff:   186     42.42     60.91      5.33    -13.51      0.00    -10.31  4.10e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.1024802
+For alpha =    0.00000 energy =        42.4151712006
+For alpha =    1.00000 energy =    728145.0669005638
+For alpha =    0.00068 energy =        42.0934715852
+For alpha =    0.00080 energy =        42.0831909136
+For alpha =    0.00082 energy =        42.0828658058
+For alpha =    0.00082 energy =        42.0828555441
+For alpha =    0.00082 energy =        42.0828552203
+For alpha =    0.00082 energy =        42.0828552101
+ff:   187     42.08     60.60      5.30    -13.51      0.00    -10.30  5.29e+00
+ff:   187     42.08     60.60      5.30    -13.51      0.00    -10.30  5.29e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.2860643
+For alpha =    0.00000 energy =        42.0828552101
+For alpha =    1.00000 energy =   1847394.6991366155
+For alpha =    0.00041 energy =        41.7604945332
+For alpha =    0.00048 energy =        41.7519179398
+For alpha =    0.00049 energy =        41.7516871559
+For alpha =    0.00049 energy =        41.7516809347
+For alpha =    0.00049 energy =        41.7516807669
+For alpha =    0.00049 energy =        41.7516807623
+ff:   188     41.75     60.30      5.27    -13.49      0.00    -10.34  4.10e+00
+ff:   188     41.75     60.30      5.27    -13.49      0.00    -10.34  4.10e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.0958471
+For alpha =    0.00000 energy =        41.7516807623
+For alpha =    1.00000 energy =    727813.4645815316
+For alpha =    0.00067 energy =        41.4316756117
+For alpha =    0.00079 energy =        41.4213614424
+For alpha =    0.00082 energy =        41.4210323440
+For alpha =    0.00082 energy =        41.4210218624
+For alpha =    0.00082 energy =        41.4210215287
+For alpha =    0.00082 energy =        41.4210215180
+ff:   189     41.42     59.99      5.25    -13.49      0.00    -10.32  5.28e+00
+ff:   189     41.42     59.99      5.25    -13.49      0.00    -10.32  5.28e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.2760171
+For alpha =    0.00000 energy =        41.4210215180
+For alpha =    1.00000 energy =   1836690.9732867919
+For alpha =    0.00041 energy =        41.0994570390
+For alpha =    0.00048 energy =        41.0910263073
+For alpha =    0.00049 energy =        41.0908027467
+For alpha =    0.00049 energy =        41.0907968079
+For alpha =    0.00049 energy =        41.0907966501
+For alpha =    0.00049 energy =        41.0907966458
+ff:   190     41.09     59.69      5.23    -13.47      0.00    -10.36  4.10e+00
+ff:   190     41.09     59.69      5.23    -13.47      0.00    -10.36  4.10e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.0977110
+For alpha =    0.00000 energy =        41.0907966458
+For alpha =    1.00000 energy =    730646.7592836088
+For alpha =    0.00067 energy =        40.7712085675
+For alpha =    0.00079 energy =        40.7607704929
+For alpha =    0.00081 energy =        40.7604328560
+For alpha =    0.00082 energy =        40.7604219537
+For alpha =    0.00082 energy =        40.7604216018
+For alpha =    0.00082 energy =        40.7604215904
+ff:   191     40.76     59.37      5.20    -13.47      0.00    -10.34  5.28e+00
+ff:   191     40.76     59.37      5.20    -13.47      0.00    -10.34  5.28e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.2765125
+For alpha =    0.00000 energy =        40.7604215904
+For alpha =    1.00000 energy =   1833879.0135002104
+For alpha =    0.00042 energy =        40.4384263175
+For alpha =    0.00048 energy =        40.4300644541
+For alpha =    0.00049 energy =        40.4298448199
+For alpha =    0.00049 energy =        40.4298390408
+For alpha =    0.00049 energy =        40.4298388887
+For alpha =    0.00049 energy =        40.4298388846
+ff:   192     40.43     59.07      5.18    -13.44      0.00    -10.38  4.11e+00
+ff:   192     40.43     59.07      5.18    -13.44      0.00    -10.38  4.11e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.1073370
+For alpha =    0.00000 energy =        40.4298388846
+For alpha =    1.00000 energy =    736392.4040765183
+For alpha =    0.00067 energy =        40.1095051821
+For alpha =    0.00079 energy =        40.0988592880
+For alpha =    0.00081 energy =        40.0985087374
+For alpha =    0.00082 energy =        40.0984972139
+For alpha =    0.00082 energy =        40.0984968352
+For alpha =    0.00082 energy =        40.0984968228
+ff:   193     40.10     58.75      5.15    -13.45      0.00    -10.36  5.29e+00
+ff:   193     40.10     58.75      5.15    -13.45      0.00    -10.36  5.29e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.2866486
+For alpha =    0.00000 energy =        40.0984968228
+For alpha =    1.00000 energy =   1838245.9825234241
+For alpha =    0.00042 energy =        39.7749445675
+For alpha =    0.00048 energy =        39.7665822372
+For alpha =    0.00049 energy =        39.7663636609
+For alpha =    0.00049 energy =        39.7663579369
+For alpha =    0.00050 energy =        39.7663577870
+For alpha =    0.00050 energy =        39.7663577830
+ff:   194     39.77     58.45      5.14    -13.42      0.00    -10.40  4.12e+00
+ff:   194     39.77     58.45      5.14    -13.42      0.00    -10.40  4.12e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.1240941
+For alpha =    0.00000 energy =        39.7663577830
+For alpha =    1.00000 energy =    744851.6165326668
+For alpha =    0.00067 energy =        39.4442089679
+For alpha =    0.00079 energy =        39.4332752498
+For alpha =    0.00081 energy =        39.4329074092
+For alpha =    0.00082 energy =        39.4328950542
+For alpha =    0.00082 energy =        39.4328946394
+For alpha =    0.00082 energy =        39.4328946254
+ff:   195     39.43     58.13      5.11    -13.42      0.00    -10.38  5.31e+00
+ff:   195     39.43     58.13      5.11    -13.42      0.00    -10.38  5.31e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.3056625
+For alpha =    0.00000 energy =        39.4328946254
+For alpha =    1.00000 energy =   1849223.8154779649
+For alpha =    0.00042 energy =        39.1067390157
+For alpha =    0.00048 energy =        39.0983123825
+For alpha =    0.00049 energy =        39.0980922440
+For alpha =    0.00050 energy =        39.0980864813
+For alpha =    0.00050 energy =        39.0980863304
+For alpha =    0.00050 energy =        39.0980863264
+ff:   196     39.10     57.82      5.10    -13.40      0.00    -10.42  4.15e+00
+ff:   196     39.10     57.82      5.10    -13.40      0.00    -10.42  4.15e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.1474559
+For alpha =    0.00000 energy =        39.0980863264
+For alpha =    1.00000 energy =    755877.0670840442
+For alpha =    0.00066 energy =        38.7731259246
+For alpha =    0.00079 energy =        38.7618260012
+For alpha =    0.00081 energy =        38.7614363350
+For alpha =    0.00081 energy =        38.7614229190
+For alpha =    0.00081 energy =        38.7614224572
+For alpha =    0.00081 energy =        38.7614224413
+ff:   197     38.76     57.50      5.07    -13.40      0.00    -10.40  5.33e+00
+ff:   197     38.76     57.50      5.07    -13.40      0.00    -10.40  5.33e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.3329314
+For alpha =    0.00000 energy =        38.7614224413
+For alpha =    1.00000 energy =   1866378.5562556616
+For alpha =    0.00042 energy =        38.4316757393
+For alpha =    0.00048 energy =        38.4231257059
+For alpha =    0.00049 energy =        38.4229015623
+For alpha =    0.00050 energy =        38.4228956759
+For alpha =    0.00050 energy =        38.4228955213
+For alpha =    0.00050 energy =        38.4228955172
+ff:   198     38.42     57.18      5.06    -13.38      0.00    -10.44  4.18e+00
+ff:   198     38.42     57.18      5.06    -13.38      0.00    -10.44  4.18e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.1770025
+For alpha =    0.00000 energy =        38.4228955172
+For alpha =    1.00000 energy =    769371.9335389724
+For alpha =    0.00066 energy =        38.0941797375
+For alpha =    0.00078 energy =        38.0824351705
+For alpha =    0.00081 energy =        38.0820188652
+For alpha =    0.00081 energy =        38.0820041310
+For alpha =    0.00081 energy =        38.0820036096
+For alpha =    0.00081 energy =        38.0820035912
+ff:   199     38.08     56.85      5.03    -13.38      0.00    -10.42  5.37e+00
+ff:   199     38.08     56.85      5.03    -13.38      0.00    -10.42  5.37e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.3679726
+For alpha =    0.00000 energy =        38.0820035912
+For alpha =    1.00000 energy =   1889404.5153006085
+For alpha =    0.00042 energy =        37.7477163541
+For alpha =    0.00048 energy =        37.7389877955
+For alpha =    0.00049 energy =        37.7387573742
+For alpha =    0.00050 energy =        37.7387512807
+For alpha =    0.00050 energy =        37.7387511195
+For alpha =    0.00050 energy =        37.7387511151
+ff:   200     37.74     56.54      5.02    -13.35      0.00    -10.46  4.21e+00
+ff:   200     37.74     56.54      5.02    -13.35      0.00    -10.46  4.21e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.2124214
+For alpha =    0.00000 energy =        37.7387511151
+For alpha =    1.00000 energy =    785289.7510220102
+For alpha =    0.00066 energy =        37.4053695839
+For alpha =    0.00078 energy =        37.3931003178
+For alpha =    0.00081 energy =        37.3926521597
+For alpha =    0.00081 energy =        37.3926358139
+For alpha =    0.00081 energy =        37.3926352178
+For alpha =    0.00081 energy =        37.3926351961
+ff:   201     37.39     56.20      5.00    -13.36      0.00    -10.45  5.41e+00
+ff:   201     37.39     56.20      5.00    -13.36      0.00    -10.45  5.41e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.4104451
+For alpha =    0.00000 energy =        37.3926351961
+For alpha =    1.00000 energy =   1918124.8579018621
+For alpha =    0.00042 energy =        37.0528776045
+For alpha =    0.00048 energy =        37.0439171991
+For alpha =    0.00049 energy =        37.0436782921
+For alpha =    0.00050 energy =        37.0436719110
+For alpha =    0.00050 energy =        37.0436717405
+For alpha =    0.00050 energy =        37.0436717358
+ff:   202     37.04     55.88      4.98    -13.33      0.00    -10.48  4.25e+00
+ff:   202     37.04     55.88      4.98    -13.33      0.00    -10.48  4.25e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.2535093
+For alpha =    0.00000 energy =        37.0436717358
+For alpha =    1.00000 energy =    803636.0045904489
+For alpha =    0.00065 energy =        36.7047309895
+For alpha =    0.00078 energy =        36.6918527687
+For alpha =    0.00080 energy =        36.6913669262
+For alpha =    0.00081 energy =        36.6913486233
+For alpha =    0.00081 energy =        36.6913479339
+For alpha =    0.00081 energy =        36.6913479080
+ff:   203     36.69     55.53      4.96    -13.33      0.00    -10.47  5.46e+00
+ff:   203     36.69     55.53      4.96    -13.33      0.00    -10.47  5.46e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.4601472
+For alpha =    0.00000 energy =        36.6913479080
+For alpha =    1.00000 energy =   1952489.3927102024
+For alpha =    0.00042 energy =        36.3451910378
+For alpha =    0.00048 energy =        36.3359453211
+For alpha =    0.00049 energy =        36.3356956685
+For alpha =    0.00050 energy =        36.3356889155
+For alpha =    0.00050 energy =        36.3356887328
+For alpha =    0.00050 energy =        36.3356887277
+ff:   204     36.34     55.20      4.95    -13.31      0.00    -10.51  4.30e+00
+ff:   204     36.34     55.20      4.95    -13.31      0.00    -10.51  4.30e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.3001718
+For alpha =    0.00000 energy =        36.3356887277
+For alpha =    1.00000 energy =    824468.0808719076
+For alpha =    0.00065 energy =        35.9902932202
+For alpha =    0.00078 energy =        35.9767149394
+For alpha =    0.00080 energy =        35.9761847329
+For alpha =    0.00081 energy =        35.9761640576
+For alpha =    0.00081 energy =        35.9761632515
+For alpha =    0.00081 energy =        35.9761632201
+ff:   205     35.98     54.85      4.93    -13.31      0.00    -10.49  5.52e+00
+ff:   205     35.98     54.85      4.93    -13.31      0.00    -10.49  5.52e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.5170160
+For alpha =    0.00000 energy =        35.9761632201
+For alpha =    1.00000 energy =   1992573.7039012942
+For alpha =    0.00042 energy =        35.6226594786
+For alpha =    0.00048 energy =        35.6130734212
+For alpha =    0.00050 energy =        35.6128106374
+For alpha =    0.00050 energy =        35.6128034209
+For alpha =    0.00050 energy =        35.6128032226
+For alpha =    0.00050 energy =        35.6128032170
+ff:   206     35.61     54.51      4.92    -13.29      0.00    -10.53  4.35e+00
+ff:   206     35.61     54.51      4.92    -13.29      0.00    -10.53  4.35e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.3524233
+For alpha =    0.00000 energy =        35.6128032170
+For alpha =    1.00000 energy =    847900.6746713290
+For alpha =    0.00065 energy =        35.2600359123
+For alpha =    0.00078 energy =        35.2456579625
+For alpha =    0.00080 energy =        35.2450756820
+For alpha =    0.00081 energy =        35.2450521318
+For alpha =    0.00081 energy =        35.2450511795
+For alpha =    0.00081 energy =        35.2450511410
+ff:   207     35.25     54.15      4.90    -13.29      0.00    -10.51  5.58e+00
+ff:   207     35.25     54.15      4.90    -13.29      0.00    -10.51  5.58e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.5811242
+For alpha =    0.00000 energy =        35.2450511410
+For alpha =    1.00000 energy =   2038581.5556554836
+For alpha =    0.00042 energy =        34.8832143367
+For alpha =    0.00048 energy =        34.8732298941
+For alpha =    0.00050 energy =        34.8729513896
+For alpha =    0.00050 energy =        34.8729436071
+For alpha =    0.00050 energy =        34.8729433896
+For alpha =    0.00050 energy =        34.8729433834
+ff:   208     34.87     53.80      4.89    -13.26      0.00    -10.55  4.41e+00
+ff:   208     34.87     53.80      4.89    -13.26      0.00    -10.55  4.41e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.4103860
+For alpha =    0.00000 energy =        34.8729433834
+For alpha =    1.00000 energy =    874109.3455795008
+For alpha =    0.00064 energy =        34.5118471377
+For alpha =    0.00077 energy =        34.4965586467
+For alpha =    0.00080 energy =        34.4959152564
+For alpha =    0.00081 energy =        34.4958882149
+For alpha =    0.00081 energy =        34.4958870787
+For alpha =    0.00081 energy =        34.4958870309
+ff:   209     34.50     53.43      4.87    -13.26      0.00    -10.53  5.65e+00
+ff:   209     34.50     53.43      4.87    -13.26      0.00    -10.53  5.65e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.6526753
+For alpha =    0.00000 energy =        34.4958870309
+For alpha =    1.00000 energy =   2090847.3528180304
+For alpha =    0.00041 energy =        34.1246721819
+For alpha =    0.00048 energy =        34.1142266692
+For alpha =    0.00050 energy =        34.1139295599
+For alpha =    0.00050 energy =        34.1139210938
+For alpha =    0.00050 energy =        34.1139208525
+For alpha =    0.00050 energy =        34.1139208456
+ff:   210     34.11     53.07      4.86    -13.24      0.00    -10.57  4.47e+00
+ff:   210     34.11     53.07      4.86    -13.24      0.00    -10.57  4.47e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.4742867
+For alpha =    0.00000 energy =        34.1139208456
+For alpha =    1.00000 energy =    903333.7110293966
+For alpha =    0.00064 energy =        33.7434795794
+For alpha =    0.00077 energy =        33.7271554844
+For alpha =    0.00080 energy =        33.7264402757
+For alpha =    0.00080 energy =        33.7264089790
+For alpha =    0.00081 energy =        33.7264076099
+For alpha =    0.00081 energy =        33.7264075500
+ff:   211     33.73     52.68      4.84    -13.24      0.00    -10.55  5.73e+00
+ff:   211     33.73     52.68      4.84    -13.24      0.00    -10.55  5.73e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.7319952
+For alpha =    0.00000 energy =        33.7264075500
+For alpha =    1.00000 energy =   2149838.4428674402
+For alpha =    0.00041 energy =        33.3446904873
+For alpha =    0.00048 energy =        33.3337147821
+For alpha =    0.00050 energy =        33.3333957825
+For alpha =    0.00050 energy =        33.3333864943
+For alpha =    0.00050 energy =        33.3333862237
+For alpha =    0.00050 energy =        33.3333862158
+ff:   212     33.33     52.31      4.83    -13.21      0.00    -10.60  4.54e+00
+ff:   212     33.33     52.31      4.83    -13.21      0.00    -10.60  4.54e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.5444694
+For alpha =    0.00000 energy =        33.3333862158
+For alpha =    1.00000 energy =    935896.9005626241
+For alpha =    0.00063 energy =        32.9525083626
+For alpha =    0.00077 energy =        32.9350059179
+For alpha =    0.00080 energy =        32.9342060610
+For alpha =    0.00080 energy =        32.9341695522
+For alpha =    0.00080 energy =        32.9341678863
+For alpha =    0.00080 energy =        32.9341678102
+ff:   213     32.93     51.92      4.81    -13.22      0.00    -10.58  5.82e+00
+ff:   213     32.93     51.92      4.81    -13.22      0.00    -10.58  5.82e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.8194845
+For alpha =    0.00000 energy =        32.9341678102
+For alpha =    1.00000 energy =   2216112.6757402848
+For alpha =    0.00041 energy =        32.5407266151
+For alpha =    0.00048 energy =        32.5291433007
+For alpha =    0.00050 energy =        32.5287986035
+For alpha =    0.00050 energy =        32.5287883273
+For alpha =    0.00050 energy =        32.5287880209
+For alpha =    0.00050 energy =        32.5287880117
+ff:   214     32.53     51.54      4.80    -13.19      0.00    -10.62  4.62e+00
+ff:   214     32.53     51.54      4.80    -13.19      0.00    -10.62  4.62e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.6213751
+For alpha =    0.00000 energy =        32.5287880117
+For alpha =    1.00000 energy =    972198.8989015486
+For alpha =    0.00063 energy =        32.1362888865
+For alpha =    0.00077 energy =        32.1174440783
+For alpha =    0.00080 energy =        32.1165441051
+For alpha =    0.00080 energy =        32.1165011766
+For alpha =    0.00080 energy =        32.1164991295
+For alpha =    0.00080 energy =        32.1164990319
+ff:   215     32.12     51.13      4.78    -13.19      0.00    -10.60  5.92e+00
+ff:   215     32.12     51.13      4.78    -13.19      0.00    -10.60  5.92e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.9156290
+For alpha =    0.00000 energy =        32.1164990319
+For alpha =    1.00000 energy =   2290345.2963426998
+For alpha =    0.00041 energy =        31.7099945927
+For alpha =    0.00048 energy =        31.6977159208
+For alpha =    0.00050 energy =        31.6973410564
+For alpha =    0.00050 energy =        31.6973295908
+For alpha =    0.00050 energy =        31.6973292400
+For alpha =    0.00050 energy =        31.6973292293
+ff:   216     31.70     50.73      4.78    -13.17      0.00    -10.64  4.71e+00
+ff:   216     31.70     50.73      4.78    -13.17      0.00    -10.64  4.71e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.7055097
+For alpha =    0.00000 energy =        31.6973292293
+For alpha =    1.00000 energy =   1012700.4553426687
+For alpha =    0.00062 energy =        31.2919118474
+For alpha =    0.00076 energy =        31.2715356014
+For alpha =    0.00079 energy =        31.2705167999
+For alpha =    0.00080 energy =        31.2704659215
+For alpha =    0.00080 energy =        31.2704633814
+For alpha =    0.00080 energy =        31.2704632546
+ff:   217     31.27     50.30      4.76    -13.17      0.00    -10.62  6.02e+00
+ff:   217     31.27     50.30      4.76    -13.17      0.00    -10.62  6.02e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  6.0210226
+For alpha =    0.00000 energy =        31.2704632546
+For alpha =    1.00000 energy =   2373377.1248140684
+For alpha =    0.00041 energy =        30.8494183360
+For alpha =    0.00048 energy =        30.8363440466
+For alpha =    0.00050 energy =        30.8359337202
+For alpha =    0.00050 energy =        30.8359208184
+For alpha =    0.00050 energy =        30.8359204126
+For alpha =    0.00050 energy =        30.8359203998
+ff:   218     30.84     49.89      4.75    -13.14      0.00    -10.67  4.80e+00
+ff:   218     30.84     49.89      4.75    -13.14      0.00    -10.67  4.80e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.7974465
+For alpha =    0.00000 energy =        30.8359203998
+For alpha =    1.00000 energy =   1057940.5340144613
+For alpha =    0.00062 energy =        30.4161586988
+For alpha =    0.00076 energy =        30.3940334714
+For alpha =    0.00079 energy =        30.3928732351
+For alpha =    0.00080 energy =        30.3928124669
+For alpha =    0.00080 energy =        30.3928092851
+For alpha =    0.00080 energy =        30.3928091185
+ff:   219     30.39     49.45      4.74    -13.14      0.00    -10.65  6.14e+00
+ff:   219     30.39     49.45      4.74    -13.14      0.00    -10.65  6.14e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  6.1363069
+For alpha =    0.00000 energy =        30.3928091185
+For alpha =    1.00000 energy =   2466167.4474873883
+For alpha =    0.00041 energy =        29.9555909590
+For alpha =    0.00048 energy =        29.9416057718
+For alpha =    0.00050 energy =        29.9411536607
+For alpha =    0.00050 energy =        29.9411390174
+For alpha =    0.00050 energy =        29.9411385430
+For alpha =    0.00050 energy =        29.9411385276
+ff:   220     29.94     49.02      4.73    -13.12      0.00    -10.69  4.90e+00
+ff:   220     29.94     49.02      4.73    -13.12      0.00    -10.69  4.90e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  4.8978080
+For alpha =    0.00000 energy =        29.9411385276
+For alpha =    1.00000 energy =   1108537.6584944245
+For alpha =    0.00061 energy =        29.5054624126
+For alpha =    0.00076 energy =        29.4813389191
+For alpha =    0.00079 energy =        29.4800100288
+For alpha =    0.00080 energy =        29.4799369159
+For alpha =    0.00080 energy =        29.4799328946
+For alpha =    0.00080 energy =        29.4799326734
+ff:   221     29.48     48.56      4.72    -13.12      0.00    -10.67  6.26e+00
+ff:   221     29.48     48.56      4.72    -13.12      0.00    -10.67  6.26e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  6.2621396
+For alpha =    0.00000 energy =        29.4799326734
+For alpha =    1.00000 energy =   2569773.1763540157
+For alpha =    0.00041 energy =        29.0247432813
+For alpha =    0.00048 energy =        29.0097095004
+For alpha =    0.00050 energy =        29.0092076953
+For alpha =    0.00050 energy =        29.0091909139
+For alpha =    0.00050 energy =        29.0091903525
+For alpha =    0.00050 energy =        29.0091903337
+ff:   222     29.01     48.11      4.71    -13.09      0.00    -10.72  5.01e+00
+ff:   222     29.01     48.11      4.71    -13.09      0.00    -10.72  5.01e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.0072419
+For alpha =    0.00000 energy =        29.0091903337
+For alpha =    1.00000 energy =   1165188.9902637198
+For alpha =    0.00061 energy =        28.5558736780
+For alpha =    0.00075 energy =        28.5294678542
+For alpha =    0.00079 energy =        28.5279377008
+For alpha =    0.00080 energy =        28.5278491481
+For alpha =    0.00080 energy =        28.5278440250
+For alpha =    0.00080 energy =        28.5278437286
+ff:   223     28.53     47.62      4.70    -13.09      0.00    -10.70  6.40e+00
+ff:   223     28.53     47.62      4.70    -13.09      0.00    -10.70  6.40e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  6.3991539
+For alpha =    0.00000 energy =        28.5278437286
+For alpha =    1.00000 energy =   2685314.6068507503
+For alpha =    0.00041 energy =        28.0526908663
+For alpha =    0.00048 energy =        28.0364627028
+For alpha =    0.00050 energy =        28.0359025823
+For alpha =    0.00050 energy =        28.0358832122
+For alpha =    0.00050 energy =        28.0358825421
+For alpha =    0.00050 energy =        28.0358825189
+ff:   224     28.04     47.15      4.69    -13.06      0.00    -10.74  5.13e+00
+ff:   224     28.04     47.15      4.69    -13.06      0.00    -10.74  5.13e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.1263922
+For alpha =    0.00000 energy =        28.0358825189
+For alpha =    1.00000 energy =   1228666.8938455193
+For alpha =    0.00060 energy =        27.5630359959
+For alpha =    0.00075 energy =        27.5340262259
+For alpha =    0.00079 energy =        27.5322559775
+For alpha =    0.00080 energy =        27.5321481023
+For alpha =    0.00080 energy =        27.5321415309
+For alpha =    0.00080 energy =        27.5321411306
+ff:   225     27.53     46.65      4.68    -13.07      0.00    -10.72  6.55e+00
+ff:   225     27.53     46.65      4.68    -13.07      0.00    -10.72  6.55e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  6.5479078
+For alpha =    0.00000 energy =        27.5321411306
+For alpha =    1.00000 energy =   2813994.1778814434
+For alpha =    0.00041 energy =        27.0348567465
+For alpha =    0.00048 energy =        27.0172561613
+For alpha =    0.00050 energy =        27.0166266403
+For alpha =    0.00050 energy =        27.0166040801
+For alpha =    0.00050 energy =        27.0166032713
+For alpha =    0.00050 energy =        27.0166032423
+ff:   226     27.02     46.15      4.67    -13.04      0.00    -10.77  5.26e+00
+ff:   226     27.02     46.15      4.67    -13.04      0.00    -10.77  5.26e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.2558602
+For alpha =    0.00000 energy =        27.0166032423
+For alpha =    1.00000 energy =   1299808.6721852180
+For alpha =    0.00059 energy =        26.5221752641
+For alpha =    0.00075 energy =        26.4901992009
+For alpha =    0.00078 energy =        26.4881428195
+For alpha =    0.00079 energy =        26.4880107708
+For alpha =    0.00080 energy =        26.4880022946
+For alpha =    0.00080 energy =        26.4880017506
+ff:   227     26.49     45.62      4.66    -13.04      0.00    -10.75  6.71e+00
+ff:   227     26.49     45.62      4.66    -13.04      0.00    -10.75  6.71e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  6.7088222
+For alpha =    0.00000 energy =        26.4880017506
+For alpha =    1.00000 energy =   2956982.8936630609
+For alpha =    0.00041 energy =        25.9662332729
+For alpha =    0.00048 energy =        25.9470598245
+For alpha =    0.00050 energy =        25.9463478440
+For alpha =    0.00050 energy =        25.9463213530
+For alpha =    0.00050 energy =        25.9463203669
+For alpha =    0.00050 energy =        25.9463203302
+ff:   228     25.95     45.10      4.66    -13.01      0.00    -10.80  5.40e+00
+ff:   228     25.95     45.10      4.66    -13.01      0.00    -10.80  5.40e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.3961562
+For alpha =    0.00000 energy =        25.9463203302
+For alpha =    1.00000 energy =   1379498.7220741762
+For alpha =    0.00059 energy =        25.4281134836
+For alpha =    0.00074 energy =        25.3927616165
+For alpha =    0.00078 energy =        25.3903642710
+For alpha =    0.00079 energy =        25.3902019620
+For alpha =    0.00079 energy =        25.3901909779
+For alpha =    0.00079 energy =        25.3901902346
+ff:   229     25.39     44.54      4.65    -13.02      0.00    -10.78  6.88e+00
+ff:   229     25.39     44.54      4.65    -13.02      0.00    -10.78  6.88e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  6.8820989
+For alpha =    0.00000 energy =        25.3901902346
+For alpha =    1.00000 energy =   3115357.6431381325
+For alpha =    0.00040 energy =        24.8414186364
+For alpha =    0.00048 energy =        24.8204475440
+For alpha =    0.00050 energy =        24.8196377379
+For alpha =    0.00050 energy =        24.8196064038
+For alpha =    0.00050 energy =        24.8196051909
+For alpha =    0.00050 energy =        24.8196051440
+ff:   230     24.82     43.99      4.64    -12.99      0.00    -10.82  5.55e+00
+ff:   230     24.82     43.99      4.64    -12.99      0.00    -10.82  5.55e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.5476348
+For alpha =    0.00000 energy =        24.8196051440
+For alpha =    1.00000 energy =   1468634.1679417067
+For alpha =    0.00058 energy =        24.2753106028
+For alpha =    0.00074 energy =        24.2361195520
+For alpha =    0.00078 energy =        24.2333156506
+For alpha =    0.00079 energy =        24.2331154062
+For alpha =    0.00079 energy =        24.2331011124
+For alpha =    0.00079 energy =        24.2331000922
+ff:   231     24.23     43.39      4.64    -12.99      0.00    -10.80  7.07e+00
+ff:   231     24.23     43.39      4.64    -12.99      0.00    -10.80  7.07e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  7.0676141
+For alpha =    0.00000 energy =        24.2331000922
+For alpha =    1.00000 energy =   3289965.0803253995
+For alpha =    0.00040 energy =        23.6547018753
+For alpha =    0.00048 energy =        23.6316609960
+For alpha =    0.00050 energy =        23.6307335592
+For alpha =    0.00050 energy =        23.6306961515
+For alpha =    0.00050 energy =        23.6306946421
+For alpha =    0.00050 energy =        23.6306945812
+ff:   232     23.63     42.81      4.63    -12.96      0.00    -10.85  5.71e+00
+ff:   232     23.63     42.81      4.63    -12.96      0.00    -10.85  5.71e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.7104085
+For alpha =    0.00000 energy =        23.6306945812
+For alpha =    1.00000 energy =   1568058.3010078452
+For alpha =    0.00057 energy =        23.0578784460
+For alpha =    0.00073 energy =        23.0143871001
+For alpha =    0.00077 energy =        23.0111077641
+For alpha =    0.00079 energy =        23.0108609871
+For alpha =    0.00079 energy =        23.0108424269
+For alpha =    0.00079 energy =        23.0108410312
+ff:   233     23.01     42.18      4.63    -12.97      0.00    -10.83  7.26e+00
+ff:   233     23.01     42.18      4.63    -12.97      0.00    -10.83  7.26e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  7.2647953
+For alpha =    0.00000 energy =        23.0108410312
+For alpha =    1.00000 energy =   3481302.2830954078
+For alpha =    0.00040 energy =        22.4000957246
+For alpha =    0.00048 energy =        22.3747201633
+For alpha =    0.00050 energy =        22.3736548694
+For alpha =    0.00050 energy =        22.3736100538
+For alpha =    0.00050 energy =        22.3736081676
+For alpha =    0.00050 energy =        22.3736080882
+ff:   234     22.37     41.57      4.62    -12.93      0.00    -10.88  5.88e+00
+ff:   234     22.37     41.57      4.62    -12.93      0.00    -10.88  5.88e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  5.8842270
+For alpha =    0.00000 energy =        22.3736080882
+For alpha =    1.00000 energy =   1678466.2222157854
+For alpha =    0.00057 energy =        21.7696771415
+For alpha =    0.00073 energy =        21.7215285905
+For alpha =    0.00077 energy =        21.7177188265
+For alpha =    0.00078 energy =        21.7174180485
+For alpha =    0.00079 energy =        21.7173943174
+For alpha =    0.00079 energy =        21.7173924454
+ff:   235     21.72     40.90      4.62    -12.94      0.00    -10.86  7.47e+00
+ff:   235     21.72     40.90      4.62    -12.94      0.00    -10.86  7.47e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  7.4724644
+For alpha =    0.00000 energy =        21.7173924454
+For alpha =    1.00000 energy =   3689238.2818512903
+For alpha =    0.00040 energy =        21.0716395142
+For alpha =    0.00048 energy =        21.0436277952
+For alpha =    0.00050 energy =        21.0424000818
+For alpha =    0.00050 energy =        21.0423461585
+For alpha =    0.00050 energy =        21.0423437890
+For alpha =    0.00050 energy =        21.0423436849
+ff:   236     21.04     40.25      4.61    -12.91      0.00    -10.91  6.07e+00
+ff:   236     21.04     40.25      4.61    -12.91      0.00    -10.91  6.07e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  6.0683012
+For alpha =    0.00000 energy =        21.0423436849
+For alpha =    1.00000 energy =   1800276.6494408101
+For alpha =    0.00056 energy =        20.4048809046
+For alpha =    0.00072 energy =        20.3516541527
+For alpha =    0.00077 energy =        20.3472465434
+For alpha =    0.00078 energy =        20.3468824684
+For alpha =    0.00078 energy =        20.3468524172
+For alpha =    0.00079 energy =        20.3468499372
+ff:   237     20.35     39.54      4.61    -12.92      0.00    -10.89  7.69e+00
+ff:   237     20.35     39.54      4.61    -12.92      0.00    -10.89  7.69e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  7.6885699
+For alpha =    0.00000 energy =        20.3468499372
+For alpha =    1.00000 energy =   3912639.2536227223
+For alpha =    0.00040 energy =        19.6636343676
+For alpha =    0.00048 energy =        19.6326742372
+For alpha =    0.00050 energy =        19.6312567525
+For alpha =    0.00050 energy =        19.6311917137
+For alpha =    0.00050 energy =        19.6311887281
+For alpha =    0.00050 energy =        19.6311885910
+ff:   238     19.63     38.85      4.61    -12.88      0.00    -10.94  6.26e+00
+ff:   238     19.63     38.85      4.61    -12.88      0.00    -10.94  6.26e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  6.2611098
+For alpha =    0.00000 energy =        19.6311885910
+For alpha =    1.00000 energy =   1933393.8797154243
+For alpha =    0.00055 energy =        18.9581227996
+For alpha =    0.00071 energy =        18.8993724772
+For alpha =    0.00076 energy =        18.8942908707
+For alpha =    0.00078 energy =        18.8938525696
+For alpha =    0.00078 energy =        18.8938147966
+For alpha =    0.00078 energy =        18.8938115421
+ff:   239     18.89     38.09      4.61    -12.89      0.00    -10.92  7.91e+00
+ff:   239     18.89     38.09      4.61    -12.89      0.00    -10.92  7.91e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  7.9098884
+For alpha =    0.00000 energy =        18.8938115421
+For alpha =    1.00000 energy =   4148848.7074056291
+For alpha =    0.00040 energy =        18.1711196684
+For alpha =    0.00048 energy =        18.1369089052
+For alpha =    0.00050 energy =        18.1352727219
+For alpha =    0.00050 energy =        18.1351942963
+For alpha =    0.00051 energy =        18.1351905354
+For alpha =    0.00051 energy =        18.1351903550
+ff:   240     18.14     37.36      4.60    -12.85      0.00    -10.97  6.46e+00
+ff:   240     18.14     37.36      4.60    -12.85      0.00    -10.97  6.46e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  6.4601191
+For alpha =    0.00000 energy =        18.1351903550
+For alpha =    1.00000 energy =   2076862.8968309909
+For alpha =    0.00054 energy =        17.4248960697
+For alpha =    0.00071 energy =        17.3603289594
+For alpha =    0.00076 energy =        17.3545183380
+For alpha =    0.00077 energy =        17.3539970640
+For alpha =    0.00078 energy =        17.3539503449
+For alpha =    0.00078 energy =        17.3539461589
+ff:   241     17.35     36.55      4.61    -12.86      0.00    -10.95  8.13e+00
+ff:   241     17.35     36.55      4.61    -12.86      0.00    -10.95  8.13e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  8.1317036
+For alpha =    0.00000 energy =        17.3539461589
+For alpha =    1.00000 energy =   4393099.3743267450
+For alpha =    0.00039 energy =        16.5905367455
+For alpha =    0.00048 energy =        16.5528144221
+For alpha =    0.00050 energy =        16.5509312410
+For alpha =    0.00051 energy =        16.5508370172
+For alpha =    0.00051 energy =        16.5508323004
+For alpha =    0.00051 energy =        16.5508320642
+ff:   242     16.55     35.78      4.60    -12.83      0.00    -11.00  6.66e+00
+ff:   242     16.55     35.78      4.60    -12.83      0.00    -11.00  6.66e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  6.6614184
+For alpha =    0.00000 energy =        16.5508320642
+For alpha =    1.00000 energy =   2228408.8743480039
+For alpha =    0.00054 energy =        15.8024808131
+For alpha =    0.00070 energy =        15.7320183920
+For alpha =    0.00075 energy =        15.7254567776
+For alpha =    0.00077 energy =        15.7248478929
+For alpha =    0.00077 energy =        15.7247914528
+For alpha =    0.00077 energy =        15.7247862229
+ff:   243     15.72     34.93      4.61    -12.84      0.00    -10.98  8.35e+00
+ff:   243     15.72     34.93      4.61    -12.84      0.00    -10.98  8.35e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  8.3474216
+For alpha =    0.00000 energy =        15.7247862229
+For alpha =    1.00000 energy =   4637762.8387748580
+For alpha =    0.00039 energy =        14.9206303290
+For alpha =    0.00048 energy =        14.8792249091
+For alpha =    0.00050 energy =        14.8770710040
+For alpha =    0.00051 energy =        14.8769587013
+For alpha =    0.00051 energy =        14.8769528428
+For alpha =    0.00051 energy =        14.8769525372
+ff:   244     14.88     34.11      4.60    -12.80      0.00    -11.03  6.86e+00
+ff:   244     14.88     34.11      4.60    -12.80      0.00    -11.03  6.86e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  6.8593317
+For alpha =    0.00000 energy =        14.8769525372
+For alpha =    1.00000 energy =   2383861.1027435181
+For alpha =    0.00053 energy =        14.0909552336
+For alpha =    0.00070 energy =        14.0148285122
+For alpha =    0.00075 energy =        14.0075442297
+For alpha =    0.00076 energy =        14.0068499435
+For alpha =    0.00077 energy =        14.0067838498
+For alpha =    0.00077 energy =        14.0067775603
+ff:   245     14.01     33.21      4.61    -12.81      0.00    -11.01  8.55e+00
+ff:   245     14.01     33.21      4.61    -12.81      0.00    -11.01  8.55e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  8.5482342
+For alpha =    0.00000 energy =        14.0067775603
+For alpha =    1.00000 energy =   4871615.4179850444
+For alpha =    0.00039 energy =        13.1636015966
+For alpha =    0.00048 energy =        13.1184979897
+For alpha =    0.00050 energy =        13.1160603678
+For alpha =    0.00051 energy =        13.1159283183
+For alpha =    0.00051 energy =        13.1159211611
+For alpha =    0.00051 energy =        13.1159207732
+ff:   246     13.12     32.35      4.60    -12.78      0.00    -11.06  7.05e+00
+ff:   246     13.12     32.35      4.60    -12.78      0.00    -11.06  7.05e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  7.0460722
+For alpha =    0.00000 energy =        13.1159207732
+For alpha =    1.00000 energy =   2536550.3393437178
+For alpha =    0.00052 energy =        12.2944435601
+For alpha =    0.00069 energy =        12.2133149355
+For alpha =    0.00074 energy =        12.2054081338
+For alpha =    0.00076 energy =        12.2046408434
+For alpha =    0.00076 energy =        12.2045664850
+For alpha =    0.00076 energy =        12.2045592820
+ff:   247     12.20     31.41      4.62    -12.79      0.00    -11.04  8.72e+00
+ff:   247     12.20     31.41      4.62    -12.79      0.00    -11.04  8.72e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  8.7229899
+For alpha =    0.00000 energy =        12.2045592820
+For alpha =    1.00000 energy =   5079417.7440682892
+For alpha =    0.00039 energy =        11.3264424998
+For alpha =    0.00048 energy =        11.2778647660
+For alpha =    0.00050 energy =        11.2751495287
+For alpha =    0.00051 energy =        11.2749973984
+For alpha =    0.00051 energy =        11.2749888700
+For alpha =    0.00051 energy =        11.2749883919
+ff:   248     11.27     30.51      4.61    -12.75      0.00    -11.09  7.21e+00
+ff:   248     11.27     30.51      4.61    -12.75      0.00    -11.09  7.21e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  7.2116024
+For alpha =    0.00000 energy =        11.2749883919
+For alpha =    1.00000 energy =   2676904.9346450954
+For alpha =    0.00052 energy =        10.4224959843
+For alpha =    0.00068 energy =        10.3375728300
+For alpha =    0.00073 energy =        10.3292335953
+For alpha =    0.00075 energy =        10.3284185185
+For alpha =    0.00075 energy =        10.3283389705
+For alpha =    0.00076 energy =        10.3283312105
+ff:   249     10.33     29.53      4.62    -12.76      0.00    -11.06  8.86e+00
+ff:   249     10.33     29.53      4.62    -12.76      0.00    -11.06  8.86e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  8.8585209
+For alpha =    0.00000 energy =        10.3283312105
+For alpha =    1.00000 energy =   5242303.3758456176
+For alpha =    0.00039 energy =         9.4222381899
+For alpha =    0.00048 energy =         9.3707339938
+For alpha =    0.00050 energy =         9.3677757116
+For alpha =    0.00051 energy =         9.3676053790
+For alpha =    0.00051 energy =         9.3675955658
+For alpha =    0.00051 energy =         9.3675950004
+ff:   250      9.37     28.61      4.61    -12.72      0.00    -11.12  7.34e+00
+ff:   250      9.37     28.61      4.61    -12.72      0.00    -11.12  7.34e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  7.3439623
+For alpha =    0.00000 energy =         9.3675950004
+For alpha =    1.00000 energy =   2792645.8029058757
+For alpha =    0.00051 energy =         8.4912951175
+For alpha =    0.00068 energy =         8.4043881606
+For alpha =    0.00073 energy =         8.3959009068
+For alpha =    0.00074 energy =         8.3950761680
+For alpha =    0.00075 energy =         8.3949961507
+For alpha =    0.00075 energy =         8.3949883911
+ff:   251      8.39     27.60      4.62    -12.74      0.00    -11.09  8.94e+00
+ff:   251      8.39     27.60      4.62    -12.74      0.00    -11.09  8.94e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  8.9407194
+For alpha =    0.00000 energy =         8.3949883911
+For alpha =    1.00000 energy =   5339595.3628803240
+For alpha =    0.00039 energy =         7.4710351390
+For alpha =    0.00048 energy =         7.4175314528
+For alpha =    0.00050 energy =         7.4144002781
+For alpha =    0.00051 energy =         7.4142165747
+For alpha =    0.00051 energy =         7.4142057905
+For alpha =    0.00051 energy =         7.4142051573
+ff:   252      7.41     26.66      4.61    -12.70      0.00    -11.15  7.43e+00
+ff:   252      7.41     26.66      4.61    -12.70      0.00    -11.15  7.43e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  7.4303530
+For alpha =    0.00000 energy =         7.4142051573
+For alpha =    1.00000 energy =   2870069.4666612945
+For alpha =    0.00051 energy =         6.5241945497
+For alpha =    0.00067 energy =         6.4376594589
+For alpha =    0.00072 energy =         6.4293817053
+For alpha =    0.00074 energy =         6.4285939811
+For alpha =    0.00074 energy =         6.4285191413
+For alpha =    0.00074 energy =         6.4285120345
+ff:   253      6.43     25.64      4.62    -12.71      0.00    -11.12  8.96e+00
+ff:   253      6.43     25.64      4.62    -12.71      0.00    -11.12  8.96e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  8.9565371
+For alpha =    0.00000 energy =         6.4285120345
+For alpha =    1.00000 energy =   5352432.8551413044
+For alpha =    0.00039 energy =         5.4997218576
+For alpha =    0.00048 energy =         5.4455065551
+For alpha =    0.00051 energy =         5.4423079064
+For alpha =    0.00051 energy =         5.4421187138
+For alpha =    0.00051 energy =         5.4421075166
+For alpha =    0.00051 energy =         5.4421068538
+ff:   254      5.44     24.69      4.61    -12.68      0.00    -11.18  7.46e+00
+ff:   254      5.44     24.69      4.61    -12.68      0.00    -11.18  7.46e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  7.4590987
+For alpha =    0.00000 energy =         5.4421068538
+For alpha =    1.00000 energy =   2896668.1718596709
+For alpha =    0.00051 energy =         4.5510028318
+For alpha =    0.00067 energy =         4.4675171530
+For alpha =    0.00071 energy =         4.4598268699
+For alpha =    0.00073 energy =         4.4591222171
+For alpha =    0.00073 energy =         4.4590577547
+For alpha =    0.00073 energy =         4.4590518605
+ff:   255      4.46     23.67      4.62    -12.69      0.00    -11.15  8.90e+00
+ff:   255      4.46     23.67      4.62    -12.69      0.00    -11.15  8.90e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction: 30.5728520
+For alpha =    0.00000 energy =         4.4590518605
+For alpha =    1.00000 energy =   5513828.6867099116
+For alpha =    0.00016 energy =         4.1862639555
+For alpha =    0.00033 energy =         3.9118411841
+For alpha =    0.00049 energy =         3.6358969608
+For alpha =    0.00065 energy =         3.3586558959
+For alpha =    0.00082 energy =         3.0804554582
+For alpha =    0.00098 energy =         2.8017461455
+ff:   256      2.80     22.05      4.58    -12.66      0.00    -11.16  8.90e+00
+ff:   256      2.80     22.05      4.58    -12.66      0.00    -11.16  8.90e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  2.9448874
+For alpha =    0.00000 energy =         2.8017461455
+For alpha =    1.00000 energy =     35727.8693242701
+For alpha =    0.00593 energy =         1.3648871214
+For alpha =    0.01164 energy =        -0.0097894215
+For alpha =    0.01708 energy =        -1.2900957770
+For alpha =    0.02217 energy =        -2.4333014330
+For alpha =    0.02682 energy =        -3.4020910469
+For alpha =    0.03096 energy =        -4.1772444816
+ff:   257     -4.18     15.34      4.32    -12.57      0.00    -11.26  9.59e+00
+ff:   257     -4.18     15.34      4.32    -12.57      0.00    -11.26  9.59e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.3166309
+For alpha =    0.00000 energy =        -4.1772444816
+For alpha =    1.00000 energy =        63.8261623571
+For alpha =    0.38485 energy =       -12.9612188980
+For alpha =    0.37303 energy =       -12.9727839030
+For alpha =    0.37422 energy =       -12.9729290454
+For alpha =    0.37422 energy =       -12.9729290453
+ff:   258    -12.97      7.20      4.02    -12.43      0.00    -11.77  1.07e+01
+ff:   258    -12.97      7.20      4.02    -12.43      0.00    -11.77  1.07e+01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.0635459
+For alpha =    0.00000 energy =       -12.9729290453
+For alpha =    1.00000 energy =       -18.9854556441
+For alpha =    2.00000 energy =       -12.6388599398
+For alpha =    1.00809 energy =       -18.9858415431
+For alpha =    1.00797 energy =       -18.9858416338
+For alpha =    1.00797 energy =       -18.9858416337
+ff:   259    -18.99      1.02      3.96    -12.47      0.00    -11.50  2.39e+00
+ff:   259    -18.99      1.02      3.96    -12.47      0.00    -11.50  2.39e+00
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.0157156
+For alpha =    0.00000 energy =       -18.9858416337
+For alpha =    1.00000 energy =       -19.1624327283
+For alpha =    0.98406 energy =       -19.1624793786
+For alpha =    0.98428 energy =       -19.1624793873
+For alpha =    0.98426 energy =       -19.1624793872
+ff:   260    -19.16      0.72      4.06    -12.49      0.00    -11.45  2.97e-01
+ff:   260    -19.16      0.72      4.06    -12.49      0.00    -11.45  2.97e-01
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.0012933
+For alpha =    0.00000 energy =       -19.1624793872
+For alpha =    1.00000 energy =       -19.1655380639
+For alpha =    2.00000 energy =       -19.1626480347
+For alpha =    1.01074 energy =       -19.1655384070
+For alpha =    1.01049 energy =       -19.1655384068
+ff:   261    -19.17      0.72      4.06    -12.49      0.00    -11.45  2.24e-03
+ff:   261    -19.17      0.72      4.06    -12.49      0.00    -11.45  2.24e-03
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.0006892
+For alpha =    0.00000 energy =       -19.1655384068
+For alpha =    1.00000 energy =       -19.1655522835
+For alpha =    0.99090 energy =       -19.1655522847
+For alpha =    0.99138 energy =       -19.1655522847
+ff:   262    -19.17      0.72      4.06    -12.49      0.00    -11.45  5.99e-04
+ff:   262    -19.17      0.72      4.06    -12.49      0.00    -11.45  5.99e-04
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.0000026
+ff:   263    -19.17      0.72      4.06    -12.49      0.00    -11.45  9.37e-09
+ff:   263    -19.17      0.72      4.06    -12.49      0.00    -11.45  9.37e-09
+ adding    0.00000 to diagonal of the hessian
+rms of search direction:  0.0000000
+ff:   264    -19.17      0.72      4.06    -12.49      0.00    -11.45  1.95e-12
+RMSD =    0.000
+RMSD =    0.000
+      iter    Total       bad      vdW     elect   nonpolar   genBorn      frms
+ff:     1    -19.17      0.72      4.06    -12.49      0.00    -11.45  1.95e-12
+RMSD =    0.000
+RMSD =    0.000
+RMSD =    0.000
+RMSD =    0.000
+RMSD =    0.000
+RMSD =    0.000
+RMSD =    0.000
+RMSD =    0.000
+RMSD =    0.000
+RMSD =    0.000
+RMSD =    0.000
+RMSD =    0.000
+RMSD =    0.000
+RMSD =    0.000
+RMSD =    0.000
+RMSD =    0.000
+RMSD =    0.000
+RMSD =    0.000
+RMSD =    0.000
+RMSD =    0.000
+RMSD =    0.000
+RMSD =    0.000
+
+Energy       =    -1.9165552296e+01
+RMS gradient =     1.9480760966e-12
+dysev time =       0.01 seconds 
+
+
+                - Thermochemistry -
+
+Temperature:   298.150
+   Pressure:     1.000
+       Mass:   108.134
+Principal moments of inertia in amu-A**2:
+           156.47      229.40      382.69
+Rotational symmetry number is  1
+Assuming classical behavior for rotation
+Rotational temperatures:    0.155     0.106     0.063
+Zero-point vibrational energy:     82.339
+
+             freq.         E               Cv              S
+            cm**-1       kcal/mol       cal/mol-K     cal/mol-K
+Total:                    67.657         27.233         82.500
+translational:             0.888          2.979         39.924
+rotational:                0.888          2.979         27.909
+vibrational:              85.047         21.276         14.668
+ff   energy:             -19.166
+     1       -0.000
+     2       -0.000
+     3       -0.000
+     4        0.000
+     5        0.000
+     6        0.000
+     7      114.513        0.607          1.936          3.187
+     8      188.304        0.632          1.855          2.242
+     9      264.098        0.670          1.737          1.632
+    10      300.409        0.692          1.671          1.412
+    11      350.367        0.727          1.573          1.163
+    12      445.092        0.804          1.370          0.809
+    13      457.749        0.816          1.342          0.771
+    14      507.000        0.862          1.233          0.640
+    15      514.710        0.870          1.216          0.621
+    16      570.777        0.927          1.093          0.502
+    17      708.569        1.081          0.811          0.295
+    18      754.493        1.137          0.727          0.247
+    19      787.622        1.177          0.670          0.217
+    20      827.266        1.227          0.605          0.186
+    21      946.021        1.381          0.439          0.116
+    22     1012.551        1.470          0.363          0.089
+    23     1033.901        1.498          0.341          0.081
+    24     1035.678        1.501          0.339          0.081
+    25     1092.725        1.578          0.285          0.064
+    26     1112.133        1.605          0.269          0.059
+    27     1167.215        1.681          0.227          0.047
+    28     1184.757        1.705          0.214          0.044
+    29     1225.509        1.762          0.188          0.037
+    30     1279.198        1.836          0.158          0.030
+    31     1327.613        1.904          0.135          0.024
+    32     1434.956        2.056          0.093          0.015
+    33     1466.436        2.100          0.084          0.013
+    34     1468.047        2.102          0.083          0.013
+    35     1557.564        2.229          0.061          0.009
+    36     1642.847        2.350          0.045          0.006
+    37     1698.870        2.430          0.037          0.005
+    38     1761.665        2.520          0.029          0.004
+    39     1811.829        2.591          0.024          0.003
+    40     1847.369        2.642          0.021          0.003
+    41     2860.609        4.090          0.000          0.000
+    42     2965.665        4.240          0.000          0.000
+    43     2967.161        4.242          0.000          0.000
+    44     2969.955        4.246          0.000          0.000
+    45     2970.000        4.246          0.000          0.000
+    46     2970.297        4.247          0.000          0.000
+    47     2971.745        4.249          0.000          0.000
+    48     3019.987        4.318          0.000          0.000
