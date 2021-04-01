@@ -1,0 +1,27 @@
+molecule m;
+molecule n;
+
+float x[39], fret, r;
+
+m = getpdb( "ligand_snapshot.pdb.29893" );
+readparm( m, "lig.prmtop" );
+
+n = getpdb( "ligand_snapshot.pdb.29893" );
+readparm( m, "lig.prmtop" );
+
+
+mm_options( "cut=999., ntpr=50, nsnb=99999, diel=C, gb=1, dielc=1.0" );
+mme_init( m, NULL, "::Z", x, NULL);
+setxyz_from_mol( m, NULL, x);
+
+conjgrad(x, 39, fret, mme, 0.00001, 1500.0, 100000 );
+setmol_from_xyz( m, NULL, x );
+
+mm_options( "ntpr=1" );
+newton( x, 39, fret, mme, mme2, 0.0000000001, 0.0, 100000 );
+
+
+rmsd( n, "::", m, "::", r );
+printf( "RMSD = %8.3f\n", r );
+
+nmode( x, 39, mme2, 0, 0, 0.0, 0.0, 0);

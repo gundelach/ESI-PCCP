@@ -1,0 +1,41 @@
+molecule m;
+molecule n;
+
+# 8340 = 3 * number of atoms in system
+
+float x[8340], fret, r;
+
+# read in pdb and prmtop
+# have to read it in twice to compare rmsd with initial structure
+# there's probably a more elegant way of doing this but this seemed to work
+
+m = getpdb( "snapshot.pdb" );
+readparm( m, "file.prmtop" );
+
+n = getpdb( "snapshot.pdb" );
+readparm( m, "file.prmtop" );
+
+# perform minimisation in GB implicit solvent
+# you should generally get lower rmsd during minimisation by using GB rather than vacuum
+
+mm_options( "cut=999., ntpr=50, nsnb=99999, diel=C, gb=1, dielc=1.0" );
+mme_init( m, NULL, "::Z", x, NULL);
+setxyz_from_mol( m, NULL, x);
+
+# conjgrad then Newton-Raphson minimisation (change 8340 to 3*Natoms)
+# these force tolerances are very low but they do need to be this low for sensible answers
+# 1500.0 should be changed to the expected drop in energy at the first conjgrad step
+# it's not very sensitive to this but it should be the right order of magnitude to get convergence
+
+conjgrad(x, 8340, fret, mme, 0.00001, 1500.0, 100000 );
+setmol_from_xyz( m, NULL, x );
+
+mm_options( "ntpr=1" );
+newton( x, 8340, fret, mme, mme2, 0.0000000001, 0.0, 100000 );
+
+# calculate rmsd of minimised structure and entropy
+
+rmsd( n, "::", m, "::", r );
+printf( "RMSD = %8.3f\n", r );
+
+nmode( x, 8340, mme2, 0, 0, 0.0, 0.0, 0);

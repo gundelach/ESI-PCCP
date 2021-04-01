@@ -1,0 +1,22 @@
+#!/bin/bash
+
+for i in ligand*pdb ;
+do 
+if [ `echo $i | grep lig` ]; then
+sed -e "s/snapshot.pdb/${i}/g" -e "s/file.prmtop/lig.prmtop/g" -e "s/8340/42/g" -e "/\#/d" nmode.nab > nmode_${i}.nab
+elif  [ `echo $i | grep host` ];then
+sed -e "s/snapshot.pdb/${i}/g" -e "s/file.prmtop/rec.prmtop/g" -e "s/8340/7806/g" -e "/\#/d" nmode.nab > nmode_${i}.nab
+elif  [ `echo $i | grep com` ];then
+sed -e "s/snapshot.pdb/${i}/g" -e "s/file.prmtop/com.prmtop/g" -e "s/8340/7848/g" -e "/\#/d" nmode.nab > nmode_${i}.nab
+fi
+
+echo -e \\n $i \\n
+
+
+nab -O -v nmode_${i}.nab -o nmode_${i}.out
+
+echo -e \\n $i nmode calc \\n
+
+./nmode_${i}.out > ${i//.pdb/.nab_out}
+
+done
